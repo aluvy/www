@@ -1,0 +1,71 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "포스코엠텍 소개"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+                
+                <div class="sub_company">
+                    <img src="./images/sub1_1/company1.jpg" alt="경영이념 이미지">
+                    <h3>경영이념</h3>
+                    <p>포스코는 '더불어 함께 발전하는 기업시민'을 추구합니다. 포스코 스스로가 사회 구성원의 일원이 되어 임직원, 주주, 고객, 공급사, 협력사, 지역사회 등 여러 이해관계자와 더불어 함께 발전하고, 배려와 공존, 공생의 가치를 함께 추구해 나가고자 합니다.</p>
+                    
+                    <img src="./images/sub1_1/company2.jpg" alt="경영비전 이미지">
+                    <h3>경영비전</h3>
+                    <p>더불어 함께 발전하는 기업시민 의미를 담고 있는 With의 의미를 시각적으로 전달하기 위해 W는 두 사람이 손을 맞잡고 있는 모습을 이미지화해 공감적 어울림이 꾸준히 지속됨을 표현하였습니다. 따뜻한 오렌지색은 함께 발전하는 긍정 에너지를 담았습니다.</p>
+                    
+                    <img src="./images/sub1_1/company3.jpg" alt="활동영역 이미지">
+                    <h3>활동영역</h3>
+                    <p>비즈니스 파트너와 함께 Win-Win 할 수 있는 공생가치를 창출하여 강건한 산업생태계를 조성하고, 사회공동체의 일원으로 경제적 이윤 창출을 넘어 사회문제 해결에 적극적으로 동참하며, 신뢰와 창의의 조직문화로 임직원이 보람과 행복을 느끼는 회사를 만들어갑니다.</p>
+                </div>
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+</body>
+</html>

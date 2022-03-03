@@ -1,0 +1,120 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "포장엔지니어링"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+                
+                <div class="package_list">
+                    <ul>
+                        <li>
+                            <div class="image"><img src="./images/sub2_2/photo1.jpg" alt="포장라인"></div>
+                            <h3>포장라인</h3>
+                            <p>철강 포장 전문업체 포스코엠텍은 오랜 기간 쌓아온 전문역량을 바탕으로 철강제품 포장과 포장설비 엔지니어링 분야에서 높은 경쟁력을 발휘해 나가고 있습니다.</p>
+                            <div class="package link">
+                                <!-- <a href="#">철강 코일 포장라인</a>
+                                <a href="#">비철금속 대코일 포장라인</a>
+                                <a href="#">비철금속 소코일 포장라인</a> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub2_2/photo2.jpg" alt="장치 및 기기"></div>
+                            <h3>장치 및 기기</h3>
+                            <p>철강 포장 전문업체 포스코엠텍은 오랜 기간 쌓아온 전문역량을 바탕으로 철강제품 포장과 포장설비 엔지니어링 분야에서 높은 경쟁력을 발휘해 나가고 있습니다.</p>
+                            <div class="device link">
+                                <!-- <a href="#">포장지 공급장치</a>
+                                <a href="#">포장지 밀봉(접기)장치</a>
+                                <a href="#">외보호판 부착기</a>
+                                <a href="#">철재 자동 부착설비</a>
+                                <a href="#">로봇결속기 (POSCO StrapMaster)</a> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub2_2/photo3.jpg" alt=""></div>
+                            <h3>성형기</h3>
+                            <p>철강 포장 전문업체 포스코엠텍은 오랜 기간 쌓아온 전문역량을 바탕으로 철강제품 포장과 포장설비 엔지니어링 분야에서 높은 경쟁력을 발휘해 나가고 있습니다.</p>
+                            <div class="modeling link">
+                                <!-- <a href="#">외주링 성형기</a>
+                                <a href="#">내주링 성형기</a>
+                                <a href="#">단면측판 성형기</a> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="package_pop">
+                    <!-- <div class="image"><img src="./images/sub2_1/product1.jpg" alt="알루미늄 잉곳 1kg Aluminum Ingot 1kg"></div>
+                    <div class="ttl">
+                        <span>AI 탈산제</span>
+                        <strong>알루미늄 잉곳 1kg Aluminum Ingot 1kg</strong>
+                        <p>제강공정에서 과포화된 산소를 제거, 제강 제품의 용접성, 인성, 고온과 부식에 대한 저항력 강화를 위하여 사용합니다.</p>
+                    </div>
+                    <div class="cont">
+                        <dl>
+                            <dt>성분</dt>
+                            <dd>Al 93% minCu 2.0% maxFe 2.5% maxMn 1.2% maxTi 0.2% maxZn 3.0% maxMg 3.0% maxSi 2.5% max</dd>
+                        </dl>
+                        <dl>
+                            <dt>규격</dt>
+                            <dd>무게 : 1.0kg ± 0.3kg높이 : 33mm ± 12.0mm길이 : 3.95mm ± 25.0 mm폭 : (上) 25mm ± 10.0mm (下) 43mm ± 7.0mm</dd>
+                        </dl>
+                        <dl>
+                            <dt>포장</dt>
+                            <dd>Bundle</dd>
+                        </dl>
+                    </div>
+                    <a href="#" class="close">닫기</a> -->
+                </div>
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+    <script src="./js/sub_package.js"></script>
+</body>
+</html>

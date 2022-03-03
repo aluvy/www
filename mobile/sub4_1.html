@@ -1,0 +1,177 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "미디어센터"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+                
+                
+                <div class="media_tab">
+                    <span>홍보영화</span>
+                    <ul>
+                        <li><a href="#">홍보영화</a></li>
+                        <li><a href="#">광고영상</a></li>
+                        <li><a href="#">인쇄광고</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="contBox movie">
+                    <h3 class="hidden">홍보영화</h3>
+                    <div class="movie_list"></div>
+                    <div class="movie_pop"></div>
+                    <div class="movie_pop_back"></div>
+                </div>
+
+
+                <div class="contBox advideo">
+                    <h3 class="hidden">광고영상</h3>
+                    <div class="advideo_main"></div>
+                    <div class="advideo_list"></div>
+                </div>
+
+                
+                <div class="contBox poster">
+                    <h3 class="hidden">인쇄광고</h3>
+                    <div class="howto"><span>좌우로 화면을 밀어보세요</span></div>
+                    
+                    <div class="swiper mySwiper6">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print1.jpg" alt="수소환원제철 기술 편">
+                                <div class="ttl">
+                                    <strong>수소환원제철 기술 편</strong>
+                                    <span>수소로 리드하는 위대한 내일을 열다.</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print2.jpg" alt="기업시민 함께 편">
+                                <div class="ttl">
+                                    <strong>기업시민 함께 편</strong>
+                                    <span>떨어져 있어도 마음만은 늘 가깝게 늘 '함께'하고 싶은 기업이 되겠습니다.</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print3.jpg" alt="업시민 등대광고 편">
+                                <div class="ttl">
+                                    <strong>기업시민 등대광고 편</strong>
+                                    <span>포스코가 스마트 팩토리를 구축하여 세계경제포럼이 선정한 국내 최초 '등대공장'이 되었습니다.</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print4.jpg" alt="기업, 시민이 되다 편">
+                                <div class="ttl">
+                                    <strong>기업, 시민이 되다 편</strong>
+                                    <span>함께 나누고, 함께 성장하고, 함께 살아가는 당신처럼 포스코가 기업시민이 되어 당신께 한 걸음 더 다가갑니다.</span>
+                                </div></div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print5.jpg" alt="기업시민 POSCO 편">
+                                <div class="ttl">
+                                    <strong>기업시민 POSCO 편</strong>
+                                    <span>기업시민 포스코가 여러분과 동행합니다.</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print6.jpg" alt="포스코 LOVE Letter 편">
+                                <div class="ttl">
+                                    <strong>포스코 LOVE Letter 편</strong>
+                                    <span>더 많은 생각과 이야기를 듣고 더 나은 미래를 만들어가겠습니다.</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print7.jpg" alt="포스코 창립 50주년 기념 편">
+                                <div class="ttl">
+                                    <strong>포스코 창립 50주년 기념 편</strong>
+                                    <span>50년의 도전! 100년의 새꿈!</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/sub4_1/print8.jpg" alt="포스코 기가스틸 편">
+                                <div class="ttl">
+                                    <strong>포스코 기가스틸 편</strong>
+                                    <span>자동차 자체용 알루미늄보다 3배 더 강한 포스코 기가스틸!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+
+    <!-- <script src="./js/modernizr.custom.js"></script>
+	<script src="./js/jquery.responsiveGallery.js"></script> -->
+    <script src="./js/sub_media.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><script>
+        
+        var swiper6 = new Swiper(".mySwiper6", {
+          grabCursor: true,
+          effect: "creative",
+          creativeEffect: {
+            prev: {
+              shadow: true,
+              origin: "left center",
+              translate: ["-5%", 0, -200],
+              rotate: [0, 100, 0],
+            },
+            next: {
+              origin: "right center",
+              translate: ["5%", 0, -200],
+              rotate: [0, -100, 0],
+            },
+          },
+        });
+      </script>
+</body>
+</html>

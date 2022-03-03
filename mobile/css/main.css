@@ -1,0 +1,83 @@
+/* CSS Document */
+@keyframes vis_slogan {
+    from{transform:translateY(2rem); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+.visual .gallery ul li .slogan.active strong{
+    animation: vis_slogan 1 .5s ease-out; animation-delay:.5s; animation-fill-mode:forwards;}
+.visual .gallery ul li .slogan.active span{
+    animation: vis_slogan 1 .5s ease-out; animation-delay:.7s; animation-fill-mode:forwards;}
+
+
+.visual{position:relative; width: 100%; overflow:hidden;}
+.visual .gallery{position:relative; left:0; top:0; width:300%; overflow:hidden;}
+.visual .gallery ul li{float:left; position:relative; width: 33.333%;}
+.visual .gallery ul li .slogan{position:absolute; left:10%; top:30%; color:#fff; line-height: 1.5;}
+.visual .gallery ul li .slogan strong{display:block; font-size:1.75rem; letter-spacing:-0.065rem; opacity:0;}
+.visual .gallery ul li .slogan span{display:block; /*font-size:0.8571rem;*/ margin:1.1428rem 0 0; opacity:0;}
+.visual .gallery ul li img{width: 100%;}
+
+.visual .cnt{position:absolute; left:4.5%; bottom:1.7142rem; font-size:0.85714rem; color:#fff;}
+.visual .cnt span{display:block; width: 20px; text-align:center; line-height: 2;}
+.visual .cnt span + span{border-top:1px solid rgba(255,255,255,.5); color:rgba(255,255,255,.5);}
+.visual .dock{position:absolute; right: 4.5%; bottom:1.7142rem; font-size:0;}
+.visual .dock span{display:inline-block; width: 8px; height: 8px; border-radius:500px; background:rgba(255,255,255,.5); margin-left:5px;}
+.visual .dock span:first-child{margin-left:0;}
+.visual .dock span.on{background:#00a5e5;}
+
+
+#content h3{font-size:1.5625rem; font-weight:700; letter-spacing:-0.065rem;}
+#content .more{position:absolute; right: 0; top: 0; display:block; width: 30px; height: 40px; background:url(../images/more.png) 50% 50% no-repeat; background-size:26px auto; font-size:0; text-indent:-9999%;}
+
+/* 사업영역 */
+#content .business{position:relative; margin:3rem 0 0 8%;}
+#content .business ul li{letter-spacing:-0.045rem; display: none;}
+#content .business ul li:first-child{display: block;}
+#content .business ul li a{display: block;}
+#content .business ul li h4{font-size:1.5625rem; font-weight:700;}
+#content .business ul li p{height:3.4rem; /*font-size:0.8571rem;*/ padding-right:4.5%; margin:1rem 0 1.5rem; overflow: hidden;}
+#content .business ul li img{width: 100%;}
+#content .business .control{position:absolute; right: 4.5%; top: 0;}
+#content .business .control a{float:left; width: 35px; height: 40px; background-image:url(../images/arrow_prev.png); background-size:auto 15px; background-position:50% 50%; background-repeat:no-repeat; text-indent:-9999%; font-size:0;}
+#content .business .control a:nth-child(2){background-image:url(../images/arrow_next.png);}
+
+/* 지속가능경영 */
+#content .sus{margin:2.5rem 0 0; padding:2.5rem 4.5%; background:url(../images/poscox2.png) 115% 4.5rem no-repeat #f2f2f2; background-size:55% auto;}
+#content .sus ul{margin:1rem 0 0;}
+#content .sus ul::after{content:''; display: block; clear: both;}
+#content .sus ul li{position:relative; float:left; width: 50%;}
+#content .sus ul li a{display: block;}
+#content .sus ul li div{position:absolute; left:1rem; bottom:1rem; color:#fff; line-height: 1.3; letter-spacing:-0.045rem;}
+#content .sus ul li div h4{font-size:1.125rem; font-weight:700;}
+#content .sus ul li div p{font-size:0.75rem; margin:0.5rem 0 0;}
+#content .sus ul li img{width: 100%;}
+#content .sus ul li:nth-child(2){margin:1.14285rem 0 0;}
+
+/* 미디어센터 */
+#content .media{position:relative; margin:3rem 0 0 4.5%;}
+#content .media ul{white-space:nowrap; overflow-x:scroll; font-size:0; margin:1rem 0 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;}
+#content .media ul::-webkit-scrollbar {display: none;}
+#content .media ul li{display:inline-block; width: 210px; margin-right:20px; vertical-align:top;}
+/*#content .media ul li:first-child{margin-left:0;}*/
+#content .media ul li a{display: block; text-align:justify; letter-spacing:-0.045rem;}
+#content .media ul li .image{position:relative; padding-bottom:56%; overflow:hidden;}
+#content .media ul li img{position:absolute; left:0; top:0; width: 100%;}
+#content .media ul li p{font-size:1.125rem; font-weight:700; margin:1.74rem 0 0.5rem; text-overflow:ellipsis; overflow: hidden;}
+#content .media ul li span{display: block; height: 2.8rem; font-size:0.8571rem; white-space:normal; overflow: hidden; padding-right:5px;}
+#content .media .cnt{border-radius:500px; background:rgba(0,0,0,0.1); margin:3rem 4.5% 0 0;}
+#content .media .cnt span{display: block; width: 30%; height: 5px; background:#005793; border-radius:500px;}
+#content .media .more{right: 4.5%;}
+
+/* FAQ */
+#content .faq{position:relative; margin:4rem 4.5% 0;}
+#content .faq ul{margin:1rem 0 0;}
+#content .faq ul li{border-top:1px solid #ddd;}
+#content .faq ul li:last-child{border-bottom:1px solid #ddd;}
+#content .faq ul li p{letter-spacing:-0.045rem; text-align:justify;}
+#content .faq ul li p a{position:relative; display:block; padding:1rem 0 1rem 2.85rem; background:url(../images/navi_open.png) 98% 50% no-repeat; background-size:16px auto;}
+#content .faq ul li.on p a{background-image:url(../images/navi_close.png);}
+#content .faq ul li p a::before{content:'Q'; position:absolute; left:0.7142rem; top:.6rem; color:#005793; font-size:1.3751rem; font-weight:700;}
+#content .faq ul li p:nth-child(2){position:relative; padding:1rem 1rem 1rem 2.85rem; background:#f8f8f8; border-top:1px dotted #eee; display: none;}
+#content .faq ul li p:nth-child(2)::before{content:'A'; position:absolute; left:0.7142rem; top:.6rem; color:#999; font-size:1.3751rem; font-weight:700;}

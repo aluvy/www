@@ -1,0 +1,104 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    $myurl = $_SERVER['PHP_SELF'];
+
+    if(strpos($myurl, 'product')) {
+        $mypath = '..';
+    } else {
+        $mypath = '.';
+    }
+?>
+<script>
+
+    function check_search() // 유효성체크
+    {
+        if (!document.search_form.search.value)
+        {
+            alert("검색어를 입력하세요!");    
+            document.search_form.search.focus();
+            return;
+        }
+
+        document.search_form.submit();
+    }
+
+</script>
+
+<div class="header_top">
+    <h1><a href="<?=$mypath?>/index.html">POSCO M-TECH 로고</a></h1>
+    <a class="menu_open" href="#"><span>메뉴오픈</span></a>
+</div>
+
+<nav id="gnb">
+    <h2 class="hidden">글로벌네비게이션영역</h2>
+    <div class="search">
+        <?
+            $myurl = $_SERVER['PHP_SELF'];
+            if(strpos($myurl, 'product')) {     // product page
+        ?>
+        <form name="search_form" method="post" action="./list.php?table=product&mode=search">
+        <? } else { ?>
+        <form name="search_form" method="post" action="./product/list.php?table=product&mode=search">
+        
+        <? } ?>
+        <!-- <form name="search_form" method="post" action="./product/list.php?table=product&mode=search"> -->
+            <input type="text" class="hidden" name="find" value="subject">
+            <label class="hidden" for="search">검색어 입력</label>
+            <input type="text" id="search" name="search" placeholder="검색어를 입력하세요">
+            <input type="button" value="검색" onclick="check_search()">
+        </form>
+    </div>
+    <ul class="mainMenu">  
+        <li class="depth1">
+            <h3><a href="#">회사소개</a></h3>
+            <ul>
+                <li><a href="<?=$mypath?>/sub1_1.html">포스코엠텍 소개</a></li>
+                <li><a href="<?=$mypath?>/sub1_2.html">CEO 인사말</a></li>
+                <li><a href="<?=$mypath?>/sub1_3.html">주요연혁</a></li>
+                <li><a href="<?=$mypath?>/sub1_4.html">찾아오시는 길</a></li>
+            </ul>
+        </li>
+        <li class="depth1">
+            <h3><a href="#">사업영역</a></h3>
+            <ul>
+                <li><a href="<?=$mypath?>/sub2_1.html">철강부원료</a></li>
+                <li><a href="<?=$mypath?>/sub2_2.html">포장엔지니어링</a></li>
+                <li><a href="<?=$mypath?>/product/list.php">제품검색</a></li>
+            </ul>
+        </li>
+        <li class="depth1">
+            <h3><a href="#">지속가능경영</a></h3>
+            <ul>
+                <li><a href="<?=$mypath?>/sub3_1.html">윤리경영</a></li>
+                <li><a href="<?=$mypath?>/sub3_2.html">사회공헌</a></li>
+            </ul>
+        </li>
+        <li class="depth1">
+            <h3><a href="#">고객지원</a></h3>
+            <ul>
+                <li><a href="<?=$mypath?>/sub4_1.html">미디어센터</a></li>
+                <li><a href="<?=$mypath?>/sub4_2.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="memberMenu">
+        <? if(!$userid){ ?>
+            <li><a href="<?=$mypath?>/login/login_form.php">로그인</a></li>
+            <li><a href="<?=$mypath?>/member/member_check.html">회원가입</a></li>
+        <? } else { ?>
+            <li><a href="<?=$mypath?>/login/logout.php">로그아웃</a></li>
+            <li><a href="<?=$mypath?>/member/member_form_modify.php">정보수정</a></li>
+        <? } ?>
+
+    </ul>
+    <ul class="gnb_sns">
+        <li><a href="https://www.youtube.com/channel/UCGu-RtRyCaWQl32YoOh4WNg" target="black" title="유튜브 새창으로 열림">유튜브</a></li>
+        <li><a href="https://kr.linkedin.com/company/posco" target="black" title="링크드인 새창으로 열림">링크드인</a></li>
+        <li><a href="https://ko-kr.facebook.com/HELLOPOSCO/" target="black" title="페이스북 새창으로 열림">페이스북</a></li>
+        <li><a href="https://www.instagram.com/hello_posco/?hl=ko" target="black" title="인스타그램 새창으로 열림">인스타그램</a></li>
+    </ul>
+</nav>

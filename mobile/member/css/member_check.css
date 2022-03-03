@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+#content .agreement_wrap{}
+#content .agreement_wrap h3{font-size:1.25rem; letter-spacing:-0.015rem; margin:4rem 0 1rem;}
+#content .agreement_wrap h3:nth-of-type(1){margin-top:0;}
+#content .agreement_wrap h3::after{content:'(필수사항)'; display:inline-block; padding-left:10px; font-size:1rem; font-weight:normal; color:rgba(255,116,88,1);}
+
+#content .agreement_wrap .policy{height:6rem; overflow-y:scroll; border:1px solid #e5e5e5; padding:1rem; line-height: 1.4; box-sizing:border-box;}
+
+
+/* all agree */
+#content .agreement_wrap .all_agree{border-top:1px dashed #ddd; margin:50px 0 0; padding:50px 0 0;}
+#content .agreement_wrap .all_agree p{font-size: 1.125rem;}
+#content .agreement_wrap .all_agree .check{margin:1rem 0 0;}
+#content .agreement_wrap .all_agree .check input[type=checkbox] + label {font-size:1.25rem; font-weight:700;}
+
+    /* button */
+#content .agreement_wrap .button{position:fixed; left:0; bottom:0; width:100%;}
+#content .agreement_wrap .button::after{content: ''; display: block; clear: both;}
+#content .agreement_wrap .button a{float:left; width: 50%; height: 4rem; line-height: 4rem; font-size:1.125rem; background:#f7f7f7; text-align:center; box-sizing:border-box; transition:all .3s;}
+#content .agreement_wrap .button a+a{width:calc(50% - 1px); margin-left:1px;}
+#content .agreement_wrap .button a.ok{background:#005891; color:#fff;}
+#content .agreement_wrap .button a.cancel{background:#888; color:#ccc;}
+    /* hover */
+    #content .agreement_wrap .button a.ok:hover{background:#00a5e5;}
+    #content .agreement_wrap .button a.cancel:hover{background:#aaa;}
+
+
+/* checkbox */
+#content .agreement_wrap .check{position:relative; padding-left:35px; margin:20px 0 0;}
+#content .agreement_wrap .check input[type=checkbox] + label::before {
+    position:absolute; left:0; top: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    box-sizing:border-box;
+    content: '';
+}
+#content .agreement_wrap .check input[type=checkbox] {display: none;}
+#content .agreement_wrap .check input[type=checkbox] + label {cursor: pointer; line-height:25px;}
+#content .agreement_wrap .check input[type=checkbox]:checked + label::before {
+    background:url(../images/checked.png) 50% 50% no-repeat #005793; border-color: #005793;
+}

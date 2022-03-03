@@ -1,0 +1,195 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "사회공헌"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+
+
+                <div class="social_tab">
+                    <ul>
+                        <li><a href="#">사회공헌 소개</a></li>
+                        <li><a href="#">주요활동</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="cont social_intro">
+                    <div class="social_top">
+                        <h3 class="hidden">사회공헌 비전</h3>
+                        
+                        <p>더 나은 세상을<br>만들어가기 위한 우리의 同行</p>
+                        <span>함께 웃는 세상을 만들어가기 위해 지역의 어려운 이웃을 위한 나눔활동에 적극 참여하고 있습니다.</span>
+                        <ul>
+                            <li><p>포스코 엠텍은 지속 가능한 내일을 함께 만들어가기 위해 생태계 조성을 위해 환경 꿈나무 육성 교육 및 다양한 활동에 앞장서고 있습니다.</p></li>
+                            <li><p>미래 세대의 성장가능성을 발굴하여 지원하고 심리적 · 정서적인 안전 제공 및 취약계층 교육환경 제공에 힘쓰고 있습니다.</p></li>
+                            <li><p>임직원의 자발적인 참여를 통한 선한 영향력 확산 및 지역사회와 소통하며 전문가들과의 파트너쉽을 통한 사회문제 발굴하고 있습니다.</p></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <h3 class="hidden">봉사·후원 활동</h3>
+                    <ul class="social_list">
+                        <li>
+                            <dl>
+                                <dt>재능기부 봉사활동 (가치봉사 동호회)</dt>
+                                <dd>임직원이 보유한 재능이나 관심사와 연계하여 사회이슈 해결을 위해 활동하는 봉사단운영 </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>전사 테마 봉사활동</dt>
+                                <dd>글로벌 모범시민위크 등 전임직원이 공통의 주제와 목표를 가지고 함께 참여하는 봉사활동 전개</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>부서단위 / 개인 봉사활동</dt>
+                                <dd>부서단위 혹은 개인이 지역사회의 어려운 이웃을 위해 자발적으로 참여 하는봉사 활동 장려</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>1% 나눔기금참여</dt>
+                                <dd>매월 급여의 1%를 기부함으로써 지역의 사회공헌 활동에 기여하는 자발적 기부 후원활동 장려</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <div class="cont social_active">
+                    <h3 class="hidden">주요 활동내역</h3>
+                    <ul>
+                        <li>
+                            <div class="image"><img src="./images/sub3_2/img1.jpg" alt="비대면 공헌사업"></div>
+                            <dl>
+                                <dt>비대면 공헌사업</dt>
+                                <dd>언택트 문화 및 시대에 맞춰 어플(app)을 활용한 걸음 기부, 안전, 화재예방 키트 제작 등 패러다임 변화에 발맞춘 비대면 공헌 활동을 실시하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub3_2/img2.jpg" alt="지역사회 상생활동"></div>
+                            <dl>
+                                <dt>지역사회 상생활동</dt>
+                                <dd>지역사회와 상생하여 동반성장할 수 있도록 문화공간 조성, 골프꿈나무 지원 등으로 골프산업 인식개선과 지역주민들에게 다양한 기회를 제공하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub3_2/img3.jpg" alt="환경체험스쿨"></div>
+                            <dl>
+                                <dt>환경체험스쿨</dt>
+                                <dd>올바른 자원 재활용 인식을 전파하는 활동으로써, 분리수거, 재활용 체험 교육, 견학 등으로 환경기초시설의 중요성과 자원순환 이해도를 확산시키는 활동입니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub3_2/img4.jpg" alt="민관협력사업"></div>
+                            <dl>
+                                <dt>민관협력사업</dt>
+                                <dd>포스코 그룹사, 정부/공공기관, 비영리기관 등 민관 협업을 통한 사회공헌 사업을 추진하며 사회적 임팩트 확산을 제고하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="image"><img src="./images/sub3_2/img5.jpg" alt="우리집을 부탁해"></div>
+                            <dl>
+                                <dt>우리집을 부탁해</dt>
+                                <dd>시설관리 전문 역량을 활용해 시설물 안전진단과 보수 작업을 지원하는 지역사회에 재능기부하는 사업입니다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+
+                    <h3>기부금 현황</h3>
+                    <div class="donation">
+                        <table>
+                            <caption class="hidden">기부금 현황 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="row">구분</th>
+                                    <th scope="row">기부금(원)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2018</td>
+                                    <td>69,643,580</td>
+                                </tr>
+                                <tr>
+                                    <td>2019</td>
+                                    <td>159,143,391</td>
+                                </tr>
+                                <tr>
+                                    <td>2020</td>
+                                    <td>180,274,324</td>
+                                </tr>
+                                <tr>
+                                    <td>2021</td>
+                                    <td>165,563,580</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+                
+
+
+
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+    <script src="./js/sub_social.js"></script>
+</body>
+</html>

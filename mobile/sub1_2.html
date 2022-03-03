@@ -1,0 +1,105 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "CEO 인사말"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+                
+                <div class="sub_greeting">
+                    
+                    <div class="photo"><img src="./images/sub1_2/photo.png" alt="CEO 사진"></div>
+                    <p class="summary">기업의 가치는<br>나와 또 다른 나의 협력으로부터 창출됩니다.</p>
+                    
+                    <div class="text">
+                        <h3 class="hidden">CEO 인사말</h3>
+                        <p>훌륭한 기업이란 시대와 사회가 안고있는 문제를 외면하지 않고 그 해결을 기업경영의 핵심적인 목표와 가치로 삼는 기업이라고 생각합니다.</p>
+                        
+                        <p>기업의 가치는 나와 또 다른 나의 협력으로부터 창출됩니다. 우리가 공감과 공존, 공생의 가치를 확대함으로써 기업과 사회, 인간과 자연, 현재와 미래의 조화로운 발전을 이루게 되면 포스코의 세계는 더욱 확장되고 지속될 것입니다.</p>
+
+                        <p>우리가 지향하는 기업시민 포스코의 모습은 주주가 투자하고싶은 회사, 파트너사가 거래하고 싶은 회사, 직원이 일하고 싶고, 지역사회가 자랑스러워 하는 회사입니다.</p>
+                        
+                        <p>우리 모두 혁신과 성장으로 With POSCO 비전 실현을 위해 함께 전진하도록 합시다. 2021년, 포스코그룹 임직원을 비롯하여 협력사, 고객사, 지역사회 여러분 모두의 건강과 행복을 기원합니다.</p>
+
+                        <span class="sign">
+                            포스코엠텍 회장
+                            <img src="./images/sub1_2/sign.png" alt="CEO sign">
+                        </span>
+                    </div>
+                    <div class="career">
+                        <h3 class="hidden">CEO 학력 및 경력</h3>
+                        <dl>
+                            <dt>학력</dt>
+                            <dd><span>1983</span>부산대학교 경제학과 졸업</dd>
+                            <dd><span>1976</span>부산동래고등학교 졸업</dd>
+                        </dl>
+                        <dl>
+                            <dt>경력</dt>
+                            <dd><span>2021~</span>포스코 대표이사 회장</dd>
+                            <dd><span>2018</span>포스코켐텍 대표이사 사장</dd>
+                            <dd><span>2017</span>포스코 대표이사 사장 / 가치경영센터장 (CFO)</dd>
+                            <dd><span>2016</span>포스코 사내이사 부사장 / 가치경영센터장 (CFO)</dd>
+                            <dd><span>2015</span>포스코 부사장 / 가치경영실장</dd>
+                            <dd><span>2015</span>대우인터네셔널 대표이사 부사장 / 기획재무본부장</dd>
+                            <dd><span>2014</span>대우인터내셔널 사내이사 부사장 / 기획재무본부장</dd>
+                            <dd><span>2012</span>포스코 전무 / 정도경영실장</dd>
+                            <dd><span>2010</span>포스코 상무 / 정도경영실장</dd>
+                            <dd><span>2008</span>포스코건설 상무/ 경영전략실장</dd>
+                            <dd><span>2006</span>포스코 재무실장</dd>
+                            <dd><span>2005</span>포스코 감사실장</dd>
+                            <dd><span>1983</span>포항종합제철 관리부 입사</dd>
+                        </dl>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+</body>
+</html>

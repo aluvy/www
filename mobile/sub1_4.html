@@ -1,0 +1,199 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>POSCO M-TECH</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_common.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=254410f25b638fcce34ea8cc1750ea44"></script>
+    <script src="./js/map_kakao2.js"></script>
+    <script>
+    // <![CDATA[
+        try {
+            window.addEventListener('load', function(){
+                setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+    // ]]>
+    </script>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+        <header id="headerArea"><? include "./header.html" ?></header>
+        <div class="sub_layout"><? $pagettl = "찾아오시는 길"; include "./sub_layout.php"; ?></div>
+        <article id="content">
+            <div class="title_area"></div>
+            <div class="content_area">
+                
+                
+                <div class="map_tab">
+                    <ul>
+                        <li><a href="#">본사</a></li>
+                        <li><a href="#">서울사무소</a></li>
+                        <li><a href="#">알루미늄 공장</a></li>
+                        <li><a href="#">광양사업소</a></li>
+                    </ul>
+                </div>
+                
+                <div class="map_cont">
+                    <div class="mapAPI" id="map1"></div>
+                    <div class="location">
+                        <h3>포스코엠텍 본사</h3>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>(우) 37835 경북 포항시 남구 형산강북로 131 (경북 포항시 남구 효자동 608)</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화</dt>
+                            <dd>054-280-8114</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스</dt>
+                            <dd>054-280-8302~5</dd>
+                        </dl>
+                        <strong>찾아오시는 방법</strong>
+                        <dl>
+                            <dt>자가용</dt>
+                            <dd>포스코엠텍 본사 검색 → 화산분기점에서 ‘포항’방면으로 오른쪽 방향 → 포항톨게이트 → 효성로82번길 방면으로 우회전 → 포스코엠텍 본사 도착</dd>
+                        </dl>
+                        <dl>
+                            <dt>버스</dt>
+                            <dd>
+                                <p>포항남부경찰서 정류장</p>
+                                <p><i class="bus_b">간선</i>130, 302</p>
+                                <p><i class="bus_r">공항</i>5000</p>
+                                <p><i class="bus_g">지선</i>연일1, 연일2, 연일3, 연일4, 연일5, 연일9</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="map_cont">
+                    <div class="mapAPI" id="map2"></div>
+                    <div class="location">
+                        <h3>포스코엠텍 서울사무소</h3>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>(우) 06163 서울특별시 강남구 봉은사로 514 포스코타워 삼성 (강남구 삼성동 147)</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화</dt>
+                            <dd>02-554-7718</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스</dt>
+                            <dd>02-554-6618</dd>
+                        </dl>
+                        <strong>찾아오시는 방법</strong>
+                        <dl>
+                            <dt>자가용</dt>
+                            <dd>포스코엠텍 서울사무소 검색 - 포스코센터 지하 주차장 이용 가능</dd>
+                        </dl>
+                        <dl>
+                            <dt>버스</dt>
+                            <dd>
+                                <p>봉은사. 코엑스 북문</p>
+                                <p><i class="bus_b">간선</i>342</p>
+                                <p><i class="bus_r">공항</i>500-2</p>
+                                <p><i class="bus_g">지선</i>3411, 3412</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="map_cont">
+                    <div class="mapAPI" id="map3"></div>
+                    <div class="location">
+                        <h3>포스코엠텍 알루미늄 공장</h3>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>(우) 37860 경북 포항시 남구 철강로 431 (경북 포항시 호동 616)</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화</dt>
+                            <dd>054-288-8114</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스</dt>
+                            <dd>054-288-1130</dd>
+                        </dl>
+                        <strong>찾아오시는 방법</strong>
+                        <dl>
+                            <dt>자가용</dt>
+                            <dd>포스코엠텍 알루미늄 공장 검색 → 포항톨게이트 → 포항IC에서 '김포, 구룡포, 울산, 포항고속도로' 방면으로 오른쪽 고속도로 출구 → 포스코엠텍 알루미늄 공장 도착</dd>
+                        </dl>
+                        <dl>
+                            <dt>버스</dt>
+                            <dd>
+                                <p>성우오토모티브 정류장</p>
+                                <p><i class="bus_b">간선</i>130, 302, 800</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                
+                <div class="map_cont">
+                    <div class="mapAPI" id="map4"></div>
+                    <div class="location">
+                        <h3>포스코엠텍 광양사업소</h3>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>(우) 57801 전남 광양시 희망길 12-14 제철협력회관 4층 B동 (전남 광양시 금호동 623)</dd>
+                        </dl>
+                        <dl>
+                            <dt>전화</dt>
+                            <dd>061-798-5114</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스</dt>
+                            <dd>061-792-0198</dd>
+                        </dl>
+                        <strong>찾아오시는 방법</strong>
+                        <dl>
+                            <dt>자가용</dt>
+                            <dd>포스코엠텍 광양사업소 검색 → 동광양톨게이트 → '금당주택단지, 제철회관' 방면으로 우회전 → 포스코엠텍 광양사업소 도착</dd>
+                        </dl>
+                        <dl>
+                            <dt>버스</dt>
+                            <dd>
+                                <p>협력회관 정류장</p>
+                                <p><i class="bus_c">일반</i>87, 88, 9</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </article>
+        <footer id="footerArea"><? include "./footer.html" ?></footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/subnavi.js"></script>
+</body>
+</html>

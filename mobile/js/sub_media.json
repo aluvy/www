@@ -1,0 +1,103 @@
+{
+    "movie" : [
+        {
+            "image" : "./images/sub4_1/movie1.jpg",
+            "youtube" : "https://www.youtube.com/embed/7bNUm9_TpFA",
+            "title" : "더불어 함께 발전하는 기업시민 포스코 그룹",
+            "summary" : "2021 포스코그룹 홍보영화(국문)"
+        },
+        {
+            "image" : "./images/sub4_1/movie2.jpg",
+            "youtube" : "https://www.youtube.com/embed/pX0ORt0C4mY",
+            "title" : "50주년 기념 POSCO ODYSSEY",
+            "summary" : "포스코 창립 50주년 기념 홍보영화 (국문, '18년 제작)"
+        },
+        {
+            "image" : "./images/sub4_1/movie3.jpg",
+            "youtube" : "https://www.youtube.com/embed/x6wN7M-HnDs",
+            "title" : "희망의 새시대, 행복한 세상의 길을 밝히는 불꽃, 포스코입니다.",
+            "summary" : "포스코 홍보영화(국문, '13년 제작, '18년 갱신)"
+        },
+        {
+            "image" : "./images/sub4_1/movie4.jpg",
+            "youtube" : "https://www.youtube.com/embed/EvBys9okEbQ",
+            "title" : "제철공정영화(포항)",
+            "summary" : "포항제철소 제철공정영화 (국문, '14년 제작, '18년 갱신)"
+        },
+        {
+            "image" : "./images/sub4_1/movie5.jpg",
+            "youtube" : "https://www.youtube.com/embed/VTd6-ENMen8",
+            "title" : "제철공정영화(광양)",
+            "summary" : "광양제철소 제철공정영화 (국문, '14년 제작, '18년 갱신)"
+        },
+        {
+            "image" : "./images/sub4_1/movie6.jpg",
+            "youtube" : "https://www.youtube.com/embed/h-GXnmIZLzM",
+            "title" : "POSCO Family Vision 2020",
+            "summary" : "포스코 Vision 2020  애니메이션 (국문, '15년 제작)"
+        },
+        {
+            "image" : "./images/sub4_1/movie7.jpg",
+            "youtube" : "https://www.youtube.com/embed/i0eaP30Om68",
+            "title" : "POSCO 44주년 기념 동영상",
+            "summary" : "포스코 창립 44주년 기념 홍보영화 (국문, '12년 제작)"
+        },
+        {
+            "image" : "./images/sub4_1/movie8.jpg",
+            "youtube" : "https://www.youtube.com/embed/kQlaxAt9yWg",
+            "title" : "Sound of Progress, Sound of POSCO",
+            "summary" : "포스코 홍보영화 (국문, '09년 제작, '12년 갱신)"
+        }
+    ],
+
+    "advideo" : [
+        {
+            "image" : "./images/sub4_1/video1.jpg",
+            "youtube" : "https://www.youtube.com/embed/xpOYApHBBu4",
+            "title" : "Green Tommorrow, With POSCO 편",
+            "summary" : "푸른 지구를 만드는 미래의 베이스가 되다"
+        },
+        {
+            "image" : "./images/sub4_1/video2.jpg",
+            "youtube" : "https://www.youtube.com/embed/-9CoF03WqVc",
+            "title" : "사회적 거리수기 속 서로의 마음은 온(On)택트로 가까이!",
+            "summary" : "언택트가 아닌 마음을 켜는 온(On)택트로"
+        },
+        {
+            "image" : "./images/sub4_1/video3.jpg",
+            "youtube" : "https://www.youtube.com/embed/NJwsPhG2NGI",
+            "title" : "기업, 시민이 되다 편",
+            "summary" : "Power of 'With' POSCO"
+        },
+        {
+            "image" : "./images/sub4_1/video4.jpg",
+            "youtube" : "https://www.youtube.com/embed/UmBkckBwDuA",
+            "title" : "포스코 창립 50주년 기념 광고",
+            "summary" : "세상은 더 넓게 Unlimit the Limit POSCO"
+        },
+        {
+            "image" : "./images/sub4_1/video5.jpg",
+            "youtube" : "https://www.youtube.com/embed/AuibHcF8Jjs",
+            "title" : "기가스틸 편",
+            "summary" : "포스코 기가스틸로 철의 시대를 열어갑니다."
+        },
+        {
+            "image" : "./images/sub4_1/video6.jpg",
+            "youtube" : "https://www.youtube.com/embed/g8xM9WbZES8",
+            "title" : "I AM #STEELSTRONG",
+            "summary" : "강철처럼 강한 이 시대 청춘들의 이야기, 포스코가 대한민국 청춘을 응원합니다."
+        },
+        {
+            "image" : "./images/sub4_1/video7.jpg",
+            "youtube" : "https://www.youtube.com/embed/QrwLXEsHnZE",
+            "title" : "담금질 - 두드림 편",
+            "summary" : "새로운 내일을 향해 갑니다. 포스코"
+        },
+        {
+            "image" : "./images/sub4_1/video8.jpg",
+            "youtube" : "https://www.youtube.com/embed/ZV6d1ApQcPg",
+            "title" : "담금질 - 쇳물 편",
+            "summary" : "새로운 내일을 향해 갑니다. 포스코"
+        }
+    ]
+}
