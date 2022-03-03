@@ -1,0 +1,73 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 윤리경영 > 공정거래 */
+
+@keyframes preface{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes diagram{
+    from{transform:translateY(-50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes diagramUl{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+/* keyframe */
+.trade .preface.active{animation:preface 1 .7s ease-out; animation-fill-mode: forwards;}
+.trade .diagram.active p{animation: diagram 1 .7s ease-out; animation-fill-mode: forwards;}
+.trade .diagram.active ul li{animation: diagramUl 1 .5s ease-out; animation-fill-mode: forwards;}
+
+.trade .diagram ul li:nth-child(1){animation-delay: .1s;}
+.trade .diagram ul li:nth-child(2){animation-delay: .2s;}
+.trade .diagram ul li:nth-child(3){animation-delay: .3s;}
+
+
+
+
+
+.trade{}
+
+.trade .preface{position:relative; left:50%; width: 2000px; height: 550px; overflow: hidden; margin-left:-1000px; background:url(../images/contents3/bg.jpg) 50% 50% no-repeat; opacity: 0;}
+.trade .preface .inner{position:relative; top:50%; transform:translateY(-50%); width:1200px; margin: 0 auto;}
+.trade .preface h3{font-size:2.1875rem; margin:0;}
+.trade .preface h3::before{content:'Compliance Program'; display:block; font-size:1.25rem; color:#005793; letter-spacing:0; font-weight: normal; margin:0 0 10px;}
+.trade .preface p{width:45%;}
+
+
+.trade h3{font-size:1.875rem; letter-spacing:-0.045rem; margin: 90px 0 30px;}
+.trade h3 + h4{margin-top:0;}
+.trade h4{font-size:1.375rem; color:#005793; letter-spacing: -0.045rem; margin:90px 0 30px;}
+.trade p{font-size:1.125rem; margin: 30px 0 0; line-height: 2; text-align:justify;}
+
+
+.trade .diagram{}
+
+
+.trade .diagram{width:820px; margin: 80px auto 0;}
+.trade .diagram p{height: 80px; line-height: 80px; text-align:center; font-size:1.375rem; color:#fff; border-radius:500px;
+    background: rgb(0,87,147);
+    background: linear-gradient(90deg, rgba(0,87,147,1) 30%, rgba(0,130,192,1) 75%, rgba(0,165,229,1) 100%);
+    opacity:0;
+}
+.trade .diagram ul{overflow:hidden; margin:30px 0 0;}
+.trade .diagram ul li{float:left; width: 32%; margin-left:2%; background:#dde7ee; text-align:center; border-radius:10px; padding:20px 0; transform:translateY(50px); opacity:0;}
+.trade .diagram ul li:first-child{margin-left:0;}
+.trade .diagram ul li::before{content:''; display:block; height: 80px; background:url(../images/contents2/ico1.png) 50% 50% no-repeat; margin:0 0 15px;}
+.trade .diagram ul li:nth-child(1)::before{background-image:url(../images/contents3/ico1.png);}
+.trade .diagram ul li:nth-child(2)::before{background-image:url(../images/contents3/ico2.png);}
+.trade .diagram ul li:nth-child(3)::before{background-image:url(../images/contents3/ico3.png);}
+
+
+.trade table{border-top:2px solid #444; margin:30px 0 0; font-size:1.125rem; width: 100%;}
+.trade table thead th{text-align:center; background:#f5f5f5;}
+.trade table thead th:nth-child(2){border-left:1px solid #e5e5e5;}
+.trade table th, .trade table td{padding:25px; border-bottom:1px solid #e5e5e5;}
+.trade table th{font-weight: 700; word-break: keep-all;}
+.trade table td{border-left:1px solid #e5e5e5; width: 80%;}
+.trade table td ul li{position:relative; padding-left:15px; margin-top:12px;}
+.trade table td ul li:first-child{margin-top:0;}
+.trade table td ul li::before{content:''; position:absolute; left: 0; top: 8px; display: block; width: 3px; height: 8px; background:#aaa; transform:skew(-35deg);}
+.trade table td ul li span{display: block; color:#888; word-break:break-all;}

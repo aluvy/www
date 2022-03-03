@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+}
+
+#content{position:relative; width: 650px; margin: 0 auto 100px; padding:60px; box-sizing:border-box; background:#fff; box-shadow:10px 10px 20px rgba(0,0,0,0.05);}
+
+#content h2{font-size: 1.75rem; text-align:center;}
+#content p.summary{text-align:center; color:#888;}
+
+
+.login_wrap{margin:50px 0 0;}
+.login_wrap form ul li + li{margin:10px 0 0;}
+.login_wrap form ul li input,
+.login_wrap form ul li select{width:100%; line-height: 57px; font-size:1.125rem; padding: 0 0 0 20px; box-sizing:border-box; border:1px solid #ddd; outline:0;}
+
+.login_wrap form ul li input:focus,
+.login_wrap form ul li select:focus{box-shadow:inset 0 0 1px 1px rgba(102,175,233,1), inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);}
+
+.login_wrap form ul li input::placeholder{color:rgba(0,0,0,0.3);}
+
+      /* 연락처 */
+/* .login_wrap form ul li.hp{} */
+.login_wrap form ul li.hp::after{content:''; display: block; clear: both;}
+.login_wrap form ul li.hp select,
+.login_wrap form ul li.hp input,
+.login_wrap form ul li.hp span{float:left;}
+.login_wrap form ul li.hp select{width:33.33%; height:59px;}
+.login_wrap form ul li.hp input{width: calc(33.33% - 10px); text-align:center; padding:0;}
+.login_wrap form ul li.hp span{width:10px; line-height:59px; text-align:center;}
+
+
+
+.login_wrap form button{position:relative; width: 100%; line-height:60px; font-size:1.25rem; color:#fff; background:#005891; text-align:center; margin:20px 0 0; cursor:pointer;}
+.login_wrap form button::before{content:''; position:absolute; left:0; top:0; display:block; width:0; height:100%; background:#00a5e5; transition:all .3s;}
+.login_wrap form button span{position:relative; z-index:2;}
+.login_wrap form button:hover::before{width: 100%;}
+
+.login_wrap .find_link{text-align:center; margin:20px 0 0;}
+.login_wrap .find_link li{display:inline-block; position:relative; padding:0 15px;}
+.login_wrap .find_link li+li::before{content:''; position:absolute; left:0; top:50%; margin-top:-8px; display:block; width:1px; height:16px; background:#ddd;}
+.login_wrap .find_link li a{display: block; color:#666; transition:all .3s;}
+.login_wrap .find_link li a:hover{color:#333;}
+
+
+.login_wrap .join_link{text-align:center; border-top:1px dashed #eee; color:#666; margin:50px 0 0; padding:40px 0 0;}
+.login_wrap .join_link a{display:block; line-height: 50px; margin:20px 0 0; border:1px solid #ddd; transition:all .3s;}
+.login_wrap .join_link a:hover{border-color:#444; color:#444;}
+
+
+
+
+
+
+/* loadtext */
+#loadtext{position:absolute; left: 50%; top: 50%; transform:translate(-50%, -50%); background:#fff; width: 650px; border:5px solid #005891; padding: 50px 30px; box-sizing:border-box; z-index:5; box-shadow:10px 10px 20px rgba(0,0,0,0.25); display:none;}
+#loadtext p{font-size:1.25rem; font-weight:700;}
+#loadtext p span{color:#005891;}
+#loadtext dl{border-width:1px 0; border-style:solid; line-height:2; border-color:#ccc; margin:20px 0; padding: 20px;}
+#loadtext dl::after{content:''; display: block; clear: both;}
+#loadtext dl dt{float:left; width:20%; font-weight:700;}
+#loadtext dl dd{float:left; width:80%;}
+
+#loadtext .notice{background:#dde7ee; padding:20px; font-size:1.125rem; text-align:center; margin:20px 0 0;}
+#loadtext .notice strong{color:#005891;}
+
+#loadtext ul{text-align:center; margin:20px 0 0;}
+#loadtext ul li{display:inline-block;}
+#loadtext ul li + li{margin-left:5px;}
+#loadtext ul li a{display:inline-block; width:150px; height: 43px; line-height:43px; color:#777; border:1px solid #ddd; transition:all .3s;}
+#loadtext ul li a:hover{border-color:#444;}
+#loadtext ul li:nth-child(1) a{background:#005891; border-color:#005891; color:#fff;}
+#loadtext ul li:nth-child(1) a:hover{border-color:#00a5e5; background:#00a5e5;}
+
+
+#loadtext .close{position:absolute; right:20px; top:20px; display:block; width:30px; height: 30px; background:url(../images/close.png) 50% 50% no-repeat; background-size:100% auto; font-size:0; text-indent:-9999%; transition:all .3s; overflow: hidden;}
+#loadtext .close:hover{transform:rotate(180deg);}
+.loadtext_bg{position:fixed; left:0; top: 0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:4; display:none;}

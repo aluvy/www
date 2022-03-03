@@ -1,0 +1,79 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 사업영역 > 철강부원료 */
+
+@keyframes down {
+    from{transform:translateY(50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+/* keyframe */
+.product.active ul li{animation:down 1 .5s ease-out; animation-fill-mode: forwards;}
+.product ul li:nth-child(1){animation-delay:0s;}
+.product ul li:nth-child(2){animation-delay:.2s;}
+.product ul li:nth-child(3){animation-delay:.4s;}
+.product ul li:nth-child(4){animation-delay:.6s;}
+
+
+.product{}
+.product ul{}
+.product ul::after{content:''; display: block; clear: both;}
+.product ul li{float:left; width: 560px; margin: 100px 0 0 80px; opacity: 0;}
+.product ul li:nth-child(2n-1){margin-left:0;}
+.product ul li:nth-child(-n+2){margin-top:0;}
+.product ul li a{position:relative; display: block; height: 400px; cursor:pointer;}
+.product ul li .img{width:560px; height: 270px; overflow: hidden;}
+.product ul li .img img{transform:scale(1); transition:transform .3s;}
+.product ul li:hover .img img{transform:scale(1.1);}
+
+
+
+.product ul li p{font-size:1.4375rem; color:#333; letter-spacing:-0.025rem; padding:25px 0 0; transition:all .3s; transition-delay:.3s;}
+.product ul li p span{display:block; font-size:1.125rem; color:#999; padding:0 0 5px; transition:all .3s; transition-delay:.3s;}
+.product ul li:hover p{background:#005793; color:#fff; padding:25px;}
+.product ul li:hover p span{color:rgba(255,255,255,.5);}
+
+
+
+
+
+.product ul li .more{position:absolute; right:0; top:330px; display:inline-block; height: 36px; line-height: 36px; padding-right:25px; color:#005793; background:url(../images/contents1/more.png) 100% 50% no-repeat; letter-spacing:-0.045rem; background-size:13px auto; transition:all .3s; transition-delay: .3s;}
+.product ul li:hover .more{color:#fff; right:25px; background-image:url(../images/contents1/more_w.png);}
+
+.product ul li .square{position:absolute; left:0; top: 0; width: 100%; height: 270px; }
+.product ul li .square span{position:absolute; display:block; width: 0; height: 0; background:#005793; transition:all .1s;}
+.product ul li .square span:nth-child(1){left:0; top: 0; width: 0; height: 3px; transition-delay: .3s;}
+.product ul li .square span:nth-child(2){right:0; top: 0; width: 3px; height: 0; transition-delay: .2s;}
+.product ul li .square span:nth-child(3){right:0; bottom: 0; width: 0; height: 3px; transition-delay: .1s;}
+.product ul li .square span:nth-child(4){left:0; bottom: 0; width: 3px; height: 0; transition-delay: 0s;}
+    /* hover */
+.product ul li:hover .square{}
+.product ul li:hover .square span:nth-child(1){width:100%; transition-delay:0s;}
+.product ul li:hover .square span:nth-child(2){height:100%; transition-delay:.1s;}
+.product ul li:hover .square span:nth-child(3){width:100%; transition-delay:.2s;}
+.product ul li:hover .square span:nth-child(4){height:100%; transition-delay:.3s;}
+
+
+
+
+
+
+.prd_view{position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); width: 1200px; padding:70px; border:5px solid #005793; box-sizing:border-box; background:#fff; box-shadow:15px 15px 50px rgba(0,0,0,0.2); overflow: hidden; z-index:102; display: none;}
+.prd_view::after{content:''; display: block; clear: both;}
+
+.prd_view .prdimg{float:left; width: 560px; height: 270px;}
+.prd_view .prdttl{float: right; width: 430px; padding:20px 0 0;}
+.prd_view .prdttl span{display: block; font-size:1.125rem; color:#999; letter-spacing:-0.025rem;}
+.prd_view .prdttl strong{display: block; font-size: 2rem; font-weight: normal; line-height:1.2; word-break:keep-all; letter-spacing:-0.045rem; padding:23px 0;}
+.prd_view .prdttl p{font-size:1.125rem; color:#666; line-height: 2;}
+.prd_view .prdcont{float:left; width: 100%; margin:40px 0 0;}
+.prd_view .prdcont dl{border:1px solid #ccc; font-size:1.125rem; line-height: 1.8; background:rgba(0,87,147,.05);}
+.prd_view .prdcont dl::after{content:''; display: block; clear: both;}
+.prd_view .prdcont dl dt,
+.prd_view .prdcont dl dd{box-sizing:border-box; border-top:1px solid #ddd; padding:15px;}
+.prd_view .prdcont dl dt{float:left; width: 10%; color:#005793;}
+.prd_view .prdcont dl dd{float:left; width:90%; background:#fff;}
+.prd_view .prdcont dl dt:nth-of-type(1),
+.prd_view .prdcont dl dd:nth-of-type(1){border-top:0 none;}
+.prd_view .prdcont dl dd span{display: inline-block; min-width:120px; margin-right:20px;}
+.prd_view .close{position:absolute; right: 40px; top: 40px; display:block; width: 40px; height: 40px; background:url(../images/contents1/close.png) 50% 50% no-repeat; background-size:100% auto; text-indent:-9999px; overflow: hidden; cursor:pointer; transition:transform .3s;}
+.prd_view .close:hover{transform:rotate(180deg);}
+
+.bgbox{position:fixed; left: 0; top: 0; width: 100%; height: 100%; background:rgba(0,0,0,0.7); z-index:101; display: none;}

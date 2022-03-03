@@ -1,0 +1,229 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 고객지원 > 공지사항 */
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+transition: background-color 5000s ease-in-out 0s;}
+
+
+/* form 요소 기본설정 */
+.photo_bbs_wrap input,
+.photo_bbs_wrap textarea,
+.photo_bbs_wrap button,
+.photo_bbs_wrap select{font-family: 'Lato', 'Noto Sans KR', sans-serif; font-size: 1.125rem; color:#333; vertical-align: middle; outline: 0;}
+
+.photo_bbs_wrap input,
+.photo_bbs_wrap textarea,
+.photo_bbs_wrap select{box-sizing:border-box; border:1px solid #ccc;}
+
+.photo_bbs_wrap input,
+.photo_bbs_wrap select{height: 44px; padding-left:10px;}
+
+.photo_bbs_wrap textarea{padding:10px;}
+
+.photo_bbs_wrap button{border:0 none; padding:0; margin: 0; cursor: pointer;}
+
+.photo_bbs_wrap input[type='file']{padding:5px; cursor: pointer;}
+
+.photo_bbs_wrap input::placeholder,
+.photo_bbs_wrap textarea::placeholder{color:rgba(0,0,0,0.4);}
+
+
+.photo_bbs_wrap{font-size:1.125rem;}
+
+/* 게시판 리스트 상단 */
+.photo_bbs_wrap .bbs_sort{margin:0 0 20px;}
+.photo_bbs_wrap .bbs_sort::after{content:''; display: block; clear: both;}
+.photo_bbs_wrap .bbs_sort .total{float:left; line-height: 44px;}
+.photo_bbs_wrap .bbs_sort .total b{font-weight:700;}
+.photo_bbs_wrap .bbs_sort .scale{float:right; width:120px;}
+.photo_bbs_wrap .bbs_sort .lst_style{float:right; margin-right:5px; border:1px solid #ccc; box-sizing:border-box;}
+.photo_bbs_wrap .bbs_sort .lst_style::after{content:''; display: block; clear: both;}
+.photo_bbs_wrap .bbs_sort .lst_style li{float:left; box-sizing:border-box; text-indent:-9999%; overflow: hidden; transition:all .3s;}
+.photo_bbs_wrap .bbs_sort .lst_style li:hover{background:#f2f2f2;}
+.photo_bbs_wrap .bbs_sort .lst_style li + li{border-left:1px solid #eee;}
+.photo_bbs_wrap .bbs_sort .lst_style li a{display:block; width:44px; height: 42px; opacity: .3;}
+.photo_bbs_wrap .bbs_sort .lst_style li:nth-child(1) a{background:url(../images/lst_style1.png) 50% 50% no-repeat;}
+.photo_bbs_wrap .bbs_sort .lst_style li:nth-child(2) a{background:url(../images/lst_style2.png) 50% 50% no-repeat;}
+.photo_bbs_wrap .bbs_sort .lst_style li.active a{opacity:1;}
+.photo_bbs_wrap .bbs_sort .lst_style li:nth-child(1).active a{background-image:url(../images/lst_style1_on.png);}
+.photo_bbs_wrap .bbs_sort .lst_style li:nth-child(2).active a{background-image:url(../images/lst_style2_on.png);}
+
+
+/******************************************** 게시판 리스트 ********************************************/
+.photo_bbs_wrap .bbs_lst{border-top:1px solid #999;}
+.photo_bbs_wrap .bbs_lst .lst_cont li{border-bottom:1px solid #ddd; padding:20px; transition:all .3s;}
+.photo_bbs_wrap .bbs_lst .lst_cont li a{display:block; overflow: hidden;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .img{float:left; position:relative; width: 430px; padding-bottom:23%; box-shadow:inset 0 0 1px rgba(0,0,0,0.15); overflow: hidden;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .img img{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); max-width:120%; min-width:100%; min-height:100%; transition:all .3s;}
+.photo_bbs_wrap .bbs_lst .lst_cont li:hover .img img{transform:translate(-50%, -50%) scale(1.1);}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont{margin-left:470px;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont strong{display:block; font-size:1.5rem; white-space:nowrap; text-overflow: ellipsis; overflow: hidden; margin:2.25rem 0 0;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont p{height:78px; font-size:1rem; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin:1.25rem 0 2rem;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont span{color:#999; font-size:1rem;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont span + span::before{content:'/'; display:inline-block; padding:0 10px; color:#ddd;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont i{font-size:.75rem; padding-right:2px;}
+.photo_bbs_wrap .bbs_lst .lst_cont li .cont i i{font-size:0; text-indent:-9999%;}
+
+    /* hover */
+.photo_bbs_wrap .bbs_lst .lst_cont li:hover{background:#f7f7f7;}
+.photo_bbs_wrap .bbs_lst .lst_cont li:hover .cont strong{color:#005793;}
+
+
+
+/******************************************** 게시판 리스트 box ********************************************/
+.photo_bbs_wrap .bbs_lst.box{border-top:0 none;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont{}
+.photo_bbs_wrap .bbs_lst.box .lst_cont::after{content:''; display: block; clear: both;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li{float:left; width:calc(33.33% - 20px); margin:30px 0 0 30px; padding:0; border:0 none; box-sizing:border-box;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li:nth-child(-n+3){margin-top:0;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li:nth-child(3n+1){margin-left:0}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li .img{width:100%; float:none; padding-bottom:70%;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li .cont{margin:0; padding:25px; border-width:0 1px 1px; border-style:solid; border-color:#ddd;}
+.photo_bbs_wrap .bbs_lst.box .lst_cont li .cont strong{margin:0;}
+
+
+
+
+
+
+
+
+/* 페이지 */
+.photo_bbs_wrap .page_num{text-align:center; margin:30px 0 0;}
+.photo_bbs_wrap .page_num span{display:inline-block; width: 34px; height: 34px; line-height:34px; color:#888; text-align:center; box-sizing:border-box; vertical-align: top; font-size:1rem;}
+.photo_bbs_wrap .page_num span a{display:block; transition:all .3s;}
+.photo_bbs_wrap .page_num span a:hover{color:#005793;}
+.photo_bbs_wrap .page_num span.active{background:#005793; color:#fff;}
+.photo_bbs_wrap .page_num span.prev,
+.photo_bbs_wrap .page_num span.next{font-size: 0; text-indent:-9999%; overflow: hidden; margin:0 5px;}
+.photo_bbs_wrap .page_num span.prev{background:url(../images/page_prev.png) 50% 50% no-repeat;}
+.photo_bbs_wrap .page_num span.next{background:url(../images/page_next.png) 50% 50% no-repeat;}
+
+/* 버튼 */
+.photo_bbs_wrap .btn_wrap{text-align:right; margin:0 -2px}
+.photo_bbs_wrap .btn_wrap a,
+.photo_bbs_wrap .btn_wrap button{display: inline-block; height:44px; line-height:42px; margin:0 2px; vertical-align:top; padding:0 25px; background:transparent; color:#888; border:1px solid #ddd; box-sizing:border-box; cursor:pointer; transition:all .3s; font-size:1rem;}
+.photo_bbs_wrap .btn_wrap a:hover,
+.photo_bbs_wrap .btn_wrap button:hover{border-color:#333; color:#333;}
+.photo_bbs_wrap .btn_wrap .active{border-color:#005793; color:#005793;}
+.photo_bbs_wrap .btn_wrap .active:hover{background:#005793; color:#fff;}
+
+
+/* 검색 */
+.photo_bbs_wrap .bbs_search{margin:50px 0 0; text-align:center; background:#f7f7f7; padding:25px 0;}
+
+.photo_bbs_wrap .bbs_search select{width: 120px;}
+.photo_bbs_wrap .bbs_search input{width: 250px;}
+.photo_bbs_wrap .bbs_search button{width:80px; height:44px; background:#005793; color:#fff; transition:all .3s;}
+.photo_bbs_wrap .bbs_search button:hover{background:#00a5e5;}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** view **********************************/
+.photo_bbs_wrap .bbs_view_ttl{border-top:1px solid #999;}
+.photo_bbs_wrap .bbs_view_ttl li{border-bottom:1px solid #ddd; padding:20px;}
+.photo_bbs_wrap .bbs_view_ttl li:first-child{background:#f2f2f2; font-weight:700;}
+.photo_bbs_wrap .bbs_view_ttl li span{display:inline-block; color:#888;}
+.photo_bbs_wrap .bbs_view_ttl li span + span::before{content:'/'; display:inline-block; padding:0 10px; color:#ddd;}
+.photo_bbs_wrap .bbs_view_ttl li span i{font-size:.75rem; padding-right:2px;}
+.photo_bbs_wrap .bbs_view_ttl li span i i{font-size:0; text-indent:-9999%;}
+
+.photo_bbs_wrap .bbs_view_cont{min-height:200px; padding:20px; overflow: hidden;}
+.photo_bbs_wrap .bbs_view_cont .img{text-align:center; margin:0 0 20px;}
+.photo_bbs_wrap .bbs_view_cont img{max-width: 100%;}
+.photo_bbs_wrap .bbs_view_cont::after{content:''; display: block; clear: both;}
+
+.photo_bbs_wrap .bbs_view_cont + .btn_wrap{border-top:1px solid #ddd; padding:20px 0 0;}
+
+
+
+/******************************** comment **********************************/
+.photo_bbs_wrap .comment_wrap{margin:30px 0 0;}
+.photo_bbs_wrap .comment_wrap .ripple_lst{}
+.photo_bbs_wrap .comment_wrap .ripple_lst li{position:relative; padding:25px; border-top:1px dotted #ddd; transition:all .3s; overflow: hidden;}
+/* .photo_bbs_wrap .comment_wrap .ripple_lst li:first-child{margin-top:50px;} */
+.photo_bbs_wrap .comment_wrap .ripple_lst li:first-child{border-top:1px solid #ddd;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li:last-child{margin-bottom:30px;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li:hover{background:#f5f5f5;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li dl{}
+.photo_bbs_wrap .comment_wrap .ripple_lst li dl dt{color:#000;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li dl dt small{display:inline-block; font-weight:normal; padding-left:10px; font-size:.85rem; color:#999;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li dl dd{margin:.75rem 0 0; color:#666;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li .func{position:absolute; right: 15px; top: 20px;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li .func a{display:inline-block; width:30px; height:30px; line-height:30px; text-align:center; color:#999; transition:all .3s;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li .func a:hover{color:#000;}
+.photo_bbs_wrap .comment_wrap .ripple_lst li .func i i{font-size:0; text-indent:-9999%;}
+.photo_bbs_wrap .ripple_input{background:#f2f2f2; padding:10px; overflow:hidden; margin:0 0 30px;}
+.photo_bbs_wrap .ripple_input li{float:left;}
+.photo_bbs_wrap .ripple_input li:nth-child(1){width:calc(100% - 100px);}
+.photo_bbs_wrap .ripple_input li:nth-child(2){width:100px;}
+.photo_bbs_wrap .ripple_input li textarea{width:100%; height:100px; box-sizing:border-box; border-color:#ddd; resize:none;}
+.photo_bbs_wrap .ripple_input li a{display:block; height:100px; line-height:98px; text-align:center; font-size:1rem; box-sizing:border-box; border-width:1px 1px 1px 0; border-style:solid; border-color:#ddd;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(245,245,245,1) 94%, rgba(255,255,255,1) 100%);
+}
+    /* modify */
+    .photo_bbs_wrap .ripple_input_modify{overflow:hidden; display: none;}
+    .photo_bbs_wrap .ripple_input_modify textarea{float:left; width:calc(100% - 80px); height:70px; box-sizing:border-box; resize:none;}
+    .photo_bbs_wrap .ripple_input_modify a{float:left; width:80px; height:70px; line-height:68px; background:#777; font-size:1rem; color:#fff; text-align:center; box-sizing:border-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************** write **********************************/
+.photo_bbs_wrap .bbs_write_top{border-top:1px solid #999;}
+.photo_bbs_wrap .bbs_write_top li{border-bottom:1px solid #ddd;}
+.photo_bbs_wrap .bbs_write_top li dl{background:#f2f2f2;}
+.photo_bbs_wrap .bbs_write_top li dl::after{content:''; display: block; clear: both;}
+.photo_bbs_wrap .bbs_write_top li dl dt,
+.photo_bbs_wrap .bbs_write_top li dl dd{padding:20px;}
+.photo_bbs_wrap .bbs_write_top li dl dt{float:left;}
+.photo_bbs_wrap .bbs_write_top li dl dt label{line-height:44px;}
+.photo_bbs_wrap .bbs_write_top li dl dd{margin-left:15%; background:#fff; overflow: hidden;}
+.photo_bbs_wrap .bbs_write_top li dl dd input[type='file']{float:left;}
+.photo_bbs_wrap .bbs_write_top li dl dd .delete_ok{float:left; margin-left:15px; line-height:44px;}
+.photo_bbs_wrap .bbs_write_top li dl dd .delete_ok .check{display:inline-block; margin:0 0 0 15px;}
+
+.photo_bbs_wrap .bbs_write_top #subject{width:100%;}
+.photo_bbs_wrap .bbs_write_top textarea{width: 100%; height: 300px;}
+.photo_bbs_wrap .bbs_write_top #content{width:100%;}
+
+.photo_bbs_wrap .bbs_write_top + .btn_wrap{padding:20px 0 0;}
+
+/* checkbox */
+.photo_bbs_wrap .bbs_write_top .check{position:relative; padding-left:35px; line-height:25px; margin:0 0 10px;}
+.photo_bbs_wrap .bbs_write_top .check input[type=checkbox] + label::before {
+    position:absolute; left:0; top: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    box-sizing:border-box;
+    content: '';
+}
+.photo_bbs_wrap .bbs_write_top .check input[type=checkbox] {display: none;}
+.photo_bbs_wrap .bbs_write_top .check input[type=checkbox] + label {cursor: pointer; line-height:25px;}
+.photo_bbs_wrap .bbs_write_top .check input[type=checkbox]:checked + label::before {
+    background:url(../images/checked.png) 50% 50% no-repeat #005793; border-color: #005793;
+}
+
+
+
+

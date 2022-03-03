@@ -1,0 +1,44 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 인재채용 > 채용절차 */
+
+@keyframes up {
+    from{transform:translateY(50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+/* keyframe */
+.recruit_process.active ul li{animation:up 1 .5s ease-out; animation-fill-mode:forwards; }
+.recruit_process ul li:nth-child(1){animation-delay:0s;}
+.recruit_process ul li:nth-child(2){animation-delay:.2s;}
+.recruit_process ul li:nth-child(3){animation-delay:.4s;}
+.recruit_process ul li:nth-child(4){animation-delay:.6s;}
+
+
+
+.recruit_process{}
+.recruit_process ul{}
+.recruit_process ul::after{content:''; display:block; clear: both;}
+.recruit_process ul li{float:left; position:relative; width: 255px; height: 255px; border-radius:500px; box-sizing:border-box; margin-left:60px; text-align:center; padding:8px;
+    background: rgb(0,87,147);
+    background: linear-gradient(0deg, rgba(0,87,147,1) 50%, rgba(0,165,229,1) 50%); opacity: 0;
+}
+.recruit_process ul li:first-child{margin-left:0;}
+
+.recruit_process ul li h3{background:#fff; width: 100%; height: 100%; font-size:1.25rem; letter-spacing:-0.045rem; border-radius:500px; padding:50px 0 0; box-sizing:border-box;}
+
+.recruit_process ul li h3::before{content:''; display: block; height: 100px; background-position:50% 50%; background-repeat: no-repeat; margin-bottom:15px;}
+
+
+
+.recruit_process ul li:nth-child(1) h3::before{background-image:url(../images/contents2/ico1.png);}
+.recruit_process ul li:nth-child(2) h3::before{background-image:url(../images/contents2/ico2.png);}
+.recruit_process ul li:nth-child(3) h3::before{background-image:url(../images/contents2/ico3.png);}
+.recruit_process ul li:nth-child(4) h3::before{background-image:url(../images/contents2/ico4.png);}
+
+.recruit_process ul li::after{content:''; position:absolute; left: -60px; top: 50%; margin-top:-30px; width: 60px; height: 60px; background:url(../images/contents2/arrow.png) 50% 50% no-repeat; background-size:15px auto; opacity:.3}
+.recruit_process ul li:first-child::after{display: none;}
+
+
+.recruit_process dl{border-bottom:1px solid #ddd; padding:40px 40px;}
+.recruit_process dl:nth-of-type(1){border-top:2px solid #444; margin:100px 0 0;}
+.recruit_process dl::after{content:''; display: block; clear: both;}
+.recruit_process dl dt{float:left; width: 15%; font-size:1.25rem;}
+.recruit_process dl dd{float:left; width: 85%; font-size:1.125rem; text-align:justify;}

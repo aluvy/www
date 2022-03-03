@@ -1,0 +1,12 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 인재채용 > 인재상 */
+@keyframes down {
+    from{transform:translateY(-50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+/* active */
+.email.active{animation:down 1 .7s ease-out; animation-fill-mode: forwards;}
+
+
+.email{background:url(../images/contents3/ico.png) 110px 50% no-repeat #e6edf2; background-size:110px auto; padding:70px 70px 70px 300px; font-size:1.125rem; line-height: 2; text-align:justify; opacity: 0;}
+.email p{}
+.email span{display: block; margin:30px 0 0;}

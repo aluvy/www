@@ -1,0 +1,151 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원 - 미디어센터</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 고객지원">
+            <h3>고객지원</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li><a href="../greet/list.php">공지사항</a></li>
+                <li><a href="../concert/list.php">뉴스룸</a></li>
+                <li class="current"><a href="./sub6_3.html">미디어센터</a></li>
+                <li><a href="./sub6_4.html">FAQ</a></li>
+                <li><a href="./sub6_5.html">문의하기</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>고객지원</span>
+                    <span>미디어센터</span>
+                </div>
+                <h2>미디어센터</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>포스코엠텍 미디어센터 입니다.</p>
+                    <span>철강포장 및 소재 전문기업으로서 철강사업에 새로운 가치를 제공하고 시너지를 창출하고자 합니다.</span>
+                </div>
+                
+                <div class="tab w3">
+                    <ul>
+                        <li class="current"><a href="#">홍보영화</a></li>
+                        <li><a href="#">광고영상</a></li>
+                        <li><a href="#">인쇄광고</a></li>
+                    </ul>
+                </div>
+
+                <div class="contBox movie">
+                    <h3 class="hidden">홍보영화</h3>
+                    <div class="movie_list"></div>
+                    <div class="movie_pop"></div>
+                    <div class="movie_pop_back"></div>
+                </div>
+
+                <div class="contBox advideo">
+                    <h3 class="hidden">광고영상</h3>
+                    <div class="advideo_main"></div>
+                    <div class="advideo_list"></div>
+                </div>
+
+                <div class="contBox poster">
+                    <h3 class="hidden">인쇄광고</h3>
+                    <div class="poster_container">
+
+                        <a class="btn_prev" href="#"></a> 
+                        <a class="btn_next" href="#"></a>
+
+                        <ul>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print1.jpg" alt="수소환원제철 기술 편"></a>
+                                <div>
+                                    <strong>수소환원제철 기술 편</strong>
+                                    <span>수소로 리드하는 위대한 내일을 열다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print2.jpg" alt="기업시민 함께 편"></a>
+                                <div>
+                                    <strong>기업시민 함께 편</strong>
+                                    <span>떨어져 있어도 마음만은 늘 가깝게 늘 '함께'하고 싶은 기업이 되겠습니다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print3.jpg" alt="기업시민 등대광고 편"></a>
+                                <div>
+                                    <strong>기업시민 등대광고 편</strong>
+                                    <span>포스코가 스마트 팩토리를 구축하여 세계경제포럼이 선정한 국내 최초 '등대공장'이 되었습니다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print4.jpg" alt="기업, 시민이 되다 편"></a>
+                                <div>
+                                    <strong>기업, 시민이 되다 편</strong>
+                                    <span>함께 나누고, 함께 성장하고, 함께 살아가는 당신처럼 포스코가 기업시민이 되어 당신께 한 걸음 더 다가갑니다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print5.jpg" alt="기업시민 POSCO 편"></a>
+                                <div>
+                                    <strong>기업시민 POSCO 편</strong>
+                                    <span>기업시민 포스코가 여러분과 동행합니다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print6.jpg" alt="포스코 LOVE Letter 편"></a>
+                                <div>
+                                    <strong>포스코 LOVE Letter 편</strong>
+                                    <span>더 많은 생각과 이야기를 듣고 더 나은 미래를 만들어가겠습니다.</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print7.jpg" alt="포스코 창립 50주년 기념 편"></a>
+                                <div>
+                                    <strong>포스코 창립 50주년 기념 편</strong>
+                                    <span>50년의 도전! 100년의 새꿈!</span>
+                                </div>
+                            </li>
+                             <li>
+                                <a href="#"><img src="./images/contents3/print8.jpg" alt="포스코 기가스틸 편"></a>
+                                <div>
+                                    <strong>포스코 기가스틸 편</strong>
+                                    <span>자동차 자체용 알루미늄보다 3배 더 강한 포스코 기가스틸!</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="./js/modernizr.custom.js"></script>
+	<script src="./js/jquery.responsiveGallery.js"></script>
+    <script src="./js/media.js"></script>
+
+
+</body>
+</html>

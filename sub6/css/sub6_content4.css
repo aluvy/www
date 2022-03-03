@@ -1,0 +1,23 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 고객지원 > FAQ */
+
+.faq_wrap{}
+.faq_wrap::after{content:''; display: block; clear: both;}
+
+.faq_wrap span{float:right; position:relative; background:#005793;}
+.faq_wrap span::before{content:''; display: block; position:absolute; left:0; top:0; width: 0; height: 100%; background:#00a5e5; transition:width .3s;}
+.faq_wrap span:hover::before{width:100%;}
+.faq_wrap .all{display:block; position:relative; width: 200px; height: 50px; color:#fff; line-height: 50px; padding-left:30px; box-sizing:border-box; background:url(../images/contents4/select_w.png) 90% 50% no-repeat; z-index:3;}
+
+
+.faq_wrap ul{float:left; width: 100%; border-top:2px solid #333; margin:30px 0 0; font-size:1.125rem;}
+.faq_wrap ul li{border-bottom:1px solid #e5e5e5;}
+.faq_wrap ul li p{position:relative; text-align:justify; padding-left:120px;}
+.faq_wrap ul li p::before{content:'Q'; position:absolute; left:65px; top:25px; font-size:1.5625rem; font-weight:700; color:#005793;}
+
+.faq_wrap ul li p:nth-child(1){}
+.faq_wrap ul li p:nth-child(1) > a{display:block; padding:30px 120px 30px 30px; font-size:1.25rem; background:url(../images/contents4/arrow_down.png) 97% 50% no-repeat; background-size:auto 12px;}
+
+.faq_wrap ul li p:nth-child(2){padding:30px 120px 30px 150px; border-top:1px dotted #eee; background:#f8f8f8; display: none;}
+.faq_wrap ul li p:nth-child(2)::before{content:'A'; color:#999;}
+
+.faq_wrap ul li.on p:nth-child(1) > a{background-image:url(../images/contents4/arrow_up.png);}

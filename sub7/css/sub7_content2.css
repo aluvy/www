@@ -1,0 +1,50 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 인재채용 > 인재상 */
+@keyframes down {
+    from{transform:translateY(-50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+
+/* active */
+.privacy_toc.active{animation:down 1 .7s ease-out; animation-fill-mode: forwards;}
+
+
+.privacy_toc{background:#f5f5f5; padding:40px 50px; font-size:1.125rem; line-height: 2; opacity: 0;}
+.privacy_toc ul{overflow:hidden;}
+.privacy_toc ul li{float:left; width: 33.333%;}
+.privacy_toc ul li a{transition:all .3s}
+.privacy_toc ul li a:hover{color:#005793;}
+
+
+
+
+.privacy{font-size:1.125rem; text-align:justify;}
+.privacy h3{font-size:1.5625rem; letter-spacing:-0.045rem; padding:120px 0 30px;}
+
+.privacy p + p{margin:20px 0 0;}
+
+.privacy p + ul{margin:20px 0 0;}
+
+.privacy ul{}
+.privacy ul li{padding-left:24px; text-indent:-24px;}
+.privacy ul li + li{margin:10px 0 0;}
+
+.privacy dl{margin:30px 0 0;}
+.privacy dl dt{font-size:1.25rem; font-weight:700; color:#005793;}
+.privacy dl dd{margin-left:20px; margin-top:20px;}
+.privacy dl.other_insti dd{margin-top:0;}
+.privacy dl.other_insti dt + dd{margin-top:20px;}
+.privacy dl.other_insti dd::before{content:'- ';}
+
+.privacy span{display: block;}
+.privacy span::before{content:'- ';}
+.privacy span + span{margin-top:10px;}
+
+.privacy table{width:100%; border-top:2px solid #333; margin:20px 0;}
+.privacy table th,
+.privacy table td{text-align:center; padding:17px 10px; border-bottom:1px solid #ddd; border-left:1px solid #e5e5e5;}
+.privacy table th:first-child,
+.privacy table td:first-child{border-left:0 none;}
+.privacy table thead{background:#f5f5f5}
+.privacy table thead th{}
+.privacy table tbody th{}
+.privacy table tbody td{width: 33.33%;}

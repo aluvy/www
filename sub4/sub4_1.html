@@ -1,0 +1,96 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사회공헌 - 사회공헌 소개</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 사회공헌">
+            <h3>사회공헌</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub4_1.html">사회공헌 소개</a></li>
+                <li><a href="./sub4_2.html">주요활동</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>사회공헌</span>
+                    <span>사회공헌 소개</span>
+                </div>
+                <h2>사회공헌 소개</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>사회와 인류에 책임을 다하는 기업시민 포스코엠텍</p>
+                    <span>미래세대 육성, 지속가능한 환경보호, 지역사회 공생가치 창출을 중점으로 역량을 집중하고 있습니다.</span>
+                </div>
+
+                
+                <div class="social_top kframe">
+                    <h3 class="hidden">사회공헌 비전</h3>
+                    <p>더 나은 세상을 만들어가기 위한 우리의 同行</p>
+                    <span>함께 웃는 세상을 만들어가기 위해 지역의 어려운 이웃을 위한 나눔활동에 적극 참여하고 있습니다.</span>
+                    <ul>
+                        <li>포스코 엠텍은 지속 가능한 내일을 함께 만들어가기 위해 생태계 조성을 위해 환경 꿈나무 육성 교육 및 다양한 활동에 앞장서고 있습니다.</li>
+                        <li>미래 세대의 성장가능성을 발굴하여 지원하고 심리적 · 정서적인 안전 제공 및 취약계층 교육환경 제공에 힘쓰고 있습니다.</li>
+                        <li>임직원의 자발적인 참여를 통한 선한 영향력 확산 및 지역사회와 소통하며 전문가들과의 파트너쉽을 통한 사회문제 발굴하고 있습니다.</li>
+                    </ul>
+                </div>
+
+
+                <h3 class="hidden">봉사·후원 활동</h3>
+                <ul class="social_list">
+                    <li>
+                        <dl>
+                            <dt>재능기부 봉사활동 (가치봉사 동호회)</dt>
+                            <dd>임직원이 보유한 재능이나 관심사와 연계하여 사회이슈 해결을 위해 활동하는 봉사단운영 </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>전사 테마 봉사활동</dt>
+                            <dd>글로벌 모범시민위크 등 전임직원이 공통의 주제와 목표를 가지고 함께 참여하는 봉사활동 전개</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>부서단위 / 개인 봉사활동</dt>
+                            <dd>부서단위 혹은 개인이 지역사회의 어려운 이웃을 위해 자발적으로 참여 하는봉사 활동 장려</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1% 나눔기금참여</dt>
+                            <dd>매월 급여의 1%를 기부함으로써 지역의 사회공헌 활동에 기여하는 자발적 기부 후원활동 장려</dd>
+                        </dl>
+                    </li>
+                </ul>
+                
+
+
+            </div>
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="../common/js/keyframe.js"></script>
+</body>
+</html>

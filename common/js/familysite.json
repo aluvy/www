@@ -1,0 +1,67 @@
+{
+    "familysite" : [
+        {
+            "address" : "http://www.posco.co.kr",
+            "sitename" : "포스코"
+        },
+        {
+            "address" : "http://www.poscointl.com",
+            "sitename" : "포스코인터내셔널"
+        },
+        {
+            "address" : "http://www.poscoenc.com",
+            "sitename" : "포스코건설"
+        },
+        {
+            "address" : "http://www.poscochemical.com",
+            "sitename" : "포스코케미칼"
+        },
+        {
+            "address" : "http://www.poscoenergy.com",
+            "sitename" : "포스코에너지"
+        },
+        {
+            "address" : "https://www.poscoict.com",
+            "sitename" : "포스코ICT"
+        },
+        {
+            "address" : "https://www.poscocnc.com",
+            "sitename" : "포스코강판"
+        },
+        {
+            "address" : "http://www.poscosps.com",
+            "sitename" : "포스코SPS"
+        },
+        {
+            "address" : "http://www.snnc.co.kr",
+            "sitename" : "SNNC"
+        },
+        {
+            "address" : "https://www.poscoonm.com",
+            "sitename" : "포스코O&M"
+        }
+    ],
+
+    "sns" : [
+        {
+            "address" : "https://www.youtube.com/channel/UCGu-RtRyCaWQl32YoOh4WNg",
+            "title" : "포스코엠텍 유튜브 새창으로 열기",
+            "name" : "유튜브"
+        },
+        {
+            "address" : "https://kr.linkedin.com/company/posco",
+            "title" : "포스코엠텍 링크드인 새창으로 열기",
+            "name" : "트위터"
+        },
+        {
+            "address" : "https://ko-kr.facebook.com/HELLOPOSCO/",
+            "title" : "포스코엠텍 페이스북 새창으로 열기",
+            "name" : "페이스북"
+        },
+        {
+            "address" : "https://www.instagram.com/hello_posco/?hl=ko",
+            "title" : "포스코엠텍 인스타그램 새창으로 열기",
+            "name" : "인스타그램"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 회사소개 > CEO 인사말 */
+
+@keyframes up{
+    from{transform:translateY(70px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+@keyframes down{
+    from{transform:translateY(-70px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+/* active */
+.greeting_wrap .greeting.active{animation:up 1 1s ease-out; animation-fill-mode: forwards;}
+.greeting_wrap .ceo_info.active{animation:down 1 1s ease-out; animation-fill-mode: forwards;}
+
+
+.greeting_wrap{position:relative; box-sizing:border-box; margin-bottom:275px;}
+.greeting_wrap::before{content:''; position:absolute; width: 2000px; height: calc(100% - 150px); left:50%; top: 275px; margin-left:-1000px; background:#ebf0f2; z-index:-1;}
+.greeting_wrap::after{content:''; display:block; clear: both;}
+
+.greeting_wrap .greeting{float:right; width: 580px; opacity: 0;}
+.greeting_wrap .greeting p{font-size:1.125rem; line-height:2.4; margin:45px 0 0; /*word-break:keep-all;*/ text-align: justify;}
+.greeting_wrap .greeting p:nth-of-type(1){font-size:2rem; color:#005793; font-weight: 600; line-height:1.4;}
+.greeting_wrap .greeting p:nth-of-type(1) img{margin:25px 0 0;}
+.greeting_wrap .greeting p:nth-of-type(2){margin-top:120px;}
+.greeting_wrap .greeting .sign{margin:58px 0 0; font-size:1.125rem; vertical-align:middle;}
+.greeting_wrap .greeting .sign img{vertical-align:middle; padding-left:20px;}
+
+.greeting_wrap .ceo_info{float: left; width: 540px; opacity: 0;}
+.greeting_wrap .ceo_info img{}
+.greeting_wrap .ceo_info .career{height:630px; padding:60px 0 0 55px; box-sizing:border-box; background:#fff; box-shadow:10px 10px 10px rgba(0,0,0,.03);}
+.greeting_wrap .ceo_info .career dl{}
+.greeting_wrap .ceo_info .career dl + dl{margin:25px 0 0;}
+.greeting_wrap .ceo_info .career dl dt{font-size:1.25rem; color:#005793; font-weight:700; letter-spacing:-0.065rem; margin-bottom:10px;}
+.greeting_wrap .ceo_info .career dl dd{line-height: 1.75; color:#666;}
+.greeting_wrap .ceo_info .career dl dd span{display:inline-block; width: 65px; color:#333; font-weight:700;}

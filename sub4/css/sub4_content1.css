@@ -1,0 +1,57 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 사회공헌 > 사회공헌 소개 */
+
+@keyframes up{
+    from{transform:translateY(50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+@keyframes down{
+    from{transform:translateY(-30px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+
+/* keyframe */
+.social_top.active p,
+.social_top.active span{animation:down 1 .7s ease-out; animation-fill-mode: forwards;}
+
+.social_top.active ul{animation:up 1 .7s ease-out; animation-fill-mode: forwards; }
+.social_top.active ul li{animation:up 1 .5s ease-out; animation-fill-mode: forwards;}
+.social_top ul li:nth-child(1){animation-delay:.4s;}
+.social_top ul li:nth-child(2){animation-delay:.6s;}
+.social_top ul li:nth-child(3){animation-delay:.8s;}
+
+
+
+
+.social_top{position:relative; left: 50%; width: 2000px; height: 570px; margin-left:-1000px; padding:75px 0 0; background:url(../images/contents1/bg.jpg) 50% 50% no-repeat; background-size: cover; background-attachment: fixed; text-align:center; color:#fff; box-sizing:border-box;}
+.social_top p{font-size:2.1575rem; letter-spacing: -0.045rem;}
+.social_top span{display: block; font-size: 1.25rem; letter-spacing:-0.025rem; margin:10px 0 0;}
+.social_top span::after{content:''; display: block; height: 40px; background:url(../images/contents1/withposco.png) 50% bottom no-repeat; background-size:auto 40px; margin:30px 0 0;}
+
+.social_top p,
+.social_top span{opacity: 0;}
+
+
+.social_top ul{position:absolute; left: 50%; top:300px; width:1200px; padding:70px 20px; box-sizing:border-box; margin-left:-600px; background:#005793; border-radius:35px; box-shadow:20px 20px 40px 0 rgba(0,0,0,0.4); opacity: 0;}
+.social_top ul::after{content:''; display: block; clear:both;}
+.social_top ul li{float:left; width: 33.33%; padding:0 60px; border-left:1px dashed rgba(255,255,255,.2); box-sizing:border-box; text-align:center; letter-spacing:-0.025rem; color:rgba(255,255,255,.7); font-size:1.125rem; opacity: 0;}
+.social_top ul li:first-child{border-left:0;}
+.social_top ul li::before{content:''; display: block; height: 120px; background-position:50% 50%; background-repeat:no-repeat; margin:0 0 30px;}
+.social_top ul li:nth-child(1)::before{background-image:url(../images/contents1/ico1.png);}
+.social_top ul li:nth-child(2)::before{background-image:url(../images/contents1/ico2.png);}
+.social_top ul li:nth-child(3)::before{background-image:url(../images/contents1/ico3.png);}
+
+
+
+.social_list{margin:200px 0 0;}
+.social_list::after{content:''; display: block; clear: both;}
+.social_list li{float:left; width: calc(50% - 20px); height: 200px; margin:20px 0 0 20px; padding:35px 40px 40px; border:5px solid #eee; border-radius:10px; box-sizing:border-box;}
+.social_list li:nth-child(-n+2){margin-top:0;}
+.social_list li:nth-child(2n+1){margin-left:0;}
+.social_list li dl{position: relative;}
+.social_list li dl dt{font-size:1.4375rem; letter-spacing:-0.045rem;}
+.social_list li dl dd{font-size:1.125rem; color:#888; text-align:justify; margin:20px 0 0;}
+.social_list li dl::before{position:absolute; right: 0; top: 0; font-size:1.4375rem; color:#005793;}
+.social_list li:nth-child(1) dl::before{content:'01';}
+.social_list li:nth-child(2) dl::before{content:'02';}
+.social_list li:nth-child(3) dl::before{content:'03';}
+.social_list li:nth-child(4) dl::before{content:'04';}

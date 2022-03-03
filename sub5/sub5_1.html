@@ -1,0 +1,76 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용 - 인재상</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 인재채용">
+            <h3>인재채용</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub5_1.html">인재상</a></li>
+                <li><a href="./sub5_2.html">채용절차</a></li>
+                <li><a href="./sub5_3.html">복리후생</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>인재채용</span>
+                    <span>인재상</span>
+                </div>
+                <h2>인재상</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>미래를 함께할 역량있는 인재를 찾습니다.</p>
+                    <span>안전하고 행복한 일터를 구현하고, 같이짓는 가치를 함께 실현할 실천의식과 배려의 마인드를 갖춘 창의적 인재</span>
+                </div>
+                
+                <div class="recruit_people kframe">
+                    <ul>
+                        <li>
+                            <h3>실천 의식과 올바른 가치관을 가진 인재</h3>
+                            <p>주인의식과 책임감으로 매사에 솔선하고 능동적으로 협업하여 조직차원의 시너지를 창출하는 인재</p>
+                            <div class="image"><img src="images/contents1/img1.jpg" alt="실천 의식과 올바른 가치관을 가진 인재"></div>
+                        </li>
+                        <li>
+                            <h3>배려의 마인드를 갖춘 인재</h3>
+                            <p>겸손과 존중의 마인드로 이해관계자와 진정성 있게 소통하며 상생의 가치를 추구하는 인재</p>
+                            <div class="image"><img src="images/contents1/img2.jpg" alt="배려의 마인드를 갖춘 인재"></div>
+                        </li>
+                        <li>
+                            <h3>창의적 인재</h3>
+                            <p>유연한 사고와 지속적 학습으로 도전적인 아이디어를 제시하여 변화와 성장을 주도하는 미래 지향적인 인재</p>
+                            <div class="image"><img src="images/contents1/img3.jpg" alt="창의적 인재"></div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="../common/js/keyframe.js"></script>
+</body>
+</html>

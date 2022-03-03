@@ -1,0 +1,118 @@
+{
+    "package" : [
+        {
+            "category" : "포장라인",
+            "title" : "철강 코일 포장라인",
+            "image" : "./images/contents2/product1_1.jpg",
+            "summary" : "철강 및 알루미늄 포장설비에 대한 자문, 설계, 제작, 설치, 시운전 등 전반적인 사항에 대해 컨설팅 및 시공, 운영전문사입니다.",
+            "package" : "<span>15~18Coil/hr</span><span>폭 600~1,860mm</span><span>외경 800~2,100mm</span><span>중량 Max.30Ton/Coil</span>",
+            "delivery" : "41개 라인 (포스코26, 현대제철3, 중국6, 베트남2, 인도3, 멕시코1)"
+        },
+        {
+            "category" : "포장라인",
+            "title" : "비철금속 대코일 포장라인",
+            "image" : "./images/contents2/product1_2.jpg",
+            "summary" : "이송기 - 측정기 - Stretch Film Wrapping M/C - Edge/Body Wrapping M/C - Up ender - 팔레트 공급기 - 수직/수평 복합결속기",
+            "package" : "<span>15Coil/hr</span><span>폭 600~2,380mm</span><span>외경 800~2,100mm</span><span>중량 Max</span><span>15Ton/Coil</span>",
+            "delivery" : "4개 라인 (국내2, 중국2)"
+        },
+        {
+            "category" : "포장라인",
+            "title" : "비철금속 소코일 포장라인",
+            "image" : "./images/contents2/product1_3.jpg",
+            "summary" : "Down Ender - 증량측정기 - 라벨부착기 - PET결속기 - Stracking Device - 팔렛트 공급기 - Turn Table - 필름포장기 - 외판지공급기 - Steel 결속기",
+            "package" : "<span>40coil/hr(slit coil)</span><span>폭 : 30~850mm</span><span>외경 : Max 2000m</span><span>중량 : max 5ton/Slit coil</span>",
+            "delivery" : "1개 라인 (중국1)"
+        }
+    ],
+
+    
+    "device" : [
+        {
+            "category" : "장치 및 기기",
+            "title" : "포장지 공급장치",
+            "image" : "./images/contents2/product2_1.jpg",
+            "summary" : "포장 사양에 맞는 포장지를 자동 공급하고 코일에 랩핑하여 주는 장치",
+            "sub1" : "<span>폭 : 800~1,860mm</span><span>외경 : Free Size</span>",
+            "sub2" : "포장지 적치대, 이송장치, 공급/테이핑 장치",
+            "sub3" : "포스코 포항 1냉연, 광양 4냉연",
+            "sub4" : "포장재 공급장치, 포장장치(래핑), 래핑장치, 테이핑장치(래핑)"
+        },
+        {
+            "category" : "장치 및 기기",
+            "title" : "포장지 밀봉(접기)장치",
+            "image" : "./images/contents2/product2_2.jpg",
+            "summary" : "외권부 포장지를 자동으로 접어 밀봉하는 장치",
+            "sub1" : "<span>폭 : 600~1,860mm</span><span>내경 : 508~610mm</span><span>외경 : 800~2,150mm</span>",
+            "sub2" : "승강장치, 주행장치 Grip / Folding 장치, Taping 장치",
+            "sub3" : "포스코 포항 1냉연, 광양 4냉연",
+            "sub4" : "포장재의 접기장치, 포장재의 접기선 형성장치, 테이핑헤드 및 이를 이용한 포장재의 테이핑장치 외 3건"
+        },
+        {
+            "category" : "장치 및 기기",
+            "title" : "외보호판 부착기",
+            "image" : "./images/contents2/product2_3.jpg",
+            "summary" : "코일 외권 보호를 위한 Steel / 플라스틱 보호판 가공 및 부착설비",
+            "sub1" : "<span>Max Out Dia : 2,150mm</span><span>Width & Length : Free Size</span><span>Cycle Time : 180Sec</span>",
+            "sub2" : "보호판 공급 및 가공, 부착(플라스틱 Banding or 로봇 부착)",
+            "sub3" : "<span>RING형 SSD-31 (포스코25, 중국2, 인도2, 멕시코2)</span><span>ROBOT형 SSD (포스코8, 중국1)</span>",
+            "sub4" : "설비 전체 국내/국제특허 보유"
+        },
+        {
+            "category" : "장치 및 기기",
+            "title" : "철재 자동 부착설비",
+            "image" : "./images/contents2/product2_4.jpg",
+            "summary" : "코일 보호를 위하여 철재 및 플라스틱 자재를 자동 공급 및 부착하는 설비 (외주링, 내주링, 단면측판, 라벨부착)",
+            "sub1" : "<span>폭 : 700~1,860mm</span><span>내경 : 508~610mm</span><span>외경 : 720~2,200mm</span>",
+            "sub2" : "15~18Coils/hr",
+            "sub3" : "2대 (포스코)",
+            "sub4" : "코일 포장재 부착장치, 코일 포장용 외주링 부착장치, 코일 포장용 테이핑/라벨링 장치, 코일포장용 내주링 단면측판의 정렬장치"
+        },
+        {
+            "category" : "장치 및 기기",
+            "title" : "로봇결속기 (POSCO StrapMaster)",
+            "image" : "./images/contents2/product2_5.jpg",
+            "summary" : "로봇을 이용한 자동결속기로 외권 결곡, EYE결속(가로), 외권중앙결속을 자동으로 수행하는 설비",
+            "sub1" : "<span>Tension Force : 1,400~1,800kgf(Adjustable)</span><span>Cycle Time : 180sec/65Straps</span>",
+            "sub2" : "19, 25, 32mm",
+            "sub3" : "14대 (포스코5, 현대제철5, 일본1, 중국3)",
+            "sub4" : "코일 포장용 로봇 결속장치, 이동형 코일포장용 로봇결속장치, 코일포장용 헤드유닛/그립유닛 외 1건 (해외 특허 포함)"
+        }
+    ],
+
+    "modeling" : [
+        {
+            "category" : "성형기",
+            "title" : "외주링 성형기",
+            "image" : "./images/contents2/product3_1.jpg",
+            "summary" : "코일 외권 모서리 보호를 위한 외주링을 자동 성형하는 설비",
+            "sub1" : "<span>두께 0.5~1.2</span><span>폭 : 150mm</span>",
+            "sub2" : "겹침형 (Over Lap)",
+            "sub3": "240매/시간 (외경 1,400mm 기준)",
+            "sub4" : "42대 (포스코, 중국, 인도, 멕시코 외 다수)",
+            "sub5" : "코일 보호용 외주링 제조장치"
+        },
+        {
+            "category" : "성형기",
+            "title" : "내주링 성형기",
+            "image" : "./images/contents2/product3_2.jpg",
+            "summary" : "코일 내권 모서리 보호를 위한 내주링을 자동 성형하는 설비",
+            "sub1" : "<span>두께 1.2~3.2</span><span>폭 100~150mm</span>",
+            "sub2" : "겹침형(Over Lap), 용접형",
+            "sub3" : "1EA / 6~10sec",
+            "sub4" : "7식 (포스코, 중국, 인도, 베트남)",
+            "sub5" : "코일 포장용 내부보호링 제조장치, 용접형내주링 제조장치"
+        },
+        {
+            "category" : "성형기",
+            "title" : "단면측판 성형기",
+            "image" : "./images/contents2/product3_3.jpg",
+            "summary" : "코일 측면 보호를 위한 단면측판을 성형하는 설비",
+            "sub1" : "<span>두께 0.5~1.2</span><span>폭 700~2,100mm</span>",
+            "sub2" : "겹침형 (Over Lap)",
+            "sub3" : "180매 / 시간(외경 1,400mm 기준)",
+            "sub4" : "9식 (포스코, 중국, 인도, 베트남)",
+            "sub5" : "코일포장용 단면측판 내경절단장치"
+        }
+    ]
+}

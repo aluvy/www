@@ -1,0 +1,347 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+        var uAgent = navigator.userAgent.toLowerCase();
+        var mobilePhones = new Array('iphone','ipod','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile');
+
+        for(var i=0;i<mobilePhones.length;i++){
+            if(uAgent.indexOf(mobilePhones[i]) != -1){
+                document.location="/mobile/";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400, initial-scale=.5">
+    <title>POSCO M-TECH</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+</head>
+<body>
+    
+    <? include './common/main_header.html' ?>
+
+        <div class="visual">
+            <div class="gallery">
+                <ul>
+                    <li class="link1">
+                        <img src="./images/vis1.jpg" alt="철의 가치를 높이는 포스코엠텍">
+                        <div class="slogan">
+                            <strong>철의 가치를 높이는 포스코엠텍</strong>
+                            <span>글로벌 포장 & 소재 전문기업 포스코엠텍은<br>무한한 가능성과 열린 마인드로 세상을 움직입니다.</span>
+                        </div>
+                    </li>
+                    <li class="link2">
+                        <img src="./images/vis2.jpg" alt="시민과 미래를 향해 열려있는 포스코엠텍">
+                        <div class="slogan">
+                            <strong>시민과 미래를 향해 열려있는 포스코엠텍</strong>
+                            <span>더불어 함께 발전하는 기업시민 포스코엠텍의 새로운 랜드마크<br>역사박물관부터 홍보관, 명예의 전당까지 park1538 을 만나보세요.</span>
+                        </div>
+                    </li>
+                    <li class="link3">
+                        <img src="./images/vis3.jpg" alt="With POSCO M-TECH">
+                        <div class="slogan">
+                            <strong>With POSCO M-TECH</strong>
+                            <span>철강포장 및 소재 전문기업으로서 철강사업에 새로운 가치를 제공하고<br>시너지를 창출하고자 합니다.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dock">
+                <span class="mbutton btn1"></span>
+                <span class="mbutton btn2"></span>
+                <span class="mbutton btn3"></span>
+                <span class="ps"></span>
+            </div>
+        </div>
+        <div class="vis_btn">
+            <span class="btn btnLeft">left</span>
+            <span class="btn btnRight">right</span>
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문 컨텐츠 영역</h2>
+
+            
+            <div class="business wide">
+                <h3 class="hidden">사업영역</h3>
+                <div class="business_box">
+                    <ul>
+                        <li>
+                            <h4>철강부원료</h4>
+                            <p>
+                                철강부원료인 탈산제를 직접 생산하여 수요가에 공급합니다. 탈산제사업은 포스코엠텍의 주요사업으로서 경쟁력있는 원료 확보 (Al Scrap)및...
+                                <a href="./sub2/sub2_1.html">자세히보기</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h4>포장엔지니어링</h4>
+                            <p>
+                                세계 최초로 철강포장 로봇인 스트랩마스터를 개발하고 포항과 광양제철소에 배치하였습니다. 이로 인한 작업의 효율성과 원가 절감을 동시에 달성했습니다.
+                                <a href="./sub2/sub2_2.html">자세히보기</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="business_btn">
+                        <a href="#" class="btnPrev">이전</a>
+                        <a href="#" class="btnNext">다음</a>
+                    </div>
+                </div>
+                <div class="business_img">
+                    <img src="./images/business1.jpg" alt="철강부원료 이미지">
+                    <img src="./images/business2.jpg" alt="포장엔지니어링 이미지">
+                </div>
+            </div>
+
+
+
+            <div class="sus wide">
+                <div class="inner">
+                    <h3>지속가능경영</h3>
+                    <ul class="sus_box">
+                        <li>
+                            <a href="./sub3/sub3_1.html">
+                                <dl>
+                                    <dt>윤리경영</dt>
+                                    <dd>
+                                        기업의 윤리성은 기업의 품격이며, 기업경쟁력의 원천입니다.
+                                        <span class="bt_motion"><b class="txt">자세히보기</b></span>
+                                    </dd>
+                                </dl>
+                                <img src="./images/sus1.jpg" alt="윤리경영 이미지">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./sub4/sub4_1.html">
+                                <dl>
+                                    <dt>사회공헌</dt>
+                                    <dd>
+                                        지역의 어려운 이웃을 위한 나눔활동에 적극 참여합니다.
+                                        <span class="bt_motion"><b class="txt">자세히보기</b></span>
+                                    </dd>
+                                </dl>
+                                <img src="./images/sus2.jpg" alt="사회공헌 이미지">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="link">
+                        <li><a href="./sub3/sub3_1.html">윤리규범</a></li>
+                        <li><a href="./sub3/sub3_2.html">환경경영</a></li>
+                        <li><a href="./sub3/sub3_3.html">공정거래</a></li>
+                        <li><a href="./sub3/sub3_4.html">클린시스템</a></li>
+                        <li><a href="./sub4/sub4_2.html">사회공헌활동</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="media">
+                <h3>미디어센터</h3>
+                <div class="media_box_wrap">
+                    <div class="movebox">
+                        <ul class="media_box">
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=0&item=0">
+                                    <div class="image"><img src="./images/media1.jpg" alt="더불어 함께 발전하는 기업시민 포스코 그룹"></div>
+                                    <dl>
+                                        <dt>더불어 함께 발전하는 기업시민 포스코 그룹</dt>
+                                        <dd>
+                                            2021 포스코그룹 홍보영화(국문) 때로는 인류의 지식으로 때로는 민족의 혼으로 때로는 문명의 꽃으로...<span>2021.04.16</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=1&ad=0">
+                                    <div class="image"><img src="./images/media4.jpg" alt="Green Tommorrow, With POSCO 편"></div>
+                                    <dl>
+                                        <dt>Green Tommorrow, With POSCO 편</dt>
+                                        <dd>
+                                            푸른 지구를 만드는 미래의 베이스가 되다 Welcome to Green Tomorrow 지구를 지키는 친환경 철 그 맨 앞에...<span>2021.12.01</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=0&item=1">
+                                    <div class="image"><img src="./images/media2.jpg" alt="50주년 기념 POSCO ODYSSEY"></div>
+                                    <dl>
+                                        <dt>50주년 기념 POSCO ODYSSEY</dt>
+                                        <dd>
+                                            포스코 창립 50주년 기념 홍보영화 (국문, '18년 제작) 순수한 영혼과 뜨거운 열정을 가진 영웅들이 인생을...<span>2018.08.02</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=0&item=2">
+                                    <div class="image"><img src="./images/media3.jpg" alt="희망의 새시대, 행복한 세상의 길을 밝히는 불꽃, 포스코입니다."></div>
+                                    <dl>
+                                        <dt>희망의 새시대, 행복한 세상의 길을 밝히는 불꽃, 포스코입니다.</dt>
+                                        <dd>
+                                            포스코 홍보영화(국문, '13년 제작, '18년 갱신) 어둠을 밝히는 한줄기 빛처럼 꿈을 가진 이들이 있었습니다...<span>2018.09.03</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=1&ad=1">
+                                    <div class="image"><img src="./images/media5.jpg" alt="사회적 거리수기 속 서로의 마음은 온(On)택트로 가까이!"></div>
+                                    <dl>
+                                        <dt>사회적 거리수기 속 서로의 마음은 온(On)택트로 가까이!</dt>
+                                        <dd>
+                                            언택트가 아닌 마음을 켜는 온(On)택트로 (드론이 바다 위를 날아다닌다) 감독 : 거기~ 저기 저기 저기!...<span>2020.06.15</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=1&ad=2">
+                                    <div class="image"><img src="./images/media6.jpg" alt="기업, 시민이 되다 편"></div>
+                                    <dl>
+                                        <dt>기업, 시민이 되다 편</dt>
+                                        <dd>
+                                            Power of 'With' POSCO 더 나아가게 더 할 수 있게 더 이루게 더 좋은 세상을 만들기 위해 함께, 한 걸음 더...<span>2019.11.18</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="play">
+                                <a href="../sub6/sub6_3.html?num=1&ad=3">
+                                    <div class="image"><img src="./images/media7.jpg" alt="포스코 창립 50주년 기념 광고"></div>
+                                    <dl>
+                                        <dt>포스코 창립 50주년 기념 광고</dt>
+                                        <dd>
+                                            세상은 더 넓게 Unlimit the Limit POSCO 50년전 우리에게 철은 도전이었습니다 기술도 자본도 없었지만...<span>2018.05.11</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sub6/sub6_3.html?num=2">
+                                    <div class="image"><img src="./images/media8.jpg" alt="수소환원제철 기술 편"></div>
+                                    <dl>
+                                        <dt>수소환원제철 기술 편</dt>
+                                        <dd>
+                                            수소로 리드하는 위대한 내일을 열다.
+                                            <span>2021.04.16</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sub6/sub6_3.html?num=2">
+                                    <div class="image"><img src="./images/media9.jpg" alt="기업시민 함께 편"></div>
+                                    <dl>
+                                        <dt>기업시민 함께 편</dt>
+                                        <dd>
+                                            떨어져 있어도 마음만은 가깝게 늘 '함께'하고 싶은 기업이 되겠습니다.
+                                            <span>2021.04.16</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sub6/sub6_3.html?num=2">
+                                    <div class="image"><img src="./images/media10.jpg" alt="더불어 함께 발전하는 기업시민 포스코"></div>
+                                    <dl>
+                                        <dt>기업시민 등대광고 편</dt>
+                                        <dd>
+                                            포스코가 스마트 팩토리를 구축하여 세계경제포럼이 선정한 국내 최초 '등대공장'이 되었습니다.
+                                            <span>2021.04.16</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="media_btn">
+                    <li><a href="#" class="btnPrev">이전</a></li>
+                    <li><a href="#" class="btnNext">다음</a></li>
+                    <li><a href="./sub6/sub6_3.html" class="more">더보기</a></li>
+                </ul>
+            </div>
+
+            <? include "./lib/func.php"; ?>
+            <div class="notice wide">
+                <div class="inner">
+                    <h3>뉴스룸</h3>
+                    <ul>
+                        <? latest_article("concert", 2, 30, 90); ?>
+                        <!-- <li>
+                            <a href="#">
+                                <dl>
+                                    <dt>이노빌트, 친환경·안전 등 건설 ESG 리딩하며 프리미엄...</dt>
+                                    <dd>
+                                        포스코의 프리미엄 강건재 통합 브랜드 이노빌트(INNOVILT)가 출범 2주년을 맞이한지난 10월, 8번째 이노빌트 브랜드위원회에서 34개 제품이 추가로 인...
+                                        <span>2021.11.08</span>
+                                    </dd>
+                                </dl>
+                                <div class="motion"><span></span><span></span><span></span><span></span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt>이노빌트, 친환경·안전 등 건설 ESG 리딩하며 프리미엄 프리미엄</dt>
+                                    <dd>
+                                        포스코의 프리미엄 강건재 통합 브랜드 이노빌트(INNOVILT)가 출범 2주년을 맞이한지난 10월, 8번째 이노빌트 브랜드위원회에서 34개 제품이 추가로 인...
+                                        <span>2021.11.08</span>
+                                    </dd>
+                                </dl>
+                                <div class="motion"><span></span><span></span><span></span><span></span></div>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <a href="./concert/list.php" class="more">더보기</a>
+                </div>
+            </div>
+            <div class="recruit wide">
+                <div class="inner">
+                    <h3>인재채용</h3>
+                    <p>포스코엠텍과 함께 할 역량있는 인재를 찾습니다</p>
+                    <span class="bt_motion"><a href="./sub5/sub5_1.html" class="txt">바로가기</a></span>
+                </div>
+            </div>
+        </article>
+        
+    <? include './common/main_footer.html' ?>
+    <script src="./mainjs/move.js"></script>
+    <script src="./mainjs/main.js"></script>
+
+    <!-- 공지사항 팝업 -->
+    <div id="showimage">
+        <script>
+            function closeWin(){
+                var chk = document.getElementById('Notice')
+                if ( chk.checked ) {
+                    setCookie( "Notice", "done" , 1); //1 이란 숫자는 1일간 안보임을 뜻합니다.
+                }
+            }
+            if ( getCookie( "Notice" ) == "done" ) {
+                hidebox();
+            }
+        </script>
+
+        <div class="hidden">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.</div>
+
+        <div class="btn">
+            <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자">
+            <label for="Notice">오늘 하루 열지않음</label>
+            <a href="#" onclick="closeWin();hidebox();return false;">[close]</a>
+        </div>
+    </div>
+
+</body>
+</html>

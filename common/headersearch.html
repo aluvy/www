@@ -1,0 +1,76 @@
+<script>
+
+
+    function check_search() // 유효성체크
+    {
+        if (!document.search_form.search.value)
+        {
+            alert("검색어를 입력하세요!");    
+            document.search_form.search.focus();
+            return;
+        }
+
+        document.search_form.submit();
+    }
+
+    // 현재 페이지가 index인지 아닌지 판별해서 ajax url 주소 가져오기
+    var myIndex, myHtml, myPhp;
+    function getMyIndex() {
+
+        var url = decodeURIComponent(location.href); // 현재 페이지의 url
+        url = decodeURIComponent(url); // url = ex.html?num=1&name=홍길동
+        // url이 encodeURIComponent 로 인코딩 되었을때는 다시 디코딩 해준다.
+    
+        myIndex = url.indexOf('index'); // 해당 문자가 없으면 -1을 반환, 있으면 index값을 반환.
+        myHtml = url.indexOf('html');
+        myPhp = url.indexOf('php');
+        // index가 있거나 (숫자값), html이나 php가 없을 경우(-1)
+
+    }
+    getMyIndex();
+    // console.log(myIndex);
+
+    if(myIndex > -1 || (myHtml == -1 && myPhp == -1) ){ // index면
+
+        $('#headerSearch form').attr('action', './product/list.php?table=product&mode=search');
+    } else { // index가 아니면
+
+        $('#headerSearch form').attr('action', '../product/list.php?table=product&mode=search');
+    }
+
+
+    function user_check(value){
+        document.search_form.search.value = value;
+        document.search_form.submit()
+    }
+
+    $('#headerSearch dl dd a').click(function(e){
+        e.preventDefault();
+    });
+
+
+</script>
+
+<div id="headerSearch">
+    <div class="inner">
+        <p>포스코엠텍의 제품을 검색해보세요</p>
+        <form name="search_form" method="post" action="../product/list.php?table=product&mode=search">
+            <input type="text" class="hidden" name="find" value="subject">
+            <label class="hidden" for="search">검색어 입력</label>
+            <input type="text" id="search" name="search" placeholder="검색어를 입력하세요">
+            <input type="button" value="검색" onclick="check_search()">
+        </form>
+        <dl>
+            <dt>추천검색어</dt>
+            <dd>
+                <a href="#" onclick="user_check('알루미늄 잉곳')">알루미늄잉곳</a>
+                <a href="#" onclick="user_check('페로 망간')">페로망간</a>
+                <a href="#" onclick="user_check('알루미늄 펠렛')">알루미늄 펠렛</a>
+                <a href="#" onclick="user_check('로봇결속기')">로봇결속기</a>
+                <a href="#" onclick="user_check('포장')">포장</a>
+                <a href="#" onclick="user_check('알루미늄 미니 펠렛')">알루미늄 미니 펠렛</a>
+            </dd>
+        </dl>
+        <a href="#" class="close">닫기</a>
+    </div>
+</div>

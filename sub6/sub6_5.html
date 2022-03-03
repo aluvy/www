@@ -1,0 +1,135 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원 - 문의하기</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content5.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 고객지원">
+            <h3>고객지원</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li><a href="../greet/list.php">공지사항</a></li>
+                <li><a href="../concert/list.php">뉴스룸</a></li>
+                <li><a href="./sub6_3.html">미디어센터</a></li>
+                <li><a href="./sub6_4.html">FAQ</a></li>
+                <li class="current"><a href="./sub6_5.html">문의하기</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>고객지원</span>
+                    <span>문의하기</span>
+                </div>
+                <h2>문의하기</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>문의사항을 남겨주시면 답변드리겠습니다.</p>
+                    <span>철강포장 및 소재 전문기업으로서 철강사업에 새로운 가치를 제공하고 시너지를 창출하고자 합니다.</span>
+                </div>
+                
+                
+                <h3 class="hidden">문의하기</h3>
+
+                <div class="mail_content">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        
+                        <div class="row control-group">
+                            <dl class="form-group col-xs-12 floating-label-form-group controls">
+                                <dt>
+                                    <label for="name">이름</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" class="form-control" placeholder="이름을 입력하세요" id="name" required data-validation-required-message="！이름을 입력해주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="row control-group">
+                            <dl class="form-group col-xs-12 floating-label-form-group controls">
+                                <dt>
+                                    <label for="phone">연락처</label>
+                                </dt>
+                                <dd>
+                                    <input type="tel" class="form-control" placeholder="연락처를 입력하세요" id="phone" required data-validation-required-message="！연락처를 입력해주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="row control-group email">
+                            <dl class="form-group col-xs-12 floating-label-form-group controls">
+                                <dt>
+                                    <label for="email">이메일</label>
+                                </dt>
+                                <dd>
+                                    <input type="email" class="form-control" placeholder="이메일 주소를 입력하세요" id="email" required data-validation-required-message="！이메일 주소를 입력해주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="row control-group message">
+                            <dl class="form-group col-xs-12 floating-label-form-group controls">
+                                <dt>
+                                    <label for="message">내용</label>
+                                </dt>
+                                <dd>
+                                    <textarea rows="5" class="form-control" placeholder="내용을 입력하세요" id="message" required data-validation-required-message="！내용을 입력해주세요"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12 send">
+                                <button type="submit" class="btn btn-success btn-lg"><span>문의사항 전송하기</span></button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+
+
+            </div>
+
+        </article>
+    <? include '../common/sub_footer.html' ?>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/contact_me.js"></script>
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script>
+        $('.form-group').focusin(function(){
+            $(this).addClass('focus');
+        });
+        
+        $('.form-group').focusout(function(){
+            $(this).removeClass('focus');
+        });
+    </script>
+
+
+</body>
+</html>

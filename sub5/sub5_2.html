@@ -1,0 +1,81 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용 - 채용절차</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 인재채용">
+            <h3>인재채용</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub5_1.html">인재상</a></li>
+                <li class="current"><a href="./sub5_2.html">채용절차</a></li>
+                <li><a href="./sub5_3.html">복리후생</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>인재채용</span>
+                    <span>채용절차</span>
+                </div>
+                <h2>채용절차</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>미래를 함께할 역량있는 인재를 찾습니다.</p>
+                    <span>전형절차는 모집시기에 따라 일부 변동될 수 있으니, 반드시 해당 채용공고를 확인하시기 바랍니다.</span>
+                </div>
+                
+                <div class="recruit_process kframe">
+                    <ul>
+                        <li><h3>서류심사</h3></li>
+                        <li><h3>인성검사</h3></li>
+                        <li><h3>면접</h3></li>
+                        <li><h3>건강검진</h3></li>
+                    </ul>
+                    <dl>
+                        <dt>1. 서류심사</dt>
+                        <dd>서류심사는 지원자의 능력, 자격, 자질, 태도 등 기본자력을 평가하는 단계입니다. 주로 전공, 경력, 학력, 사회활동 및 자기소개를 중심으로 실시되므로 자기소개서를 포함, 입사지원서에는 진실에 입각하여 성실하게 작성하여야 합니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>2. 인성검사</dt>
+                        <dd>개인의 성격적 요인, 기업가치 관련 역량, 직무수행능력, 직무적성을 동시에 파악할 수 있을 뿐 아니라, 검사결과를 통해 나타난 개인의 성향과 역량수준에 따른 종합통계 분석표, 개개인의 상세프로파일(대인관계, 리더십, 업무수행능력, 조직적응능력)을 제공받을 수 있는 심층적이고, 포괄적인 종합 인적성 검사도구입니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>3. 면접</dt>
+                        <dd>통상 임원에서 팀장까지 면접위원 3-4인으로 위원회를 구성, 면접자와 다수의 면접위원으로 전형이 진행됩니다. 피면접자는 기본인성 및 가치관, 전공 및 경영지식, 상황대처능력 및 면접태도, 직무수행능력 등을 종합적으로 평가하게 됩니다.</dd>
+                    </dl>
+                    <dl>
+                        <dt>4. 건강검진</dt>
+                        <dd>건강진단은 면접 후 혈액검사를 통한 혈압, 시력, X-ray 검진 등 종합검진이 실시되며, 건강진단일 전날은 무리한 활동이나 약물복용을 삼가시고 공복을 유지해야 합니다. 오전 검진일 경우 아침을 거르시고 물도 가급적 드시지 않는 것이 정확한 검진결과를 위해 좋습니다.</dd>
+                    </dl>
+                </div>
+
+            </div>
+
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="../common/js/keyframe.js"></script>
+
+</body>
+</html>

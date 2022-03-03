@@ -1,0 +1,68 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 고객지원 > 문의하기 */
+
+/* 크롬 인풋 색상 자동 변경 X */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+transition: background-color 5000s ease-in-out 0s;}
+
+.mail_content{width:1000px; margin:0 auto; font-size: 1.125rem;}
+.mail_content::after{content:''; display: block; clear: both;}
+
+
+/* form 요소 기본설정 */
+.mail_content input,
+.mail_content textarea,
+.mail_content button{font-family: 'Lato', 'Noto Sans KR', sans-serif; font-size: 1.125rem;}
+
+.mail_content input,
+.mail_content textarea{width:100%; border:0 none; padding: 0; background:none; outline: 0;}
+
+.mail_content input::placeholder,
+.mail_content textarea::placeholder{color:rgba(0,0,0,0.4);}
+
+
+/* 레이아웃 */
+.mail_content .control-group{float:left; width: 50%; box-sizing:border-box; padding:5px;}
+
+.mail_content .control-group.email,
+.mail_content .control-group.subject,
+.mail_content .control-group.message{width: 100%;}
+
+    /* dl */
+.mail_content .control-group .form-group{position:relative; box-sizing:border-box; background:#f5f5f5; outline: none; box-shadow:inset 1px 1px 5px rgba(0,0,0,0.07), inset 1px 1px 1px rgba(0,0,0,0.07);}
+    /* focus */
+.mail_content .control-group .form-group.focus{
+    outline: 0; box-shadow:inset 0 0 1px 1px rgba(102,175,233,1), inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);}
+
+    /* error */
+.mail_content .control-group.error .form-group{border-color:rgba(242,222,222,.7); background:rgba(242,222,222,.4)}
+
+
+
+/* 요소 레이아웃 */
+.mail_content .control-group .form-group dt{position:absolute; left:20px; top: 0;}
+.mail_content .control-group .form-group dt label{line-height: 70px;}
+
+.mail_content .control-group .form-group dd .form-control{padding-left:100px; box-sizing:border-box;}
+.mail_content .control-group .form-group dd input.form-control{height: 70px; line-height: 70px;}
+.mail_content .control-group .form-group dd textarea.form-control{height: 180px; line-height: 1.6; padding-top:20px; resize:none;}
+
+/* 경고 */
+.mail_content .control-group .form-group dd .text-danger{position:absolute; right: 0; top: 0; color:rgba(217,83,79,.7); font-size: 0.875rem;}
+.mail_content .control-group .form-group dd .text-danger ul{line-height:70px; margin-right:15px;}
+
+
+/* 전송메세지 */
+.mail_content #success{clear:both; padding: 5px;}
+.mail_content #success .alert{position:relative; font-size:1rem; background:#dff0d8; border:1px solid #d6e9c6; color:#3c763d; border-radius:2px; box-sizing:border-box; margin-top:10px;}
+.mail_content #success .alert button{position:absolute; right:15px; top:50%; margin-top:-10px; width:20px; height:20px; line-height:20px; font-size:1.5rem; text-align:center; border:0 none; background:none; padding: 0; color:rgba(0,0,0,0.4); cursor: pointer;}
+.mail_content #success .alert strong{display:block; font-weight: normal; padding:17px 25px; /*color:#31708f;*/}
+    /* 실패 시 */
+.mail_content #success .alert.alert-danger{background:#f2dede; border-color:#ebccd1; color:#a94442;}
+
+
+
+.mail_content .send{text-align:center; margin:20px 0 0;}
+.mail_content .send button{position:relative; height:60px; line-height:60px; color:#fff; padding: 0 50px; border:0 none; background:#005793; cursor:pointer; overflow: hidden; transition:all .3s;}
+.mail_content .send button::before{content:''; position:absolute; left: 0; top:0; display: block; width: 0; height: 100%; background:#00a5e5; transition:all .3s;}
+.mail_content .send button:hover::before{width: 100%;}
+.mail_content .send button span{position:relative; z-index: 2;}

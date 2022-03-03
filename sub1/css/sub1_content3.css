@@ -1,0 +1,9 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 회사소개 > 조직구성 */
+
+@keyframes up{
+    from{transform:translateY(100px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+.organ.active{animation:up 1 .5s ease-out; animation-fill-mode: forwards;}
+
+.organ{width:1200px; height: 1270px; font-size:0; text-indent:-9999px; overflow:hidden; background:url(../images/contents3/organ.jpg) 50% 50% no-repeat; opacity: 0;}

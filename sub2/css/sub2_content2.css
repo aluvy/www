@@ -1,0 +1,64 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 사업영역 > 포장엔지니어링 */
+
+@keyframes imgmation{
+    from{transform:translate(0, -50px); opacity:0;}
+    to{transform:translate(0, 0); opacity:1;}
+}
+@keyframes intromation{
+    from{transform:translate(0, 50px); opacity:0;}
+    to{transform:translate(0, 0); opacity:1;}
+}
+/* keyframe */
+.product_pn ul li.active .image{animation:imgmation 1 .5s ease-out; animation-fill-mode: forwards;}
+.product_pn ul li.active .intro{animation:intromation 1 .5s ease-out; animation-delay: .2s; animation-fill-mode: forwards;}
+
+
+.product_pn{}
+.product_pn ul{}
+.product_pn ul li{position:relative; margin-top:70px;}
+.product_pn ul li:first-child{margin-top:0;}
+.product_pn ul li .image{position:relative; left: 50%; margin-left:-1000px; width: 2000px; height: 500px; opacity:0;}
+.product_pn ul li:nth-child(1) .image{background:url(../images/contents2/photo1.jpg) 50% 50% no-repeat;}
+.product_pn ul li:nth-child(2) .image{background:url(../images/contents2/photo2.jpg) 50% 50% no-repeat;}
+.product_pn ul li:nth-child(3) .image{background:url(../images/contents2/photo3.jpg) 50% 50% no-repeat;}
+.product_pn ul li .intro{position:relative; top:-150px; padding:80px; background:#fff; box-sizing:border-box; overflow:hidden; box-shadow:30px 30px 30px rgba(0,0,0,0.15); border-bottom:5px solid #005793;
+    transform:translate(0, 50px); opacity:0;}
+    
+.product_pn ul li .intro h3{float:left; font-size:2.1875rem; letter-spacing:-0.045rem;}
+.product_pn ul li .intro .info{margin-left:300px; font-size:1.125rem; line-height: 2; /*color:#666;*/}
+.product_pn ul li .intro .info p{text-align:justify;}
+.product_pn ul li .intro .info div{margin:50px 0 0; overflow: hidden;}
+.product_pn ul li .intro .info div a{float:left; position:relative; width: calc(50% - 5px); margin:10px 0 0 10px; /*height: 50px;*/ line-height: 60px; font-size:1.125rem; color:#fff; letter-spacing:-0.045rem; background:#005793;  padding:0 25px; box-sizing:border-box;}
+.product_pn ul li .intro .info div a:nth-child(2n+1){margin-left:0;}
+.product_pn ul li .intro .info div a:nth-child(-n+2){margin-top:0;}
+.product_pn ul li .intro .info div a span{position:relative; display:block; background:url(../images/contents2/more_w.png) 100% 50% no-repeat; background-size:13px auto; z-index:2;}
+.product_pn ul li .intro .info div a::before{content:''; position:absolute; left:0; top: 0; width: 0; height: 100%; background:#00a5e5; transition:all .3s;}
+.product_pn ul li .intro .info div a:hover::before{width:100%;}
+
+
+
+
+
+
+.prd_view{position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); width: 1200px; padding:70px; border:5px solid #005793; box-sizing:border-box; background:#fff; box-shadow:15px 15px 50px rgba(0,0,0,0.2); overflow: hidden; z-index:102; display: none;}
+
+.prd_view::after{content:''; display: block; clear: both;}
+.prd_view .prdimg{float:left; width: 560px; height: 270px;}
+.prd_view .prdttl{float: right; width: 430px; padding:20px 0 0;}
+.prd_view .prdttl span{display: block; font-size:1.125rem; color:#999; letter-spacing:-0.025rem;}
+.prd_view .prdttl strong{display: block; font-size: 2rem; font-weight: normal; line-height:1.2; word-break:keep-all; letter-spacing:-0.045rem; padding:23px 0;}
+.prd_view .prdttl p{font-size:1.125rem; color:#666; line-height: 2;}
+.prd_view .prdcont{float:left; width: 100%; margin:40px 0 0;}
+.prd_view .prdcont dl{border:1px solid #ccc; font-size:1.125rem; line-height: 1.8; background:rgba(0,87,147,.05);}
+.prd_view .prdcont dl::after{content:''; display: block; clear: both;}
+.prd_view .prdcont dl dt,
+.prd_view .prdcont dl dd{box-sizing:border-box; border-top:1px solid #ddd; padding:15px;}
+.prd_view .prdcont dl dt{float:left; width: 10%; color:#005793;}
+.prd_view .prdcont dl dd{float:left; width:90%; background:#fff;}
+.prd_view .prdcont dl dt:nth-of-type(1),
+.prd_view .prdcont dl dd:nth-of-type(1){border-top:0 none;}
+.prd_view .prdcont dl dd span{display: inline-block; min-width:120px; margin-right:20px;}
+.prd_view .close{position:absolute; right: 40px; top: 40px; display:block; width: 40px; height: 40px; background:url(../images/contents1/close.png) 50% 50% no-repeat; background-size:100% auto; text-indent:-9999px; overflow: hidden; cursor:pointer; transition:transform .3s;}
+.prd_view .close:hover{transform:rotate(180deg);}
+
+.bgbox{position:fixed; left: 0; top: 0; width: 100%; height: 100%; background:rgba(0,0,0,0.7); z-index:101; display: none;}

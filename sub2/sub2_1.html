@@ -1,0 +1,63 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업영역 - 철강부원료</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 사업영역">
+            <h3>사업영역</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub2_1.html">철강부원료</a></li>
+                <li><a href="./sub2_2.html">포장엔지니어링</a></li>
+                <li><a href="../product/list.php">제품검색</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>사업영역</span>
+                    <span>철강부원료</span>
+                </div>
+                <h2>철강부원료</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>광물확보·제련·소재 일관 생산체제</p>
+                    <span>포스코엠텍은 철강 부원료인 알루미늄 탈산제(잉곳, 펠렛, 미니펠렛)을 직접 생산합니다.</span>
+                </div>
+
+                <h3 class="hidden">철강부원료 리스트</h3>
+                <div class="product kframe"></div><!-- .product -->
+
+                <div class="prd_view"></div>
+                <div class="bgbox"></div>
+
+            </div>
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="../common/js/sub_layout.js"></script>
+    <script src="./js/steel.js"></script>
+    <script src="../common/js/keyframe.js"></script>
+
+</body>
+</html>

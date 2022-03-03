@@ -1,0 +1,40 @@
+{
+    "steel" : [
+        {
+            "category" : "AI 탈산제",
+            "title" : "알루미늄 잉곳 1kg Aluminum Ingot 1kg",
+            "image" : "./images/contents1/product1.jpg",
+            "summary" : "제강공정에서 과포화된 산소를 제거, 제강 제품의 용접성, 인성, 고온과 부식에 대한 저항력 강화를 위하여 사용합니다.",
+            "ingredient" : "<span>Al 93% min</span><span>Cu 2.0% max</span><span>Fe 2.5% max</span><span>Mn 1.2% max</span><span>Ti 0.2% max</span><span>Zn 3.0% max</span><span>Mg 3.0% max</span><span>Si 2.5% max</span>",
+            "size" : "<span>무게 : 1.0kg ± 0.3kg</span><span>높이 : 33mm ± 12.0mm</span><span>길이 : 3.95mm ± 25.0 mm</span><span>폭 : (上) 25mm ± 10.0mm (下) 43mm ± 7.0mm</span>",
+            "package" : "Bundle"
+        },
+        {
+            "category" : "AI 탈산제",
+            "title" : "알루미늄 펠렛 (Alumium Pellet)",
+            "image" : "./images/contents1/product2.jpg",
+            "summary" : "제강공정에서 과포화된 산소를 제거, 제강 제품의 용접성, 인성, 고온과 부식에 대한 저항력 강화를 위하여 사용합니다.",
+            "ingredient" : "<span>Al 93% min</span><span>Cu 2.0% max</span><span>Fe 2.5% max</span><span>Mn 1.2% max</span><span>Ti 0.2% max</span><span>Zn 3.0% max</span><span>Mg 3.0% max</span><span>Si 2.5% max</span>",
+            "size" : "<span>무게 : 80g ± 25g</span><span>높이 : 30mm ± 6.0mm</span><span>형상 : 사다리꼴</span><span>직경 : (上) 17mm ± 3.0mm (下) 43mm ± 6.0mm</span>",
+            "package" : "Bulk or Bag"
+        },
+        {
+            "category" : "AI 탈산제",
+            "title" : "알루미늄 미니 펠렛 (Aluminum Mini Pellet)",
+            "image" : "./images/contents1/product3.jpg",
+            "summary" : "제강공정에서 과포화된 산소를 제거, 제강 제품의 용접성, 인성, 고온과 부식에 대한 저항력 강화를 위하여 사용합니다.",
+            "ingredient" : "<span>Al 93% min</span><span>Cu 2.0% max</span><span>Fe 2.5% max</span><span>Mn 1.2% max</span><span>Ti 0.2% max</span><span>Zn 3.0% max</span><span>Mg 3.0% max</span><span>Si 2.5% max</span>",
+            "size" : "<span>무게 : 5~20g(6~12g 90% 이상)</span><span>높이 : 30mm 이하</span><span>직경 : 30mm 이하</span>",
+            "package" : "Bulk or Bag"
+        },
+        {
+            "category" : "Fe-Mn",
+            "title" : "페로 망간 (Ferro Manganese)",
+            "image" : "./images/contents1/product4.jpg",
+            "summary" : "제강공정에서 탈산 및 탈황 등 불순물 제거에 사용 됩니다.",
+            "ingredient" : "<span>Mn 73% min</span><span>C 7.3% min</span><span>Si 1.2% max</span><span>P 0.2% max</span><span>S 0.02% max</span>",
+            "size" : "10mm ~ 50mm",
+            "package" : "1MT PP Bag / 250kg Steel Drum"
+        }
+    ]
+}

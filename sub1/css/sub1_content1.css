@@ -1,0 +1,58 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 회사소개 > 포스코엠텍 소개 */
+
+@keyframes left{
+    from{transform:translateX(-50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+}
+
+@keyframes right{
+    from{transform:translateX(50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+}
+
+@keyframes up{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+}
+/* active */
+/*.about > li.active h3{animation:right 1 .5s ease-out; animation-fill-mode: forwards;}*/
+.about > li.active img{animation:left 1 .5s ease-out; animation-fill-mode: forwards;}
+.about > li.active:nth-child(even) img{animation-name:right; animation-delay: .3s;}
+
+.about > li.active h3,
+.about > li.active p{animation:right 1 .5s ease-out; animation-delay: .3s; animation-fill-mode: forwards;}
+
+.about > li.active:nth-child(even) h3,
+.about > li.active:nth-child(even) p{ animation-name:left; animation-delay: 0s;}
+
+.about > li.active .value li{animation:up 1 .5s ease-out; animation-fill-mode: forwards;}
+.about > li.active .value li:nth-child(1){animation-delay:.1s}
+.about > li.active .value li:nth-child(2){animation-delay:.2s}
+.about > li.active .value li:nth-child(3){animation-delay:.3s}
+.about > li.active .value li:nth-child(4){animation-delay:.4s}
+
+
+/**/
+.about{}
+.about > li{margin-top:80px;}
+.about > li::after{content:''; display: block; clear: both;}
+.about > li:first-child{margin:0;}
+.about > li img{float:left; margin:0 80px 0 0;}
+.about > li h3{padding:75px 0 0; font-size:1.5625rem; color:#005793; letter-spacing:-0.065rem; font-weight:700;}
+.about > li p{font-size:1.125rem; line-height:2; margin:20px 0 0; text-align:justify;}
+.about > li:nth-child(even) img{float:right; margin:0 0 0 80px;}
+.about > li img{opacity:0;}
+.about > li h3, .about > li p{opacity: 0;}
+
+.about > li:last-child{margin-top:130px;}
+.about > li:last-child h3{margin:0;}
+
+.about .value{text-align:center; background:#f5f5f5; padding:60px 0; white-space:nowrap; font-size:0; margin:65px 0 0;}
+.about .value li{position:relative; display:inline-block; width: 160px; margin:0 55px; font-size:1.25rem; letter-spacing:-0.045rem; opacity: 0;}
+.about .value li::before{content:''; display:block; width: 160px; height: 160px; background:#fff; box-shadow:10px 10px 10px rgba(0,0,0,.03); border-radius:50px; margin:0 0 20px;}
+.about .value li::after{content:''; position:absolute; left:0; top:0; display:block; width: 160px; height: 160px; background-position:50% 50%; background-repeat:no-repeat;}
+
+.about .value li:nth-child(1)::after{background-image:url(../images/contents1/ico1.png);}
+.about .value li:nth-child(2)::after{background-image:url(../images/contents1/ico2.png);}
+.about .value li:nth-child(3)::after{background-image:url(../images/contents1/ico3.png);}
+.about .value li:nth-child(4)::after{background-image:url(../images/contents1/ico4.png);}

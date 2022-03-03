@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* CSS Reset */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{font-size:16px;}
+body{
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height:1.6
+}
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: inherit; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+
+input, label, button{padding: 0; margin: 0; border: 0 none; background:none; font-family: 'Lato', 'Noto Sans KR', sans-serif; font-size: 16px; color: #333;}
+
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+
+body{background:#f6f6f6;}
+
+header{padding:70px 0 50px;}
+header::after{content:''; display: block; clear: both;}
+header h1{text-align:center;}
+header h1 a{display:inline-block; width: 269px; height: 35px; background:url(../images/logo.png) 0 0 no-repeat; text-indent:-9999%; font-size: 0; overflow: hidden;}

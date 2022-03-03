@@ -1,0 +1,44 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 인재채용 > 복리후생 */
+
+@keyframes down {
+    from{transform:translateY(-50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+@keyframes left {
+    from{transform:translate(50px, -50%); opacity: 0;}
+    to{transform:translate(0, -50%); opacity: 1;}
+}
+/* keyframe */
+.benefit ul li.active .image{animation:down 1 .7s ease-out; animation-fill-mode: forwards;}
+/* .benefit ul li.active dl{animation:left 1 .7s ease-out; animation-delay: .2s; animation-fill-mode: forwards; } */
+.benefit ul li.active .cont{animation:left 1 .7s ease-out; animation-delay: .2s; animation-fill-mode: forwards; }
+
+
+.benefit{margin:0 0 200px;}
+.benefit ul{}
+.benefit ul li{position:relative; margin:150px 0 0;}
+.benefit ul li:first-child{margin: 0;}
+.benefit ul li::after{content:''; display: block; clear: both;}
+
+
+.benefit ul li:nth-child(even) .image{float:right;}
+/* .benefit ul li:nth-child(even) dl{margin:0 600px 0 50px;} */
+.benefit ul li:nth-child(even) .cont{margin:0 600px 0 50px;}
+
+.benefit ul li .image{float:left; width:500px; height: 350px; border-radius:20px 70px; overflow: hidden; box-shadow:10px 20px 30px 5px rgba(0,0,0,0.15); opacity: 0;}
+.benefit ul li .image img{width: 100%;}
+
+.benefit ul li:nth-child(even)::before{content:''; position:absolute; left:50%; top: -70px; display:block; margin-left:-1000px; width:2000px; height: 490px; background:#f7f7f7; z-index:-1;}
+
+/* .benefit ul li dl{position:absolute; top:50%; transform:translateY(-50%); margin:0 50px 0 600px; box-sizing:border-box; opacity: 0;}
+.benefit ul li dl dt{font-size:1.5625rem; font-weight: 700; color:rgba(0,87,147,1);}
+.benefit ul li dl dt span{display: block; font-size:1.25rem; font-weight: normal; color:#333; margin:5px 0 0;}
+.benefit ul li dl dt span::after{content:''; display: block; width: 50px; height: 1px; background:rgba(0,87,147,1); margin:35px 0;}
+.benefit ul li dl dd{font-size:1.125rem; text-align:justify; color:#777;} */
+
+
+.benefit ul li .cont{position:absolute; top:50%; transform:translateY(-50%); margin:0 50px 0 600px; box-sizing:border-box; opacity: 0;}
+.benefit ul li .cont h3{font-size:1.5625rem; font-weight: 700; color:rgba(0,87,147,1);}
+.benefit ul li .cont span{display: block; font-size:1.25rem; font-weight: normal; color:#333; margin:5px 0 0;}
+.benefit ul li .cont span::after{content:''; display: block; width: 50px; height: 1px; background:rgba(0,87,147,1); margin:35px 0;}
+.benefit ul li .cont p{font-size:1.125rem; text-align:justify; color:#777;}

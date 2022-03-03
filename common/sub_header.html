@@ -1,0 +1,84 @@
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+    <div class="wrap">
+        <header id="headerArea">
+            <div class="header_inner">
+                <h1><a href="../index.html">POSCO M-TECH 로고</a></h1>
+                <nav id="gnb">
+                    <h2 class="hidden">글로벌 네비게이션 영역</h2>
+                    <ul class="dropdownmenu">
+                        <li class="m1 menu">
+                            <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+                            <ul>
+                                <li><a href="../sub1/sub1_1.html">포스코엠텍 소개</a></li>
+                                <li><a href="../sub1/sub1_2.html">CEO 인사말</a></li>
+                                <li><a href="../sub1/sub1_3.html">조직구성</a></li>
+                                <li><a href="../sub1/sub1_4.html">주요연혁</a></li>
+                                <li><a href="../sub1/sub1_5.html">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="m2 menu">
+                            <h3><a class="depth1" href="../sub2/sub2_1.html">사업영역</a></h3>
+                            <ul>
+                                <li><a href="../sub2/sub2_1.html">철강부원료</a></li>
+                                <li><a href="../sub2/sub2_2.html">포장엔지니어링</a></li>
+                                <li><a href="../product/list.php">제품검색</a></li>
+                                <li><a href="../download/list.php">인증서</a></li>
+                            </ul>
+                        </li>
+                        <li class="m3 menu">
+                            <h3><a class="depth1" href="../sub3/sub3_1.html">윤리경영</a></h3>
+                            <ul>
+                                <li><a href="../sub3/sub3_1.html">윤리규범</a></li>
+                                <li><a href="../sub3/sub3_2.html">환경경영</a></li>
+                                <li><a href="../sub3/sub3_3.html">공정거래</a></li>
+                                <li><a href="../sub3/sub3_4.html">클린시스템</a></li>
+                            </ul>
+                        </li>
+                        <li class="m4 menu">
+                            <h3><a class="depth1" href="../sub4/sub4_1.html">사회공헌</a></h3>
+                            <ul>
+                                <li><a href="../sub4/sub4_1.html">사회공헌 소개</a></li>
+                                <li><a href="../sub4/sub4_2.html">주요활동</a></li>
+                            </ul>
+                        </li>
+                        <li class="m5 menu">
+                            <h3><a class="depth1" href="../sub5/sub5_1.html">인재채용</a></h3>
+                            <ul>
+                                <li><a href="../sub5/sub5_1.html">인재상</a></li>
+                                <li><a href="../sub5/sub5_2.html">채용절차</a></li>
+                                <li><a href="../sub5/sub5_3.html">복리후생</a></li>
+                            </ul>
+                        </li>
+                        <li class="m6 menu">
+                            <h3><a class="depth1" href="../greet/list.php">고객지원</a></h3>
+                            <ul>
+                                <li><a href="../greet/list.php">공지사항</a></li>
+                                <li><a href="../concert/list.php">뉴스룸</a></li>
+                                <li><a href="../sub6/sub6_3.html">미디어센터</a></li>
+                                <li><a href="../sub6/sub6_4.html">FAQ</a></li>
+                                <li><a href="../sub6/sub6_5.html">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="top_menu">
+                    <ul>
+                        <? if(!$userid){ // userid 세션변수가 없으면 (로그아웃 상태) ?>
+
+                            <li><a href="../login/login_form.php">로그인</a></li>
+                            <li><a href="../member/member_check.html">회원가입</a></li>
+
+                        <? } else { // userid 세션변수가 있으면 (로그인 상태) ?>
+
+                            <li><a href="../login/logout.php">로그아웃</a></li>
+                            <li><a href="../member/member_form_modify.php">정보수정</a></li>
+
+                        <? } ?>
+                    </ul>
+                    <div><a href="#">검색</a></div>
+                </div>
+            </div>
+        </header>

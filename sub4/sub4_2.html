@@ -1,0 +1,102 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사회공헌 - 주요활동</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <!-- <div class="sub_layout"></div> -->
+
+        <div class="visual">
+            <img src="common/images/visual.jpg" alt="서브 비주얼 이미지 - 사회공헌">
+            <h3>사회공헌</h3>
+        </div>
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub4_1.html">사회공헌 소개</a></li>
+                <li class="current"><a href="./sub4_2.html">주요활동</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <span>HOME</span>
+                    <span>사회공헌</span>
+                    <span>주요활동</span>
+                </div>
+                <h2>주요활동</h2>
+            </div>
+            
+            <div class="content_area">
+                <div class="summary">
+                    <p>사회와 인류에 책임을 다하는 기업시민 포스코엠텍</p>
+                    <span>미래세대 육성, 지속가능한 환경보호, 지역사회 공생가치 창출을 중점으로 역량을 집중하고 있습니다.</span>
+                </div>
+
+                
+                <div class="social">
+                    <h3 class="hidden">주요 활동내역</h3>
+                    <ul>
+                        <li class="kframe">
+                            <div class="image"><img src="./images/contents2/img1.jpg" alt="비대면 공헌사업"></div>
+                            <dl>
+                                <dt>비대면 공헌사업</dt>
+                                <dd>언택트 문화 및 시대에 맞춰 어플(app)을 활용한 걸음 기부, 안전, 화재예방 키트 제작 등 패러다임 변화에 발맞춘 비대면 공헌 활동을 실시하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="kframe">
+                            <div class="image"><img src="./images/contents2/img2.jpg" alt="지역사회 상생활동"></div>
+                            <dl>
+                                <dt>지역사회 상생활동</dt>
+                                <dd>지역사회와 상생하여 동반성장할 수 있도록 문화공간 조성, 골프꿈나무 지원 등으로 골프산업 인식개선과 지역주민들에게 다양한 기회를 제공하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="kframe">
+                            <div class="image"><img src="./images/contents2/img3.jpg" alt="환경체험스쿨"></div>
+                            <dl>
+                                <dt>환경체험스쿨</dt>
+                                <dd>올바른 자원 재활용 인식을 전파하는 활동으로써, 분리수거, 재활용 체험 교육, 견학 등으로 환경기초시설의 중요성과 자원순환 이해도를 확산시키는 활동입니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="kframe">
+                            <div class="image"><img src="./images/contents2/img4.jpg" alt="민관협력사업"></div>
+                            <dl>
+                                <dt>민관협력사업</dt>
+                                <dd>포스코 그룹사, 정부/공공기관, 비영리기관 등 민관 협업을 통한 사회공헌 사업을 추진하며 사회적 임팩트 확산을 제고하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li class="kframe">
+                            <div class="image"><img src="./images/contents2/img5.jpg" alt="우리집을 부탁해"></div>
+                            <dl>
+                                <dt>우리집을 부탁해</dt>
+                                <dd>시설관리 전문 역량을 활용해 시설물 안전진단과 보수 작업을 지원하는 지역사회에 재능기부하는 사업입니다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+
+                    <h3>기부금 현황</h3>
+                    <div class="donation"></div>
+
+                </div>
+
+            </div>
+        </article>
+    <? include '../common/sub_footer.html' ?>
+    <script src="./js/donation.js"></script>
+    <script src="../common/js/keyframe.js"></script>
+    
+</body>
+</html>

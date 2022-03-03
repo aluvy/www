@@ -1,0 +1,76 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 윤리경영 > 환경경영 */
+
+@keyframes preface{
+    from{transform:translateY(-50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes prefaceUl{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes diagram{
+    from{transform:translateY(-50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+@keyframes diagramUl{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+
+/* keyframe */
+.env .preface.active p{animation:preface 1 .7s ease-out; animation-fill-mode: forwards;}
+.env .preface.active ul li{animation: prefaceUl 1 .5s ease-out; animation-fill-mode: forwards;}
+
+.env .preface ul li:nth-child(1){animation-delay: .1s;}
+.env .preface ul li:nth-child(2){animation-delay: .2s;}
+.env .preface ul li:nth-child(3){animation-delay: .3s;}
+.env .preface ul li:nth-child(4){animation-delay: .4s;}
+.env .preface ul li:nth-child(5){animation-delay: .5s;}
+.env .preface ul li:nth-child(6){animation-delay: .6s;}
+
+.env .diagram.active p{animation: diagram 1 .7s ease-out; animation-fill-mode: forwards;}
+.env .diagram.active ul li{animation: diagramUl 1 .5s ease-out; animation-fill-mode: forwards;}
+
+.env .diagram ul li:nth-child(1){animation-delay: .1s;}
+.env .diagram ul li:nth-child(2){animation-delay: .2s;}
+.env .diagram ul li:nth-child(3){animation-delay: .3s;}
+
+
+
+
+.env{font-size:1.125rem; text-align:justify;}
+.env .preface{margin-bottom:100px; padding-bottom:100px; border-bottom:5px dotted #eee;}
+.env .preface p{background:url(../images/contents2/topbg.jpg) 50% 50% no-repeat; padding:50px 70px; font-size:1.5625rem; color:#fff; letter-spacing:-0.045rem; word-break: keep-all; opacity:0;}
+.env .preface ul{overflow:hidden; margin:60px 0 0;}
+.env .preface ul li{float:left; position:relative; width:360px; height: 150px; padding:60px 0 0; margin-left:60px; line-height: 2; transform:translateY(50px); opacity:0;}
+.env .preface ul li:nth-child(3n+1){margin-left:0;}
+.env .preface ul li::before{content:''; display:block; width: 100%; height: 1px; border-top:1px dotted #ccc; margin:0 0 15px;}
+.env .preface ul li::after{content:''; position:absolute; left: 0; top: 0; font-size:1.875rem; font-weight:300; color:#005793;}
+.env .preface ul li:nth-child(1)::after{content:'01';}
+.env .preface ul li:nth-child(2)::after{content:'02';}
+.env .preface ul li:nth-child(3)::after{content:'03';}
+.env .preface ul li:nth-child(4)::after{content:'04';}
+.env .preface ul li:nth-child(5)::after{content:'05';}
+.env .preface ul li:nth-child(6)::after{content:'06';}
+
+.env h3{font-size:1.875rem; letter-spacing:-0.065rem; margin:100px 0 30px;}
+.env > p{line-height:2;}
+.env > p span{display: block; margin: 15px 0 0;}
+
+.env .diagram{width:820px; margin: 80px auto 0;}
+.env .diagram p{height: 80px; line-height: 80px; text-align:center; font-size:1.375rem; color:#fff; border-radius:500px;
+    background: rgb(0,87,147);
+    background: linear-gradient(90deg, rgba(0,87,147,1) 30%, rgba(0,130,192,1) 75%, rgba(0,165,229,1) 100%);
+    opacity:0;
+}
+.env .diagram ul{overflow:hidden; margin:30px 0 0;}
+.env .diagram ul li{float:left; width: 32%; margin-left:2%; background:#dde7ee; text-align:center; border-radius:10px; padding:20px 0; transform:translateY(50px); opacity:0;}
+.env .diagram ul li:first-child{margin-left:0;}
+.env .diagram ul li::before{content:''; display:block; height: 80px; background:url(../images/contents2/ico1.png) 50% 50% no-repeat; margin:0 0 15px;}
+.env .diagram ul li:nth-child(1)::before{background-image:url(../images/contents2/ico1.png);}
+.env .diagram ul li:nth-child(2)::before{background-image:url(../images/contents2/ico2.png);}
+.env .diagram ul li:nth-child(3)::before{background-image:url(../images/contents2/ico3.png);}

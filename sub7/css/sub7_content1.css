@@ -1,0 +1,28 @@
+/* 각각의 페이지의 내용 컨텐츠 영역 - 인재채용 > 인재상 */
+@keyframes down {
+    from{transform:translateY(-50px); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+
+/* active */
+.guide_toc.active{animation:down 1 .7s ease-out; animation-fill-mode: forwards;}
+
+
+
+.guide_toc{background:#f5f5f5; padding:40px 50px; font-size:1.125rem; line-height: 2; opacity: 0;}
+.guide_toc ul{overflow:hidden;}
+.guide_toc ul li{float:left; width: 33.333%;}
+.guide_toc ul li a{transition:all .3s}
+.guide_toc ul li a:hover{color:#005793;}
+
+.guide{font-size:1.125rem; text-align:justify;}
+.guide h3{font-size:1.5625rem; letter-spacing:-0.045rem; padding:120px 0 30px;}
+
+.guide > ul{list-style:decimal; list-style-position: inside;}
+.guide > ul li + li{margin-top:15px;}
+.guide > ul li{padding-left:20px; text-indent:-20px;}
+.guide > ul li ul{margin-top:15px;}
+.guide > ul li ul li{padding-left:24px; text-indent:-24px;}
+.guide > ul li span{display: block; padding-left:20px; margin-top:10px;}
+.guide > ul li span::before{content:'- ';}
+.guide p + ul{margin-top:30px;}
