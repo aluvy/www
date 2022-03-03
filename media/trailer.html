@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Coco</title>
+	<link rel="shortcut icon"  type="image/x-icon"  href="./favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/sub.css">
+
+	<script src="js/prefixfree.min.js"></script>
+
+	<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+				setTimeout(scrollTo, 0, 0, 1); 
+			}, false);
+		} catch(e) {}
+	// ]]>
+    
+    // youtube service worker preload
+    self.addEventListener( "activate", event => { event.waitUntil( async function () { // Feature-detect
+        if ( self.registration.navigationPreload ) { // Enable navigation preloads!
+            console.log( "Enable navigation preloads!" );
+            await self.registration.navigationPreload.enable();
+        } return; }) } );
+	</script>
+</head>
+
+<body>
+	<div id="skipNav">
+		<a href="#content">Go to Body Contents</a>
+		<a href="#gnb">Go to Navigation</a>
+	</div>
+
+	<div id="wrap">
+		<header id="headerArea"></header>
+
+		<div class="videoBox">
+            <!-- <h2>trailer</h2> -->
+            <img src="./images/trailer/vis.jpg" alt="background image">
+			<a class="scrolldown" href="#">SCROLL DOWN</a>
+		</div>
+
+		<article id="content">
+            <div class="pagettl">
+                <h2>trailer</h2>
+            </div>
+
+            <div class="trailer_wrap">
+                <div class="trailer_lst">
+                    <div class="ttl">
+                        <h3>Official Trailer</h3>
+                        <p>Our main goal is for the audience to walk away from the film feeling like they visited Santa Cecilia and spent time in the Land of the Dead</p>
+                    </div>
+                    <ul>
+                        <li class="kframe">
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/trailer1.jpg" alt="Trailer1"></div>
+                                <dl>
+                                    <dt>Coco - Official US Trailer</dt>
+                                    <dd>
+                                        Watch the new trailer for Disney·Pixar's Coco. See the film in theatres November 22 in 3D!<br>
+                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="kframe">
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/trailer2.jpg" alt="Trailer2"></div>
+                                <dl>
+                                    <dt>Coco “Find Your Voice” Trailer</dt>
+                                    <dd>
+                                        This Thanksgiving, experience an all new comedy adventure for the generations. The latest trailer for Disney/Pixar's Coco is here!<br>
+                                    
+                                        Disney·Pixar’s Coco opens in theatres in 3D November 22 in 3D!<br>
+                                    
+                                        Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="kframe">	
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/trailer3.jpg" alt="Trailer3"></div>
+                                <dl>
+                                    <dt>Coco Official Teaser Trailer</dt>
+                                    <dd>
+                                        Coco opens in US theatres in 3D on November 22!<br>Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="kframe">
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/trailer4.jpg" alt="Trailer4"></div>
+                                <dl>
+                                    <dt>“Dante’s Lunch - A Short Tail”</dt>
+                                    <dd>
+                                        Disney·Pixar’s Coco presents “Dante’s Lunch - A Short Tail”<br>Despite his family’s baffling generations-old ban on music, Miguel (voice of newcomer Anthony Gonzalez) dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz (voice of Benjamin Bratt).
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="song_bg">
+                    <h3>Coco Songs</h3>
+                    <p>Fortunately, the Rivera family’s ban on music doesn’t extend to the film itself. “I love the irony,” says producer Darla K. Anderson. “We have a family with this inexplicable objection to music who live in a country that’s rooted in it. In ‘Coco,’ we pay homage to all different styles of Mexican music.”</p>
+                </div>
+
+                <div class="coco_song">
+                    <div class="youtube_wrap">
+                        <div class="youtube"><iframe src="https://www.youtube.com/embed/YexJzu9aSZ0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <dl>
+                            <dt>Remember Me (Ernesto de la Cruz) (From "Coco")</dt>
+                            <dd>Benjamin Bratt</dd>
+                            <dd>
+                                <span>#DisneyHitsChallenge</span>
+                                <span>#Coco</span>
+                                <span>#DisneyPixar</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <ul class="song_lst">
+                        <li>
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/song1.jpg" alt="song1"></div>
+                                <dl>
+                                    <dt>Miguel - Remember Me (Duo)</dt>
+                                    <dd>DisneyMusicVEVO</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/song2.jpg" alt="song2"></div>
+                                <dl>
+                                    <dt>Anthony Gonzalez, Gael García Bernal - Un Poco Loco (From "Coco")</dt>
+                                    <dd>DisneyMusicVEVO</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="image"><img src="./images/trailer/song3.jpg" alt="song3"></div>
+                                <dl>
+                                    <dt>Coco - La Llorona</dt>
+                                    <dd>DisneyMusicVEVO</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="trailer_pop"></div>
+            <div class="trailer_pop_bg"></div>
+
+
+		</article>
+
+		<footer id="footerArea"></footer>
+	</div>
+
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/sub_common.js"></script>
+    <script src="./js/trailer.js"></script>
+</body>
+</html>

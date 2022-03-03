@@ -1,0 +1,173 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Suez+One&display=swap');
+
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top; -webkit-text-size-adjust:none;}
+html{font-size:18px;}
+body {font-family:'Open Sans','Suez One', serif; color:#333; line-height: 1.6; transition:background .3s;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top;}
+a{color:inherit; text-decoration: none;}
+/* a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; } */
+table {border-collapse:collapse; border-spacing:0;}
+input, select {vertical-align:middle;}
+label {cursor:pointer;}
+.blind, legend, hr, caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000rem;}
+i,em,address {font-style:normal; font-weight:normal;}
+p,li,dd{ /*line-height:1.5em*/}
+h1, h2, h3, h4, h5, h6{font-weight: normal; font-size:inherit;}
+
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px; overflow: hidden; color: #fff;}
+
+
+/*
+font-family: 'Suez One', serif;
+*/
+
+/* wide PC */
+#wrap{width:100%; overflow:hidden;}
+
+
+/* @keyframes ani {
+    0% { transform:scale(1); opacity:1; color:#fff;}
+    100% { transform:scale(1.2); opacity:0.8; color:#888;}
+} */
+@keyframes scrolldown_wheel {
+    from{transform:translateY(0); opacity:1;}
+    to{transform: translateY(25px); opacity:0;}
+}
+.scrolldown{position: absolute; left:50%; bottom: 60px; transform:translateX(-50%); display:block; width: 40px; height: 60px; border:2px solid #fff; border-radius:500px; box-sizing:border-box; text-indent:-9999%; font-size: 0; z-index: 2;
+    /*animation:ani 1s infinite  alternate;*/}
+
+.scrolldown::before{content:''; position:absolute; left: 50%; top: 10px; margin-left:-3px; display:block; width:6px; height: 6px; border-radius:500px; background:#fff; animation:scrolldown_wheel 1s infinite;}
+.scrolldown::after{content:''; position:absolute; left: 0; bottom: -24px; display:block; width: 100%; height: 12px; background:url(../images/scrolldown.png) 50% 0 no-repeat; background-size:18px auto; animation:scrolldown_wheel 1s infinite;}
+
+
+/* 헤더 공통 영역 */
+#headerArea{position:fixed; left:0; top: 0; width: 100%; height: 110px; transition:height .3s, background .3s; z-index: 30;}
+#headerArea	.headerInner{margin:0 3.125%; overflow: hidden;}
+#headerArea h1{float: left;}
+#headerArea h1 a{display:block; width: 115px; height: 110px; background:url(../images/logo_w.png) 0 50% no-repeat; background-size:100% auto; text-indent:-9999%; font-size: 0; overflow: hidden; transition:all .3s;}
+
+#headerArea #gnb{float:right; font-family: 'Suez One', serif; font-size: 1.3888888rem; color:#fff; letter-spacing:0.045rem; z-index:20;}
+#headerArea #gnb ul{overflow: hidden;}
+#headerArea #gnb ul li{float:left; margin-left: 60px;}
+#headerArea #gnb ul li h3{}
+#headerArea #gnb ul li:first-child{margin-left:0;}
+#headerArea #gnb ul li a{display:block; line-height: 110px; transition:all .3s;}
+#headerArea #gnb ul li:hover a{color:#f99e1a;
+    background:linear-gradient(to right, #f99e1a, #ef519e); -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;}
+ #headerArea .nav_bg{position:fixed; left: 0; top: 0; width: 100%; height: 100%; /*background:rgba(0,0,0,0.7);*/ z-index:19; display: none;}
+	/* on */
+	#headerArea.on{height:80px; background:rgba(19,16,33,0.9);}
+	#headerArea.on h1 a{height: 80px; background-image:url(../images/logo.png);}
+	#headerArea.on #gnb ul li a{line-height: 80px;}
+
+	/* 햄버거메뉴 */
+#headerArea .menuOpen{position:absolute; right: 0; top: 0; display: block; width: 80px; height: 80px; font-size:0; text-indent:-9999%; z-index:99; display: none;}
+#headerArea .menuOpen span{position:absolute; left: 50%; top: 50%; margin:-1px 0 0 -15px; display: block; width: 30px; height: 2px; background:#fff;}
+#headerArea .menuOpen span::before,
+#headerArea .menuOpen span::after{content:''; position:absolute; left:0; display: block; width: 30px; height: 2px; background:#fff; transition:transform .3s;}
+#headerArea .menuOpen span::before{top: 9px;}
+#headerArea .menuOpen span::after{top: -9px;}
+
+
+
+
+/* 푸터 공통 영역 */
+#footerArea{position:relative; height:3.3333rem; line-height:3.3333rem; /*background:#f99e1a;*/ padding:0 3.125%; color:#fff;
+    background: rgb(248,156,25);
+    background: linear-gradient(90deg, rgba(248,156,25,1) 0%, rgba(239,81,158,1) 100%);}
+#footerArea::after{content:''; display: block; clear: both;}
+#footerArea .quicktop{position:absolute; left:50%; top:0; margin:-40px 0 0 -40px; display:block; width: 80px; height: 100px; border-radius:500px; background:url(../images/top.png) 50% 25% no-repeat #f3755e; background-size:50% auto; text-align:center; font-size:0.83333rem; box-sizing:border-box; padding:1.85rem 0 0; transition:all .3s;}
+#footerArea .quicktop:hover{background-color:#f58020; transform:translateY(-20px);}
+#footerArea p{float:left;}
+#footerArea .social{float:right; display:flex; margin: 0.4444rem 0 0;}
+#footerArea .social li{transition:opacity .3s;}
+#footerArea .social li a{display: block; width: 44px; height: 44px; background-position:50% 50%; background-repeat:no-repeat; background-size:50% auto; text-indent:-9999%; font-size: 0;}
+#footerArea .social li:nth-child(1) a{background-image:url(../images/sns_facebook.png); background-size:0.6111rem auto;}
+#footerArea .social li:nth-child(2) a{background-image:url(../images/sns_twitter.png); background-size:1.1111rem auto;}
+#footerArea .social li:nth-child(3) a{background-image:url(../images/sns_instagram.png); background-size:1.2222rem auto;}
+#footerArea .social li:nth-child(4) a{background-image:url(../images/sns_youtube.png); background-size:1.2222rem auto;}
+	/* hover */
+	#footerArea .social:hover li{opacity:.3;}
+	#footerArea .social:hover li:hover{opacity:1;}
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	/* 헤더 높이 110 -> 80 */
+	#headerArea,
+	#headerArea h1 a{height: 80px;}
+	#headerArea h1 a{width:100px;}
+	
+	/* 메뉴 모양 교체 */
+	/* #headerArea #gnb{display: none;} */
+	#headerArea .menuOpen{display: block;}
+
+	/* gnb re design */
+	#headerArea #gnb{float: none; font-size:1.6rem;
+		position:fixed; right:-100%; top:0; width: 50%; height: 100%; background:rgba(19,16,33,.95); box-sizing:border-box; padding:5rem 4rem 0; transition:right .3s;}
+	#headerArea #gnb ul li{float:none; margin-left: 0;}
+	#headerArea #gnb ul li a{line-height:5rem;}
+        /* hover */
+    #headerArea #gnb ul li:hover h3{background:url(../images/logo_leaf.png) right 50% no-repeat; background-size:80px auto;}
+    #headerArea #gnb ul li:hover a{color:#f99e1a;
+        background:linear-gradient(to right, #f99e1a, #ef519e, #ef519e, #ef519e); -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;}
+	#headerArea.on #gnb ul li a{line-height:5rem;}
+    
+		/* gnb active */
+		#headerArea.active #gnb{right: 0;}
+        #headerArea.active .nav_bg{display: block;}
+		#headerArea.active .menuOpen span{background:rgba(255,255,255,0);}
+		#headerArea.active .menuOpen span::before{top:0; transform:rotate(45deg);}
+		#headerArea.active .menuOpen span::after{top:0; transform:rotate(-45deg);}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	/* 헤더 높이 80 -> 60 */
+	#headerArea,
+	#headerArea h1 a{height: 60px;}
+	#headerArea h1 a{width:80px;}
+	#headerArea .menuOpen{width: 60px; height: 60px;}
+	#headerArea.on{height:60px;}
+	#headerArea.on h1 a{height: 60px;}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	html{font-size:16px;}
+
+	/* 헤더 */
+	#headerArea #gnb{width: 85%; padding: 5rem 3rem 0;}
+
+
+	/* 푸터 */
+	#footerArea{height: auto; line-height: inherit; padding:4rem 0 2rem; text-align:center;}
+	#footerArea .quicktop{padding:3.2rem 0 0;}
+	#footerArea p{float: none;}
+	#footerArea .social{float: none; justify-content: center; margin: 0;}
+
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
