@@ -1,0 +1,112 @@
+{
+    "car_info" : [
+        {
+            "car_image" : "./images/car/car1_1.jpg",
+            "car_subname" : "A LEGACY EXTENDED",
+            "car_name" : "ALL-NEW GRAND CHEROKEE L",
+            "car_text" : "A new sculpted exterior with a tapered roof optimizes aerodynamic performance without sacrificing space. The front view has been refreshed but remains reminiscent of its Grand Cherokee lineage. A full suite of available premium LED lighting completes the picture.",
+            "car_color" : {
+                "color1" : "31312f",
+                "color2" : "4f0f1d", 
+                "color3" : "a8aea2",
+                "color4" : "ffffff",
+                "color5" : "0a0a0c"
+            }
+        },
+        {
+            "car_image" : "./images/car/car2_1.jpg",
+            "car_subname" : "THE FUTURE IS NOW",
+            "car_name" : "WRANGLER 4xe",
+            "car_text" : "Forging a new path to the future, the Jeep<sup>®</sup> Wrangler 4xe is the Industry’s First Electrified Open-Air SUV and the Most Planet-Friendly Wrangler Ever. It’s hybrid innovation with no compromises, and it goes all in on fun.",
+            "car_color" : {
+                "color1" : "0a4776",
+                "color2" : "ffffff", 
+                "color3" : "0e0a09"
+            }
+        },
+        {
+            "car_image" : "./images/car/car3_1.jpg",
+            "car_subname" : "FOR THE THRILL SEEKERS ONLY",
+            "car_name" : "GLADIATOR",
+            "car_text" : "Mother Nature can throw a lot at you, and the Gladiator has the credentials to handle it. Rubicon makes light work of boulder-strewn trails thanks to front and rear lockers. Mojave-the first-ever Desert-Rated Jeep<sup>®</sup> Brand vehicle-turns unforgiving dunes into playgrounds with standard FOX 2.5-inch internal bypass shocks and a rear locker that works at higher speeds.",
+            "car_color" : {
+                "color1" : "212703",
+                "color2" : "cb1200", 
+                "color3" : "393b38",
+                "color4" : "3a3522",
+                "color5" : "0e0a09",
+                "color6" : "0e4677",
+                "color7" : "ffffff",
+                "color8" : "313536"
+            }
+        },
+        {
+            "car_image" : "./images/car/car4_1.jpg",
+            "car_subname" : "RESET THE LIMITS",
+            "car_name" : "WRANGLER",
+            "car_text" : "The new 2022 Wrangler offers more opportunities for adventure and the most available customization when compared to previous models. Forever in a category of its own, Wrangler gives every driver the thrill of the Most Ways To Experience Open-Air Freedom and provides the power to explore new territory.",
+            "car_color" : {
+                "color1" : "001c53",
+                "color2" : "ffffff", 
+                "color3" : "3a3a3a",
+                "color4" : "67b81b",
+                "color5" : "ca1100",
+                "color6" : "ffd124",
+                "color7" : "0e0a09",
+                "color8" : "df4f10",
+                "color9" : "323637",
+                "color10" : "7f7e7a",
+                "color11" : "006a71"
+            }
+        },
+        {
+            "car_image" : "./images/car/car5_1.jpg",
+            "car_subname" : "THE ABSOLUTE EVOLUTION",
+            "car_name" : "GRAND CHEROKEE",
+            "car_text" : "The new 2022 Jeep<sup>®</sup> Grand Cherokee answers the demands of the everyday and every new adventure. An available third row gives more room while stunning new available tech delivers elevated experiences, earning the Summit model the honor of being the Most Luxurious Vehicle in its Class.",
+            "car_color" : {
+                "color1" : "0a090e",
+                "color2" : "ffffff"
+            }
+        },
+        {
+            "car_image" : "./images/car/car6_1.jpg",
+            "car_subname" : "THE WORLD COMES CLOSER",
+            "car_name" : "CHEROKEE",
+            "car_text" : "The 2021 Jeep<sup>®</sup> Cherokee offers newly standard safety and security features like Blind Spot Monitoring with Rear Cross Path Detection and Forward Collision Warning with Active Braking That means you can take greater peace of mind on every journey.",
+            "car_color" : {
+                "color1" : "09090b",
+                "color2" : "84807d", 
+                "color3" : "ffffff"
+            }
+        },
+        {
+            "car_image" : "./images/car/car7_1.jpg",
+            "car_subname" : "BORN TO BE WILD",
+            "car_name" : "RENEGADE",
+            "car_text" : "Why stay in when you can go out in style with the 2021 Jeep® Renegade? Compact, confident and crafted with signature Jeep Brand details, Renegade turns heads with every ride.",
+            "car_color" : {
+                "color1" : "a42e24",
+                "color2" : "323637", 
+                "color3" : "dc5913",
+                "color4" : "ffffff",
+                "color5" : "0e0a09",
+                "color6" : "0e0a09"
+            }
+        },
+        {
+            "car_image" : "./images/car/car8_1.jpg",
+            "car_subname" : "FOR URBAN ADVENTURERS",
+            "car_name" : "COMPASS",
+            "car_text" : "The newly redesigned 2022 Jeep<sup>®</sup> Compass offers a dynamic range of features that impact nearly every aspect of your drive, including a sophisticated cabin, the latest in available intuitive technology, available legendary capability and more standard safety and security technology than previous Compass models.",
+            "car_color" : {
+                "color1" : "f8fbf2",
+                "color2" : "f6f5d7", 
+                "color3" : "343839",
+                "color4" : "86827f"
+            }
+        }
+
+    ]
+        
+}
