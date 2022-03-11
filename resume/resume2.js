@@ -22,18 +22,6 @@ $(document).ready(function(){
 
 
     
-    
-    // setTimeout
-    // setTimeout(function(){ 
-    //     $('.section .cont').slideUp();
-    //     $('.section .open_btn i').css({transform: 'rotate(180deg)'});
-    // }, 0);  // 3초 후 작동
-    // setTimeout
-    setTimeout(function(){ 
-        $('.section .cont').slideDown();
-        $('.section .open_btn i').css({transform: ''});
-    }, 500);  // 3초 후 작동
-
 
 
 
@@ -60,25 +48,36 @@ $(document).ready(function(){
 
 
 
+
     
+    
+    // setTimeout
+    // setTimeout(function(){ 
+    //     $('.section .cont').slideUp();
+    //     $('.section .open_btn i').css({transform: 'rotate(180deg)'});
+    // }, 0);  // 3초 후 작동
+    // setTimeout
+    setTimeout(function(){ // 첫번째 탭 빼고 닫기 
+        
+        $('.section:eq(1)').children('.cont').slideDown();
+        $('.section:eq(1)').addClass('open');
+        
+
+    }, 300);  // 3초 후 작동
 
 
+    $('.section .open_btn').click(function(){
+        if($(this).parent('.section').hasClass('open')){ // open되어있으면
 
-
-    // toggle
-    // $('.section h2').toggle(function(){
-    //     $(this).next().next('.cont').slideUp();
-    //     $(this).next().children('i').css({transform: 'rotate(180deg)'});
-    // }, function(){
-    //     $(this).next().next('.cont').slideDown();
-    //     $(this).next().children('i').css({transform: ''});
-    // });
-    $('.section .open_btn').toggle(function(){
-        $(this).next('.cont').slideUp();
-        $(this).children('i').css({transform: 'rotate(180deg)'});
-    }, function(){
-        $(this).next('.cont').slideDown();
-        $(this).children('i').css({transform: ''});
+            console.log('hi');
+            $(this).next('.cont').slideUp();
+            $(this).parent('.section').removeClass('open');
+        
+        } else {
+            $(this).next('.cont').slideDown();
+            $(this).parent('.section').addClass('open');
+        }
     });
+
 
 });

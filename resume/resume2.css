@@ -83,8 +83,11 @@ img{border: 0; vertical-align: top}
 .content_wrap .section{position:relative; margin:5rem 0 0;}
 .content_wrap .section:nth-of-type(1){margin:0;}
 
-.content_wrap .section .open_btn{position:absolute; right:0; top:0; width: 2.5rem; height: 3.125rem; line-height: 3.125rem; text-align: center; cursor: pointer; transform:rotate(180deg);}
-.content_wrap .section .open_btn i{font-size:1.55rem; transition:transform .3s;}
+.content_wrap .section .open_btn{position:absolute; right:0; top:0; width: 3.125rem; height: 3.125rem; line-height: 3.125rem; text-align: center; cursor: pointer; border-radius:500px; transform:rotate(0deg); transform-origin: center center; transition:transform .3s;}
+.content_wrap .section .open_btn i{font-size:1.55rem;}
+.content_wrap .section .open_btn:hover{background:#f2f2f2;}
+/* open */
+.content_wrap .section.open .open_btn{transform:rotate(180deg);}
 
 
 
