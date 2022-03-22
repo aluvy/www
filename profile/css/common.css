@@ -99,7 +99,7 @@ section.main .scroll_down{position:absolute; right: 40px; bottom:40px; font-size
 section.main .scroll_down i{display:inline-block; padding:5px 0 0; animation:scroll_down infinite .7s linear;}
 
 @keyframes scroll_down {
-    0%{}
+    0%{transform:translateY(0); opacity: 1;}
     100%{transform:translateY(10px); opacity: 0;}
 }
 

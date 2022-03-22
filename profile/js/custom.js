@@ -42,7 +42,8 @@
     // scroll down
     $('.scroll_down').on('click', function(){
         cnt = 1;
-        scrollMove(cnt);    // section eq1 로 이동
+        // scrollMove(cnt);    // section eq1 로 이동
+        $("html,body").stop().animate({"scrollTop":section[cnt]},500);
     })
 
 
@@ -79,9 +80,9 @@
 
     
     // section위에서 마우스 휠을 움직이면
-    $('section').on("mousewheel", function(event,delta){
+    $('section').on("mousewheel DOMMouseScroll", function(event,delta){
 
-        if (delta > 0 && cnt > 0 && wt>1024) { //마우스 휠을 올렸을때
+        if (delta > 0 && cnt > 0 && wt>1024 && window.matchMedia("(min-width: 1024px)").matches) { //마우스 휠을 올렸을때
 
             clearTimeout(timer);
             timer = setTimeout(function(){
@@ -91,7 +92,7 @@
             }, 150);
             return false;
         
-        }else if (delta < 0 && cnt < sectionLen && wt>1024) {  //마우스 휠을 내렸을때
+        }else if (delta < 0 && cnt < sectionLen && wt>1024 && window.matchMedia("(min-width: 1024px)").matches) {  //마우스 휠을 내렸을때
             
             clearTimeout(timer);
             timer = setTimeout(function(){
@@ -160,9 +161,10 @@
     function scrollMove(cnt){
         // nowTop = ht * cnt;
         // section[cnt];
-
-        $("html,body").stop().animate({"scrollTop":section[cnt]},500);
-        console.log('scrollMove Call');
+        if(wt>1024){
+            $("html,body").stop().animate({"scrollTop":section[cnt]},500);
+            console.log('scrollMove Call');
+        }
 
         $("#gnb li").removeClass();
         $("#gnb li").eq(cnt).addClass("on");
@@ -198,6 +200,7 @@
     $('#gnb li').on('click', function(){
 
         if($('#gnb').hasClass('on')){
+            $("html,body").stop().animate({"scrollTop":section[cnt]},500);
             $('#gnb').removeClass('on');
         }
 
