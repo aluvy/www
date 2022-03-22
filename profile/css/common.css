@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* CSS Reset */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{font-size:16px;}
+body, html{overflow:hidden;}
+body{
+    /* font-family: "돋움", Dotum, "굴림", Gulim, sans-serif; */
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height:1.6;
+    width: 100%; height: 100%;
+}
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: inherit; text-decoration: none}
+img{border: 0; vertical-align: top}
+
+::selection {background-color: rgba(4,43,108,1); color: #fff;}
+
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/*
+blue : #0039ac 
+*/
+
+
+#wrap{position:relative; width: 100%; height: 100%; overflow: hidden;}
+
+
+#wrap h1{position:fixed; left: 40px; top: 40px; z-index: 99;}
+#wrap h1 a{display: block; font-size: 0; text-align:center;}
+#wrap h1 span{display:block; font-size:0; text-indent: -9999%; overflow: hidden;}
+#wrap h1 path{fill:#fff; transition:all .3s;}
+
+
+
+#wrap nav{position:fixed; left:40px; top:50%; transform:translateY(-50%); z-index: 98;}
+#wrap nav ul li:nth-child(3){position:relative; margin-top:40px;}
+#wrap nav ul li:nth-child(3)::after{position:absolute; left:0; top:-20px; content:''; display: block; width: 6px; height: 6px; background:#fff; border-radius:10px;}
+#wrap nav ul li h3{position:relative; display:inline-block;}
+#wrap nav ul li h3::before{position:absolute; left:-7px; top:23px; content:''; display: block; width:0; height:14px; background:#0039ac; transform:skew(-30deg); transition:all .3s;}
+#wrap nav ul li a{position:relative; display:inline-block; padding:7px 0; text-transform: uppercase; font-size:20px; font-weight:800; color:#fff; font-style: italic; z-index:2;}
+    /* on */
+#wrap nav ul li.on h3::before{width:100%; padding:0 7px;}
+        /* respon gnb */
+#wrap nav .gnb_open{position:fixed; right: 25px; top: 25px; display:block; width: 30px; height: 30px; font-size: 0; display: none; text-indent:-9999%; z-index:2;}
+#wrap nav .gnb_open span{position:relative; display:block; width: 30px; height: 2px; margin:14px auto 0; background:#fff;}
+#wrap nav .gnb_open span::before,
+#wrap nav .gnb_open span::after{content:''; display: block; width: 30px; height: 2px; position:absolute; left:0; background:#fff; transition:all .3s; z-index:2;}
+#wrap nav .gnb_open span::before{top:9px;}
+#wrap nav .gnb_open span::after{top:-9px;}
+
+
+
+
+
+#wrap article{background:#042b6c; transition: all 1s;}
+#wrap.bright article{background:#edf0f4;}
+#wrap.dark article{background:#042b6c;}
+#wrap article section{position:relative; width: 100%; height: 100%; overflow: hidden;}
+    /* bright */
+    #wrap.bright h1 path{fill:#0039ac;}
+    #wrap.bright nav ul li:nth-child(3)::after{background:#0039ac;}
+    #wrap.bright nav ul li a{color:#0039ac;}
+    #wrap.bright nav ul li h3::before{background:#a7c4ff}
+    #wrap.bright nav .gnb_open span,
+    #wrap.bright nav .gnb_open span::before,
+    #wrap.bright nav .gnb_open span::after{background:#0039ac;}
+    
+
+
+
+/* main */
+section.main .slogan{position:absolute; left:0; top:50%; width:100%; text-align:center; color:#06378e; font-style: italic; transform:translateY(-50%); z-index: 3;}
+section.main .slogan strong{display:block; font-size:2.0625rem; font-weight:900;}
+section.main .slogan > span{display:block; font-size:3.5625rem; font-weight:900; text-transform: uppercase;}
+section.main .slogan p span{font-size:1.25rem; font-style:normal; font-weight: 400; letter-spacing:-0.025rem;}
+section.main video{position:absolute; left: 0; top: 0; min-width: 100%; min-height: 100%; z-index: 2;}
+section.main .scroll_down{position:absolute; right: 40px; bottom:40px; font-size:12px; font-style:italic; color:#fff; writing-mode: vertical-rl; z-index: 3;}
+section.main .scroll_down i{display:inline-block; padding:5px 0 0; animation:scroll_down infinite .7s linear;}
+
+@keyframes scroll_down {
+    0%{}
+    100%{transform:translateY(10px); opacity: 0;}
+}
+
+
+/* profile */
+section.profile .photo{float:left; width:44%; height: 100%; background:url(../images/profile_photo.jpg) 50% 50% no-repeat; background-size:cover;}
+section.profile .intro{position:absolute; top:50%; margin:0 5% 0 50%; color:#fff; transform:translateY(-50%);}
+section.profile .intro .name{font-size:3.4375rem; font-weight: 800; font-style: italic;}
+section.profile .intro .name span{display: inline-block; font-size:1.25rem; color:#75a6ff; font-weight: 400; letter-spacing:-0.025rem; padding-left:1rem;}
+section.profile .intro dl{padding: 3.125rem 0 0;}
+section.profile .intro dl dt{color:#75a6ff; font-weight: 700; text-transform: uppercase; padding-left:30px; background:url(../images/ico_smile.png) 0 0 no-repeat; background-size:auto 20px; line-height: 20px;}
+section.profile .intro dl dd{font-size: 1.125rem; font-weight: 500; line-height:1.8; padding: 1.5rem 0 0;}
+section.profile .intro dl dd span + span::before{content:'/'; display: inline-block; padding:0 .75rem; color:rgba(255,255,255,.2);}
+section.profile .intro dl dd .skill{padding:1rem 0 0;}
+section.profile .intro dl dd .skill img{vertical-align:middle; opacity: .5; transition:all .3s;}
+section.profile .intro dl dd .skill img:hover{opacity: 1;}
+section.profile .intro .btn{padding:4.125rem 0 0;}
+section.profile .intro .btn::after{content:''; display: block; clear: both;}
+section.profile .intro .btn a{float:left; position: relative; width:calc(33.33% - 4px); height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight: 500; color:#fff; background:rgba(1,20,73,.4); box-sizing:border-box; padding:0 1.43rem; transition:all .3s;}
+section.profile .intro .btn a + a{margin-left:6px;}
+section.profile .intro .btn a i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
+section.profile .intro .btn a:hover{background:rgba(1,20,73,1);}
+
+
+
+/* portfolio 공통 */
+    /* monitor */
+section .monitor{float:left; position:relative; width: calc(60% - 15rem); margin-left:15rem; height: 100%; box-sizing:border-box;}
+section .monitor .video{position:absolute; top:50%; top: 50%; transform:translateY(-50%); text-align:center;}
+section .monitor .video img{max-width: 100%; max-height: 100%;}
+section .monitor .video video{position:absolute; left:0; top: 0; width: 100%; padding:1.5% 9.5% 0; box-sizing:border-box;}
+section .monitor .video .respon{position:absolute; left:0; bottom:5%; width: 32%;}
+section .monitor .video .respon img{width: 100%;}
+
+    /* phone */
+section .phone{float:left; position:relative; width: calc(60% - 15rem); margin-left:15rem; height: 100%; box-sizing:border-box;}
+section .phone .video{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center;}
+section .phone .video img{max-width: 100%; max-height: 100%;}
+section .phone .video video{position:absolute; left:0; top: 0; width: 100%; padding:4% 7% 0; box-sizing:border-box; border-radius:20%/8%;}
+
+
+section .prj_info{position:relative; top:50%; margin:0 5% 0 61%; color:#fff; transform:translateY(-50%);}
+section .prj_info .ttl{font-size:2.8125rem; font-weight: 800; font-style: italic;}
+section .prj_info .ttl span{display:inline-block; font-size: 1.125rem; font-weight: 400; padding-left:1rem; letter-spacing:-0.025rem;}
+section .prj_info p{font-size: 1.125rem; padding:.5rem 0 0;}
+section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:rgba(1,20,73,.4); transition:all .3s; margin:2.5rem 0 0;}
+section .prj_info a.visit i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
+section .prj_info a.visit:hover{background:rgba(1,20,73,1);}
+section .prj_info dl{padding:2.25rem 0 0;}
+
+section .prj_info dl dd{color:#7993be; font-weight: 500; padding: 1rem 0 0; line-height: 1.8;}
+section .prj_info dl.fontcolor{padding:1rem 0 0;}
+section .prj_info dl.fontcolor dd{padding: 0;}
+section .prj_info dl.fontcolor dd span{vertical-align: middle;}
+section .prj_info dl.fontcolor dd span + span::before{content:'/'; display:inline-block; padding: 0 .75rem; color:rgba(255,255,255,.2);}
+section .prj_info dl.fontcolor dd i{display:inline-block; width: 30px; height: 4px; background:#fff; vertical-align: middle; margin-left:5px;}
+section .prj_qr{position:absolute; right: 40px; bottom:40px;}
+
+    /* bright */
+    #wrap.bright section .prj_info{color:#06378e;}
+    #wrap.bright section .prj_info a.visit{background:#06378e;}
+    #wrap.bright section .prj_info a.visit:hover{background:#001e54;}
+    #wrap.bright section .prj_info dl dt{font-weight: 700;}
+    #wrap.bright section .prj_info dl dd{color:rgba(6,35,142,.5);}
+    #wrap.bright section .prj_info dl.fontcolor dd span + span::before{color:rgba(0,0,0,0.1);}
+
+
+
+
+/* pc */
+section.pc{background:url(../images/pc_bg.png) right bottom no-repeat; background-size:30% auto;}
+section.pc .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#005793;}
+section.pc .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#fff;}
+section.pc .prj_info dl.fontcolor dd i:nth-of-type(3){background-color:#333;}
+
+
+
+/* mobile */
+section.mobile{background:url(../images/mobile_bg.png) right bottom no-repeat; background-size:30% auto;}
+section.mobile .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#005793;}
+section.mobile .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#fff;}
+section.mobile .prj_info dl.fontcolor dd i:nth-of-type(3){background-color:#333;}
+
+
+/* responsive */
+section.responsive{background:url(../images/coco_bg.png) 130% 102% no-repeat; background-size:50% auto;}
+section.responsive .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#131021;}
+section.responsive .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#f89c19;}
+section.responsive .prj_info dl.fontcolor dd i:nth-of-type(3){background-color:#ef519e;}
+
+
+/* bootstrap */
+section.bootstrap{background:url(../images/jeep_bg.png) 100% 100% no-repeat; background-size:50% auto;}
+section.bootstrap .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#000;}
+section.bootstrap .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#ffba00;}
+
+
+/* wordpress */
+section.wordpress{background:url(../images/napoleon_bg.png) 100% 170% no-repeat; background-size:30% auto;}
+section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(1){background-color:#422364;}
+section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#333;}
+
+
+
+@media only screen and (max-width:1280px) {
+	section .monitor{width:calc(60% - 14rem); margin-left:14rem;}
+    section .phone{width:calc(60% - 14rem); margin-left:14rem;}
+}
+
+@media only screen and (max-width:1024px) {
+    html{overflow-y:scroll;}
+
+    #wrap h1{left:25px; top: 25px;}
+    #wrap h1 svg{width:auto; height: 30px;}
+
+    #wrap nav{position:fixed; right: 0; top: 0; width: 100%; left: inherit; transform: translate(0,0);}
+    #wrap nav .gnb_open{display: block;}
+    #wrap nav ul{position:fixed; right:-70%; top:0; width:70%; height: 100vh; padding:90px 10% 0; box-sizing:border-box; background:rgba(0,0,0,.9); transition:all .3s;}
+        /* on */
+    #wrap nav.on ul{right:0;}
+    #wrap nav.on .gnb_open span{background:rgba(255,255,255,0);}
+    #wrap nav.on .gnb_open span::before{top:0; transform:rotate(45deg);}
+    #wrap nav.on .gnb_open span::after{top:0; transform:rotate(-45deg);}
+
+
+    #wrap article section{padding:90px 25px;}
+    #wrap article section.main{padding:0;}
+
+    section.main .scroll_down{right:25px; bottom:25px}
+
+    section.profile .photo{float:none; width:auto; height: 500px;}
+    section.profile .intro{position:relative; top:inherit; margin: 3rem 25px; transform:translateY(0);}
+    section.profile .intro .name{font-size:3rem;}
+
+    #wrap article section{width: auto;}
+
+    section .monitor{float:none; width:auto; margin:0 6rem;}
+    section .monitor .video{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
+
+    section .phone{float:none; width: auto; margin:0 16rem;}
+    section .phone .video{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
+
+    section .prj_info{margin:2rem; transform:translate(0,0);}
+    section .prj_info .ttl{font-size:3rem;}
+}
+
+@media only screen and (max-width:768px) {
+
+    section.main .slogan strong{font-size:1.8rem;}
+    section.main .slogan > span{font-size:3rem;}
+    section.main .slogan p span{font-size:1.08rem;}
+
+    section.profile .intro .name{font-size:2.5rem;}
+    section.profile .intro .btn a{width: 100%; margin:5px 0;}
+    section.profile .intro .btn a + a{margin:5px 0;}
+
+    section .monitor{margin:0 2rem;}
+    section .phone{margin:0 5rem;}
+
+    section .prj_info{margin:2rem 25px;}
+    section .prj_info .ttl{font-size:2rem;}
+    section .prj_info p{font-size:1rem;}
+}
+
+@media only screen and (max-width:480px) {
+
+    section.main .slogan strong{font-size:1.5rem;}
+    section.main .slogan > span{font-size:2.45rem;}
+    section.main .slogan p span{font-size:0.85rem;}
+
+    #wrap article section{padding:100px 25px 0;}
+    section .prj_qr{display: none;}
+
+    section.profile .photo{height:300px}
+    section.profile .intro{margin:2rem 0 0;}
+    section.profile .intro .name{font-size:2rem;}
+    section.profile .intro dl{padding:2rem 0 0;}
+    section.profile .intro dl dd{font-size:1rem; padding:1rem 0 0}
+    section.profile .intro .btn{padding:3rem 0 0;}
+
+    section .prj_info{margin:2rem 0;}
+
+}
+
+@media only screen and (max-width:375px) {
+
+    section.main .slogan strong{font-size:1.2rem;}
+    section.main .slogan > span{font-size:2rem;}
+    section.main .slogan p span{font-size:0.7rem;}
+
+    section.profile .intro .name{font-size:1.5rem;}
+    section .prj_info .ttl{font-size:1.5rem;}
+    section .prj_info .ttl span{font-size:1rem}
+
+}
