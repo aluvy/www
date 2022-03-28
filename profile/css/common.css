@@ -76,6 +76,7 @@ blue : #0039ac
 #wrap article{background:#042b6c; transition: all 1s;}
 #wrap.bright article{background:#edf0f4;}
 #wrap.dark article{background:#042b6c;}
+#wrap.design article{background:#0e1634;}
 #wrap article section{position:relative; width: 100%; height: 100%; overflow: hidden;}
     /* bright */
     #wrap.bright h1 path{fill:#0039ac;}
@@ -140,12 +141,17 @@ section .phone .video{position:absolute; left:50%; top:50%; transform:translate(
 section .phone .video img{max-width: 100%; max-height: 100%;}
 section .phone .video video{position:absolute; left:0; top: 0; width: 100%; padding:4% 7% 0; box-sizing:border-box; border-radius:20%/8%;}
 
+    /* design */
+section .design{float:left; position:relative; width: calc(60% - 15rem); margin-left:15rem; height: 100%; box-sizing:border-box;}
+section .design .image{position:absolute; left:0; top:50%; transform:translateY(-40%); width:100%;}
+section .design .image img{width:100%; max-width: 100%; max-height: 100%;}
+
 
 section .prj_info{position:relative; top:50%; margin:0 5% 0 61%; color:#fff; transform:translateY(-50%);}
 section .prj_info .ttl{font-size:2.8125rem; font-weight: 800; font-style: italic;}
 section .prj_info .ttl span{display:inline-block; font-size: 1.125rem; font-weight: 400; padding-left:1rem; letter-spacing:-0.025rem;}
 section .prj_info p{font-size: 1.125rem; padding:.5rem 0 0;}
-section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:rgba(1,20,73,.4); transition:all .3s; margin:2.5rem 0 0;}
+section .prj_info a.visit{position:relative; display:block; width:15rem; height: 3.125rem; line-height: 3.125rem; font-size:0.875rem; font-weight:600; padding:0 1.43rem; box-sizing:border-box; color:#fff; background:rgba(1,20,73,.5); transition:all .3s; margin:2.5rem 0 0;}
 section .prj_info a.visit i{position:absolute; right: 1.43rem; top: 50%; transform:translateY(-50%); font-size: 0.75rem;}
 section .prj_info a.visit:hover{background:rgba(1,20,73,1);}
 section .prj_info dl{padding:2.25rem 0 0;}
@@ -165,6 +171,9 @@ section .prj_qr{position:absolute; right: 40px; bottom:40px;}
     #wrap.bright section .prj_info dl dt{font-weight: 700;}
     #wrap.bright section .prj_info dl dd{color:rgba(6,35,142,.5);}
     #wrap.bright section .prj_info dl.fontcolor dd span + span::before{color:rgba(0,0,0,0.1);}
+    /* design */
+    #wrap.design section .prj_info a.visit{background:#192549;}
+    #wrap.design section .prj_info a.visit:hover{background:#24345d;}
 
 
 
@@ -205,8 +214,15 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
 
 
 @media only screen and (max-width:1280px) {
+
+    section.profile .intro .btn a:nth-of-type(1){width:100%; margin:0 0 5px;}
+    section.profile .intro .btn a:nth-of-type(2){width:calc(50% - 2px); margin-left:0;}
+    section.profile .intro .btn a:nth-of-type(3){width:calc(50% - 3px); margin-left:5px;}
+
+
 	section .monitor{width:calc(60% - 14rem); margin-left:14rem;}
     section .phone{width:calc(60% - 14rem); margin-left:14rem;}
+	section .design{width:calc(60% - 14rem); margin-left:14rem;}
 }
 
 @media only screen and (max-width:1024px) {
@@ -242,6 +258,9 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
     section .phone{float:none; width: auto; margin:0 16rem;}
     section .phone .video{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
 
+    section .design{float:none; width: auto; margin:0 6rem;}
+    section .design .image{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
+
     section .prj_info{margin:2rem; transform:translate(0,0);}
     section .prj_info .ttl{font-size:3rem;}
 }
@@ -253,15 +272,23 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
     section.main .slogan p span{font-size:1.08rem;}
 
     section.profile .intro .name{font-size:2.5rem;}
-    section.profile .intro .btn a{width: 100%; margin:5px 0;}
-    section.profile .intro .btn a + a{margin:5px 0;}
+    /* section.profile .intro .btn a{width: 100%; margin:5px 0;}
+    section.profile .intro .btn a + a{margin:5px 0;} */
 
     section .monitor{margin:0 2rem;}
     section .phone{margin:0 5rem;}
+    section .design{margin:0 5rem;}
 
     section .prj_info{margin:2rem 25px;}
     section .prj_info .ttl{font-size:2rem;}
     section .prj_info p{font-size:1rem;}
+}
+
+@media only screen and (max-width:680px) {
+
+    section .prj_info .ttl{font-size:1.8rem;}
+    section .prj_info .ttl span{font-size:1rem; letter-spacing:-0.045rem;}
+
 }
 
 @media only screen and (max-width:480px) {
@@ -292,6 +319,5 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
 
     section.profile .intro .name{font-size:1.5rem;}
     section .prj_info .ttl{font-size:1.5rem;}
-    section .prj_info .ttl span{font-size:1rem}
 
 }

@@ -133,11 +133,20 @@
 
         if( $('section.mobile').hasClass('active') || $('section.bootstrap').hasClass('active')){
             $('#wrap').removeClass('dark');
+            $('#wrap').removeClass('design');
             $('#wrap').addClass('bright');
+
+        } else if( $('section.design').hasClass('active') ) {
+            $('#wrap').removeClass('bright');
+            $('#wrap').removeClass('dark');
+            $('#wrap').addClass('design');
+
         } else {
             $('#wrap').removeClass('bright');
+            $('#wrap').removeClass('design');
             $('#wrap').addClass('dark');
         }
+
 
     });
 
