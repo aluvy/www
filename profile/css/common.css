@@ -174,6 +174,7 @@ section .prj_qr{position:absolute; right: 40px; bottom:40px;}
     /* design */
     #wrap.design section .prj_info a.visit{background:#192549;}
     #wrap.design section .prj_info a.visit:hover{background:#24345d;}
+    #wrap.design section .prj_info dl dd{color:rgba(106,114,146,1);}
 
 
 
@@ -277,7 +278,7 @@ section.wordpress .prj_info dl.fontcolor dd i:nth-of-type(2){background-color:#3
 
     section .monitor{margin:0 2rem;}
     section .phone{margin:0 5rem;}
-    section .design{margin:0 5rem;}
+    section .design{margin:0;}
 
     section .prj_info{margin:2rem 25px;}
     section .prj_info .ttl{font-size:2rem;}
