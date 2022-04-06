@@ -37,15 +37,27 @@
             <button type="submit">Add</button>
         </form>
         <div class="warning"></div>
-
     </header>
 
 
     <div class="list_area">
+        <p class="notice">If you enter the contents and click Add, a list will be generated.</p>
+        <template>
+            <!-- <dd> -->
+                <span class="chk">
+                    <input type="checkbox" id="cb-11">
+                    <label for="cb-11"></label>
+                </span>
+                <span class="cont">1</span>
+                <span class="fuct">
+                    <button class="btn_modify" type="button"><i class="fas fa-pen"></i></button>
+                    <button class="btn_del" type="button"><i class="fas fa-trash-alt"></i></button>
+                </span>
+            <!-- </dd> -->
+        </template>
         <dl>
-            <dd class="notice">If you enter the contents and click Add, a list will be generated.</dd>
+            <!-- list -->
         </dl>
-
         <div class="delchk">
             <p>해당 리스트를 삭제하시겠습니까?</p>
             <button type="button">예</button>

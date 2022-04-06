@@ -1,20 +1,21 @@
-/* javascript */
+window.addEventListener("load", function(){
 
-window.onload  = function() {
-
-    var input = document.querySelector(".enter_area input"); // input
-    var submit = document.querySelector(".enter_area button"); // button
+    var formArea = document.querySelector(".enter_area");
+    var input = formArea.querySelector("input[type='text']"); // input
+    var submit = formArea.querySelector("button[type='submit'"); // button
+    
     var todolist = document.querySelector(".list_area dl"); // list
+    var template = document.querySelector("template");  // template
 
     var del_chk = document.querySelector('.delchk');
     var del_chk_box = document.querySelector('.delchk_bg');
     
-    var addcnt = 10;
+    var addcnt = 0;
+
 
 
     submit.addEventListener('click', submit_function); // 버튼 클릭
 
-    
     function submit_function(e){
         e.preventDefault();
 
@@ -38,37 +39,58 @@ window.onload  = function() {
     
 
     function addText(newvalue){ // 리스트 추가하기
+
+        var newlist = document.createElement("dd");
+
+        var cloneNode = document.importNode(template.content, true);
+        var chkbox = cloneNode.querySelector(".chk");
+        var chkboxLabel = chkbox.querySelector("label");
+        var chkboxInput = chkbox.querySelector("input");
+
+        // checkbox 속성 변경
+        chkboxLabel.attributes.for.value = 'cb-' + addcnt;
+        chkboxInput.id = 'cb-' + addcnt;
+
+        // content 텍스트 변경
+        var spans = cloneNode.querySelector(".cont");
+        spans.innerHTML = newvalue;
+
+        // append
+        todolist.append(newlist);
+        newlist.append(cloneNode);
+
+
+        // 버튼 이벤트
+        var chkBtn = newlist.querySelector(".chk input");
+        var delBtn = newlist.querySelector(".btn_del");
+        var modifyBtn = newlist.querySelector(".btn_modify");
+        
+        chkBtn.addEventListener("click", check_function);
+        delBtn.addEventListener("click", del_function);
+        modifyBtn.addEventListener("click", modify_function);
+
         addcnt++;
-
-        var newlist = document.createElement("dd"); // dd 엘리먼트 생성
-
-        newlist.innerHTML = "<span class='chk'><input type='checkbox' id='cb-"+ addcnt +"'><label for='cb-"+ addcnt +"'></label></span>";
-        newlist.innerHTML += "<span class='cont'>" + newvalue + "</span>";
-        newlist.innerHTML += "<span class='fuct'><button class='btn_modify' type='button'><i class='fas fa-pen'></i></button><button class='btn_del' type='button'><i class='fas fa-trash-alt'></i></button></span>";
-
-        todolist.append(newlist); // dl에 넣어준다
-
-        newlist.querySelector('.chk input').addEventListener('click', check_function);// check
-        newlist.querySelector('.btn_del').addEventListener('click', del_function);// delete
-        newlist.querySelector('.btn_modify').addEventListener('click', modify_function);// modify
-        //수정하기
-
     };
 
 
 
-    function check_function(){
-        var dd = this.parentElement.parentElement; // dd 선택
+
+    // checkbox
+    function check_function(e){
+        var mydd = this.parentElement.parentElement; // dd 선택
 
         if(this.checked){
-            dd.classList = ' chked';
+            this.checked = true;
+            mydd.classList = ' chked';
         } else {
-            dd.classList.remove('chked');
+            this.checked = false;
+            mydd.classList.remove('chked');
         }
     }
 
     
-    function del_function(){
+
+    function del_function(e){
         
         var btn_del = this;
 
@@ -118,8 +140,6 @@ window.onload  = function() {
 
 
         }
-    
-
     }
 
-};
+});

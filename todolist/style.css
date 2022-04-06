@@ -27,7 +27,7 @@ header .warning::before{content:'!'; display:inline-block; width: 0.875rem; heig
 .list_area dl dd + dd{/*margin-top:30px;*/}
 .list_area dl dd:hover{background:#f2f2f2;}
 
-.list_area dl dd.notice{color:#999;}
+.list_area .notice{color:#999; padding:1rem;}
 
 .list_area dl dd .chk{}
 .list_area dl dd .chk input {position:absolute; left:-9999%; top:0; width:0; height:0; font-size:0; visibility:hidden;}
