@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-size:18px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    color:#fff;
+	line-height: 1.4;
+}
+a{color:inherit; text-decoration: none;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input{background:none; border:0 none;}
+input::placeholder{color:rgba(255,255,255,.8);}
+button{background:none; border:0 none; cursor: pointer; color:#fff;}
+
+.hidden{display: none!important;}
+
+/***************************************************/
+
+@keyframes background {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes greeting_line {
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+.wrap{
+    position:relative;
+    width: 100%; height: 100%;
+    overflow-y:auto;
+    background: url(../img/0.jpg) 50% 50% / cover no-repeat;
+    animation:background 1 .8s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{width:30rem;}
+
+.clock{text-align:center; font-size: 5rem; font-weight: 700; text-shadow: 5px 5px 5px rgba(0,0,0,0.15);}
+
+.greeting_wrap{margin:1rem 0 0;}
+.greeting_wrap .form-wrap{position:relative; display:flex; padding:0 0 .5rem;}
+.greeting_wrap .form-wrap::after{content:''; display: block; position:absolute; left:0; bottom:-5px; width: 100%; height: 5px; background:#fff; animation:greeting_line 1 .8s;}
+.greeting_wrap .form-wrap input,
+.greeting_wrap .form-wrap button{height: 3rem; color:inherit; outline: none;}
+.greeting_wrap .form-wrap input{flex:1 1 auto; text-align:center; font-weight: 700; font-size: 1.55rem;}
+.greeting_wrap .form-wrap button{flex:0 0 3rem; background:rgba(255,255,255,.2); border-radius:3rem; transition:all .3s;}
+.greeting_wrap .form-wrap button:hover{background:rgba(255,255,255,.5);}
+
+.greeting_wrap .greeting{text-align:center; font-size: 1.55rem; font-weight: 700;}
+
+.todo_wrap{margin:3rem 0 0;}
+/* .todo_wrap .todo-form{} */
+.todo_wrap .todo-form input{width:100%; height: 3rem; padding:0 0 0 1rem; color:#fff; box-sizing:border-box; background:rgba(255,255,255,.2); box-shadow:5px 5px 10px 1px rgba(0,0,0,0.15); outline: none;}
+.todo_wrap .todo-list{margin:1rem 0 0;}
+.todo_wrap .todo-list li{display:flex; align-items: center; padding:1rem; border-bottom:1px dashed rgba(255,255,255,.2); transition:all .3s;}
+.todo_wrap .todo-list li:hover{background:rgba(0,0,0,0.25);}
+.todo_wrap .todo-list li span{flex:1 1 auto;}
+.todo_wrap .todo-list li button{flex:0 0 1rem;}
+
+
+
+.quote{position:fixed; left:50%; bottom:2rem; transform: translateX(-50%); text-align:center;}
+.quote span{display:block; font-size: .8rem;}
+.quote span:last-child{font-style: italic; color:rgba(255,255,255,.7); margin:1rem 0 0;}
+
+
+.weather{position:fixed; right: 1rem; top: 1rem; font-size: .8rem; text-align:right;}
+.weather i{font-size:1.45rem;}
+.weather span{display: block;}
+/* .weather span:nth-of-type(1){margin:.55rem 0 0;} */
