@@ -92,7 +92,7 @@
             }, 150);
             return false;
         
-        }else if (delta < 0 && cnt < sectionLen && wt>1024 && window.matchMedia("(min-width: 1024px)").matches) {  //마우스 휠을 내렸을때
+        }else if (delta < 0 && cnt < sectionLen-1 && wt>1024 && window.matchMedia("(min-width: 1024px)").matches) {  //마우스 휠을 내렸을때
             
             clearTimeout(timer);
             timer = setTimeout(function(){
