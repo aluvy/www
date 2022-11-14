@@ -4,6 +4,7 @@
 
 #### profile
 > [https://mioksong.cafe24.com/profile/](https://mioksong.cafe24.com/profile/){:target="_blank"}  
+> <a href="https://mioksong.cafe24.com/profile/" target="blank">https://mioksong.cafe24.com/profile/</a>
 > https://aluvy.github.io/www/profile/  
 > https://aluvy.github.io/www/profile/resume/resume.html  
 
