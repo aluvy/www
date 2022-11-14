@@ -3,7 +3,7 @@
 > 작업기간 : 2021.11 ~ 2022.03
 
 #### profile
-> https://mioksong.cafe24.com/profile/{ :target="_blank"}  
+> (https://mioksong.cafe24.com/profile/){ :target="_blank"}  
 > https://aluvy.github.io/www/profile/  
 > https://aluvy.github.io/www/profile/resume/resume.html  
 
